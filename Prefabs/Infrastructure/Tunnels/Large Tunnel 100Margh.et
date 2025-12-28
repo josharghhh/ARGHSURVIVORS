@@ -1,0 +1,10 @@
+SCR_DestructibleBuildingEntity : "{0886FFD947F3B42D}Prefabs/Infrastructure/Tunnels/Large Tunnel 100M.et" {
+ ID "62FA04E7A7B4A7F7"
+ {
+  EnvironmentProbeEntity {
+   ID "62FA04E5190A1F93"
+   PriorityProbe 1
+   TopColor 0 0 0 1
+  }
+ }
+}

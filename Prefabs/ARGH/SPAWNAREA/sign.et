@@ -1,0 +1,9 @@
+GenericEntity : "{76167BEC292DCF79}Prefabs/Structures/Signs/Military/SignRectangle_01_140x100/Sign_Warzone_US_01.et" {
+ ID "50D67C36F4200F97"
+ components {
+  Hierarchy "{569E7A0B050D01C5}" {
+   Enabled 1
+  }
+ }
+ coords 0 0.741 0
+}

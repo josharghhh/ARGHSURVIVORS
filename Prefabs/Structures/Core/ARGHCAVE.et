@@ -1,0 +1,33 @@
+GameEnvironmentProbeEntity {
+ ID "672A881E585BF9C6"
+ coords 9.348 0.398 3.433
+ Priority 5
+ NearPlane 2
+ VisibleDistance 150
+ Rendering 0x5 0
+ InteriorProbe 1
+ PriorityProbe 1
+ LVReflectionBrightness -11.49
+ ReflectionDesaturation 0.47
+ LVDiffuseBrightness -7.83
+ DiffuseColor 0.141 0.144 0.147 1
+ DiffuseDesaturation 0.5
+ TopColorEV 4
+ TopAngleMax 72.581
+ TopAngleMin 53.13
+ TopAngleLerp 1
+ {
+  SCR_IndestructibleEnvironmentalEntity : "{01ACC51FDECAD098}Prefabs/ARGH/Caves/ARGHCave_CORNER1.et" {
+   ID "672A881E8441C04C"
+   coords 10.911 -0.11 -1.092
+   angles 0 86.456 0
+   scale 0.538
+  }
+  SCR_IndestructibleEnvironmentalEntity : "{970B472A7DCFE198}Prefabs/ARGH/Caves/ARGHCave_SYSTEM.et" {
+   ID "672A881E8441C06A"
+   coords -9.348 -0.398 -3.433
+   angles 0 -97.122 0
+   scale 0.538
+  }
+ }
+}

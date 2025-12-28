@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0A9246148343B7D5}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/Preview/ARGHION_Casual_Shirt_Brand_wear.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

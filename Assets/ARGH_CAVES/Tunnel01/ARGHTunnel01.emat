@@ -1,0 +1,90 @@
+MatPBRMulti {
+ Color 1 1 1 1
+ Diffuse 1 1 1 1
+ CastShadow 1
+ ReceiveShadow 1
+ SurfaceProperties "{D745FD8FC67DB26A}Common/Materials/Game/stone.gamemat"
+ Specular 0.706 0.706 0.706 1
+ SpecularMul 1.3
+ RoughnessScale 3.172
+ MetalnessScale 1.728
+ AOScale 0.568
+ DielectricReflectance 0.023
+ GlobalMCRMap "{BB93FD07EEFA5AB8}Assets/Rocks/Granite/Data/GraniteCliff_03_MCR.edds"
+ OverlayWhitePower 0.02
+ GlobalMapsUVTransform MatUVTransform "{56267ADA09E19E54}" {
+ }
+ MaskMap "{E71ACC7D79F6AD8A}Assets/Rocks/Granite/Data/GraniteCliff_03_MASK.edds"
+ MaskRedScale 0.7
+ MaskBlueScale 0.5
+ VFXMap "{0F52C9AC19172994}Assets/Rocks/Granite/Data/GraniteCliff_03_underwater_VFX.edds"
+ NormalPower 1.7
+ GlobalNMOMap "{4594D23C586CCDAF}Assets/ARGH_CAVES/Tunnel01/diffuse_0_0_0_255_NMO.edds"
+ MudColor 0.337 0.199 0.078 1
+ MudRoughness 1.5
+ MudMetalness 0
+ MudDetNormal 3
+ MudBCRMap "{66A022CBA3BEB3DD}Assets/Vegetation/Plant/Fucus_Vesiculosus/Data/FucusVesiculosus_02_BCR.edds"
+ MudNMOMap "{5E7899597AC9E143}Assets/Vegetation/Plant/Fucus_Vesiculosus/Data/FucusVesiculosus_02_NMO.edds"
+ MudMaskMap "{3781E0F86C525AEE}Assets/Vegetation/Plant/Fucus_Vesiculosus/Data/FucusVesiculosus_02_A.edds"
+ MudUVTransform MatUVTransform "{042A6732074A18A2}" {
+  TilingU 40
+  TilingV 20
+ }
+ DirtOpacity 2.43
+ DirtLayerSharpness 9.234
+ DirtColor 0.123 0.123 0.123 1
+ DirtRoughness 2.817
+ DirtBCRMap "{66A022CBA3BEB3DD}Assets/Vegetation/Plant/Fucus_Vesiculosus/Data/FucusVesiculosus_02_BCR.edds"
+ DirtMaskMap "{EDBC56194C78A396}Assets/Rocks/Granite/Data/Granite_05_MASK.edds"
+ DirtUVTransform MatUVTransform "{042A67327C040682}" {
+  TilingU 40
+  TilingV 20
+ }
+ Enabled_4 1
+ Color_4 0.084 0.084 0.084 1
+ BCR_4 "{2963E13086C6EC7A}Assets/Rocks/Granite/Data/Granite_barnackle_01_BCR.edds"
+ NMO_4 "{11BB5AA25FB1BEE4}Assets/Rocks/Granite/Data/Granite_barnackle_01_NMO.edds"
+ MaskSharpness_4 4.503
+ MaskOffset_4 0.639
+ Mask_4 "{816ABEBED1A52FF3}Assets/_SharedData/DetailMask/ST_Mud_01_Mask.edds"
+ UVTransform_4 MatUVTransform "{042A6732756CC5B6}" {
+  TilingU 40
+  TilingV 20
+ }
+ DetNormal_4 1.5
+ Metalness_4 0
+ Enabled_3 1
+ Color_3 0.061 0.061 0.061 1
+ BCR_3 "{7E8800A899350909}Assets/Rocks/Granite/Data/Granite_05_BCR.edds"
+ NMO_3 "{4650BB3A40425B97}Assets/Rocks/Granite/Data/Granite_05_NMO.edds"
+ MaskSharpness_3 4
+ MaskOffset_3 0.128
+ Mask_3 "{EDBC56194C78A396}Assets/Rocks/Granite/Data/Granite_05_MASK.edds"
+ UVTransform_3 MatUVTransform "{042A673272911FFC}" {
+  TilingU 40
+  TilingV 20
+ }
+ DetNormal_3 1.5
+ Metalness_3 0
+ Enabled_2 1
+ Color_2 0.155 0.004 0 1
+ BCR_2 "{2963E13086C6EC7A}Assets/Rocks/Granite/Data/Granite_barnackle_01_BCR.edds"
+ MaskSharpness_2 7.64
+ MaskOffset_2 0.077
+ Mask_2 "{816ABEBED1A52FF3}Assets/_SharedData/DetailMask/ST_Mud_01_Mask.edds"
+ UVTransform_2 MatUVTransform "{042A67326A77945F}" {
+  TilingU 40
+  TilingV 20
+ }
+ Metalness_2 0
+ Color_1 0 0 0 1
+ BCR_1 "{808840ED6C676545}Assets/Rocks/Granite/Data/Granite_04_BCR.edds"
+ NMO_1 "{B850FB7FB51037DB}Assets/Rocks/Granite/Data/Granite_04_NMO.edds"
+ UVTransform_1 MatUVTransform "{042A6732671F8FDF}" {
+  TilingU 40
+  TilingV 20
+ }
+ Roughness_1 0.7
+ Metalness_1 0
+}

@@ -1,0 +1,375 @@
+$grp GenericEntity : "{01AF412EA2C2F7E8}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Huge.et" {
+ {
+  coords 7380.9 329.805 6534.357
+ }
+ {
+  coords 4498.42 80.046 3933.25
+ }
+ {
+  coords 9001.377 112.064 9654.988
+  angles -12.194 1.354 -6.387
+ }
+ {
+  coords 11419.8 42.192 10952.002
+  angles -11.638 -9.905 15.016
+ }
+ {
+  coords 6276.536 103.9 4306.129
+ }
+ {
+  coords 4583.028 40.624 3506.861
+ }
+ {
+  coords 5565.203 121.179 7831.48
+  angles -27.692 -7.539 15.897
+ }
+ {
+  coords 6843.299 100.135 4754.838
+ }
+ {
+  coords 7122.795 120.883 5451.079
+ }
+ {
+  coords 5889.297 101.745 3592.042
+ }
+ {
+  coords 5408.248 345.805 4854.393
+ }
+ {
+  coords 4505.145 439.411 5675.981
+ }
+ {
+  coords 10739.478 50.354 10569.951
+ }
+}
+$grp GenericEntity : "{23122DF6C65EA0BE}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_Horde.et" {
+ {
+  coords 6312.915 391.38 6971.207
+ }
+ {
+  coords 10630.81 103.987 10192.751
+ }
+ {
+  coords 5713.936 456.587 6188.625
+ }
+ {
+  coords 4916.816 261.793 7177.886
+ }
+ {
+  coords 3956.598 377.346 6341.527
+ }
+ {
+  coords 4224.212 228.982 4645.135
+ }
+ {
+  coords 3563.909 226.748 5717.371
+ }
+}
+$grp GenericEntity : "{3DF27B108A964E1A}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Huge.et" {
+ {
+  coords 3019.342 61.784 5444.338
+ }
+ {
+  components {
+   Bacon_622120A5448725E3_AmbientPatrolSpawnPointComponent "{626CF6EC8EE6E2FD}" {
+    m_fRespawnRand 0
+   }
+  }
+  coords 8490.665 114.49 9553.858
+  scale 1.07
+ }
+}
+$grp GenericEntity : "{56FFF0C990358ED2}Prefabs/Props/Wrecks/UAZ452_wreck/UAZ452_wreck_static.et" {
+ {
+  coords 3834.276 6.07 3732.706
+  angles 3.172 22.534 -6.028
+ }
+ {
+  coords 3799.758 4.307 3723.887
+  angles 3.172 22.534 -6.028
+ }
+}
+$grp GenericEntity : "{6BDDFE9FA1D4B2F0}Prefabs/Props/Wrecks/UAZ469_wreck/UAZ469_wreck.et" {
+ {
+  coords 3297.461 27.187 4577.545
+  angles 0.989 -59.495 -33.554
+ }
+ {
+  coords 3086.226 26.89 4903.536
+  angles 0 -73.475 0
+ }
+}
+GenericEntity : "{75FEF1CA582431F3}Prefabs/Props/Wrecks/BTR70_Wreck/BTR70_wreck.et" {
+ coords 2935.063 23.89 5110.44
+}
+$grp GenericEntity : "{79FE7119DD4DEB12}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_FIA_Small.et" {
+ {
+  coords 5025.463 19.525 10146.025
+  angles 5.69 0.376 3.442
+ }
+ {
+  coords 5200 403.469 5200
+ }
+ {
+  coords 4190.473 402.244 5981.261
+ }
+ {
+  coords 8014.766 33.261 5953.101
+ }
+ {
+  coords 2456.487 19.965 5591.164
+  angles -3.555 0.278 -4.476
+  scale 4.066
+ }
+ {
+  coords 8863.916 124.469 9376.88
+  scale 4.066
+ }
+ {
+  coords 10328.059 66.724 9935.59
+  scale 4.066
+ }
+ {
+  coords 5413.118 63.969 3342.091
+ }
+ {
+  coords 5408.075 64.313 3411.168
+ }
+ {
+  coords 5330.065 65.405 3370.952
+ }
+}
+$grp GenericEntity : "{84CBCE9163176B3E}Prefabs/Props/Wrecks/S105_wreck/S105_wreck.et" {
+ {
+  coords 3775.532 4.053 3743.174
+  angles 0 -167.593 0
+ }
+ {
+  coords 3516.969 2.977 3953.286
+  angles 3.206 175.886 4.968
+ }
+ {
+  coords 3287.554 26.751 4547.424
+  angles 0 -167.593 0
+ }
+ {
+  coords 3295.049 26.571 4535.957
+  angles 0 -118.429 0
+ }
+ {
+  coords 3313.131 26.116 4505.067
+  angles 0 -24.561 0
+ }
+ {
+  coords 3095.112 26.918 4910.428
+ }
+}
+GenericEntity Minigun_66EAD093E04430A6 : "{86EA7714378F6D75}Prefabs/Weapons/MachineGuns/MiniGun/Minigun.et" {
+ coords 5058.541 698.878 6332.912
+ angles -9.321 -104.789 87.701
+}
+GenericEntity : "{A6340D063CD1630A}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Large.et" {
+ coords 3838.046 3.476 3689.308
+}
+SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+ coords 0 0 0
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{D731B0F63DCB7103}" {
+   m_sLoadoutName "Survivor Scout"
+   m_sLoadoutResource "{6CB52AE4A03D9637}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Male.et"
+   m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+   m_sAffiliatedFaction "SURVIVORS"
+  }
+  SCR_FactionPlayerLoadout "{20A4281F95CCB7C5}" {
+   m_sLoadoutName "Survivor Medic"
+   m_sLoadoutResource "{A27AA9F45BE7C25B}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Female.et"
+   m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
+   m_sAffiliatedFaction "SURVIVORS"
+  }
+ }
+}
+GenericEntity : "{C22394165A77A77A}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_Tier1_Small.et" {
+ coords 2589.871 8.203 4910.7
+ angles 13.12 -3.549 -15.284
+}
+$grp GenericEntity : "{CD7AE675C0059D3B}PrefabLibrary/DefaultLibrary/Props/Military/BMP1_wreck.et" {
+ {
+  coords 2887.506 24.299 5172.83
+ }
+ {
+  coords 2908.251 24.219 4891.529
+  angles 0 54.58 0
+ }
+}
+$grp GenericEntity : "{D7CBF3DD3D61F086}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Small.et" {
+ {
+  coords 9424.84 9.379 8452.946
+ }
+ {
+  coords 6550.324 55.889 8413.502
+ }
+ {
+  coords 8013.309 182.99 7743.724
+ }
+ {
+  coords 10787.241 92.721 10026.854
+ }
+ {
+  coords 2765.275 110.906 7448.861
+ }
+ {
+  coords 7853.053 174.507 6632.672
+ }
+ {
+  coords 2765.275 112.089 7448.861
+ }
+}
+$grp GenericEntity : "{DF5EE816FBAE02A7}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Medium.et" {
+ {
+  coords 10174.88 107.009 10429.811
+  angles -20.128 -3.222 8.621
+  scale 3.74
+ }
+ {
+  coords 7583.53 261.406 8261.097
+ }
+ {
+  coords 8069.445 128.446 7176.629
+ }
+ {
+  coords 9120.163 93.541 8705.33
+ }
+ {
+  coords 8473.688 63.529 9854.029
+ }
+ {
+  coords 7666.642 58.209 9091.222
+ }
+ {
+  coords 6506.129 107.949 7919.149
+ }
+ {
+  coords 8746.621 8.59 7386.662
+ }
+ {
+  coords 7864.78 169.679 8803.135
+ }
+ {
+  coords 3010.202 40.652 5204.752
+ }
+ {
+  coords 2975.895 11.566 4559.28
+  angles 0.878 0.123 8.006
+ }
+ {
+  coords 2221.837 126.089 7330.217
+ }
+ {
+  coords 6046.21 104.558 7830.835
+ }
+}
+$grp GenericEntity : "{E06C54D194E36C18}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_MIL_USSR_Medium.et" {
+ {
+  coords 11800 0 5200
+ }
+ {
+  coords 9619.879 11.788 8675.36
+ }
+ {
+  coords 4000 261.532 7000
+ }
+ {
+  coords 3327.661 90.27 5187.874
+ }
+ {
+  coords 5612.902 430.347 6699.536
+ }
+}
+$grp GenericEntity : "{EB084C400AABD1D3}Prefabs/Props/Wrecks/M151A2_wreck/M151A2_wreck.et" {
+ {
+  coords 3288.242 26.68 4507.767
+ }
+ {
+  coords 3083.209 27 4922.997
+ }
+}
+$grp GenericEntity : "{FBE3EE3ACA3DB9D6}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_CIV_Small.et" {
+ {
+  coords 8504.32 15.783 6649.032
+ }
+ {
+  coords 6400 11.063 2500
+ }
+ {
+  coords 4300 127.813 7600
+ }
+ {
+  coords 6837.112 142.567 8135.013
+ }
+ {
+  coords 3600 248.719 7000
+ }
+ {
+  coords 7800 193.781 7200
+ }
+ {
+  coords 11800 0 6000
+ }
+ {
+  coords 9801.227 85.488 10431.289
+ }
+ {
+  coords 9422.771 116.339 10040.923
+ }
+ {
+  coords 9294.467 107.041 9862.433
+ }
+ {
+  coords 9638.188 131.683 10014.078
+ }
+ {
+  coords 9731.123 129.098 10161.129
+ }
+ {
+  coords 11384.246 90.101 10576.365
+ }
+ {
+  coords 11527.166 106.268 10731.448
+ }
+ {
+  coords 9856.334 57.052 9496.318
+ }
+ {
+  coords 9343.32 96.627 9621.498
+ }
+ {
+  coords 8433.756 195.52 9008.371
+ }
+ {
+  coords 5970.344 8.413 3089.181
+ }
+}
+RoadGeneratorEntity : "{FDC788217C6CCF3F}Prefabs/WEGenerators/Decals/Runway/RG_DrainChannel_02.et" {
+ coords 2798.65 24.219 5090.271
+ {
+  RoadEntity {
+   ID "5670B641E4788951"
+   SplinePoints {
+    ShapePoint "{5670B641F5E0ED0C}" {
+     Position -1.516 0 -0.072
+    }
+    ShapePoint "{5670B641F5E0EC59}" {
+     Position 95.173 0 -128.998
+    }
+   }
+   IsClosedSpline 0
+   Width 1
+  }
+ }
+}
+SCR_IndestructibleEnvironmentalEntity : "{FF676E917668C455}Prefabs/Rocks/Granite/Granite_ForestStone_01.et" {
+ Flags 0 0x80000
+ coords 3298.587 27.184 4578.146
+ angles 9.125 29.994 -7.265
+ scale 0.764
+}

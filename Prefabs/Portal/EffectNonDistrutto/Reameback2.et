@@ -1,0 +1,18 @@
+GenericEntity {
+ ID "671AB417759D36D3"
+ components {
+  MeshObject "{671AB417759D36CB}" {
+   Object "{2CCC2AA6E2F6AC36}Models/Portal/Oblivion/FractureOblivion.xob"
+   Materials {
+    MaterialAssignClass "{671AC6294D6187E8}" {
+     SourceMaterial "DefaultGeneratedMaterial"
+     AssignedMaterial "{07E22DA453476C50}Particles/Portal/ARGHPortalView_Vape2.emat"
+    }
+   }
+  }
+  Hierarchy "{671AB417759D36C0}" {
+  }
+ }
+ coords 0.47 0.047 0.384
+ angles 0 180 0
+}

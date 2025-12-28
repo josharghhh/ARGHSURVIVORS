@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2609D94C89A726A7}Assets/ARGH_CAVES/Tunnel01/ARGH-CAVETUNNEL.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4D4F13CE4573DA44}Configs/Systems/Persistence/Configuration/GameMode/GameMode.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

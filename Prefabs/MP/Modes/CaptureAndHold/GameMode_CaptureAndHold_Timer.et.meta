@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A8C26602F06053A3}Prefabs/MP/Modes/CaptureAndHold/GameMode_CaptureAndHold_Timer.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{B894F30E1863B923}Assets/Islands/Data/bottom.001_BCR.edds"
+ NMOMap "{804C489CC114EBBD}Assets/Islands/Data/bottom.001_NMO.edds"
+}

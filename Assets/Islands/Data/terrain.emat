@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{3978D4E5C79696EC}Assets/Islands/Data/terrain.001_BCR.edds"
+ NMOMap "{01A06F771EE1C472}Assets/Islands/Data/terrain.001_NMO.edds"
+}

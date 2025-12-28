@@ -1,0 +1,15 @@
+SCR_ChimeraCharacter : "{E024A74F8A4BC644}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_1.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   itemWhitelist + {
+    "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et"
+   }
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   EnableDamage 0
+  }
+ }
+ coords 9429.856 4.261 12307.518
+ angles 0 70.357 0
+}

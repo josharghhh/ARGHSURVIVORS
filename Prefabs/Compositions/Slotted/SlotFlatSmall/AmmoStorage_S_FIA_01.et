@@ -1,0 +1,11 @@
+GenericEntity : "{6E9190BC2713551D}Prefabs/Compositions/Slotted/BuildableComposition_Base.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  SCR_CampaignBuildingCompositionComponent "{5E96A067C097D570}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{5D66ED1096104FD8}" {
+   Enabled 0
+  }
+ }
+}

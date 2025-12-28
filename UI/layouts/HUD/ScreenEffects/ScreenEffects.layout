@@ -1,0 +1,16 @@
+FrameWidgetClass "{0000000000000000}" {
+ Name "ScreenEffectsRoot"
+ IgnorePointer 1
+ Size 1 1
+ Anchors 0 0 1 1
+ Color 0 0 0 0
+ ImageWidgetClass "{0000000000000001}" {
+  Name "FadeOut"
+  IgnorePointer 1
+  Size 1 1
+  Anchors 0 0 1 1
+  Color 0 0 0 1
+  Opacity 0
+  Flags 4
+ }
+}

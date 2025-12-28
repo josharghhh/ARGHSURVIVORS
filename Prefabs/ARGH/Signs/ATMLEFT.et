@@ -1,0 +1,29 @@
+GenericEntity : "{48C842DD171DE304}Prefabs/Structures/Signs/Large/SignLarge_01_base.et" {
+ ID "0000000000000001"
+ components {
+  MeshObject "{54969A6AAAADA251}" {
+   Materials {
+    MaterialAssignClass "{672B4B9EB642F004}" {
+     SourceMaterial "SignLarge_01"
+     AssignedMaterial "{DDBAE8D4281B7A7C}Assets/Structures/Signs/Large/Data/ATM_LEFT.emat"
+    }
+    MaterialAssignClass "{672B4B9EB642F0F5}" {
+     SourceMaterial "SignLarge_01_MLOD"
+     AssignedMaterial "{DDBAE8D4281B7A7C}Assets/Structures/Signs/Large/Data/ATM_LEFT.emat"
+    }
+   }
+  }
+  RigidBody "{54969A6AA8773997}" {
+   ResponseIndex "LargeDestructible"
+  }
+  SCR_DestructionMultiPhaseComponent "{5496C1EF00137501}" {
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{57209A7D9AC2E2D9}" {
+     m_ModelPrefabs {
+      "{3E8A74FBD234E461}Prefabs/Structures/Signs/Large/Dst/SignLarge_01_WaterTreatmentPlant_dst.et"
+     }
+    }
+   }
+  }
+ }
+}

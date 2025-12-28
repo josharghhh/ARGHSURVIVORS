@@ -1,0 +1,20 @@
+MatPBRBasicGlass {
+ Emissive 1 1 1 0
+ EmissiveLV -1.91
+ RoughnessScale 0
+ MetalnessScale 0
+ AOScale 5
+ DielectricReflectance 0.02
+ GlobalAOPower 0
+ EmissiveMap "{E38B15B7825E072A}Common/Postprocess/LensFlares/Halo_01_BC.edds"
+ BCRMap "{A730977A76334925}Assets/_SharedData/Glass/ST_Glass_Test_01_A.edds"
+ OpacityMap "{A730977A76334925}Assets/_SharedData/Glass/ST_Glass_Test_01_A.edds"
+ NMOMap "{A34F1113366DF8A2}Assets/_SharedData/Dirt/ST_destruct_rust_NMO.edds"
+ HeightMap "{B17D1D734FCDD8C5}Particles/ChaosGate/WarpGate.edds"
+ ParallaxScale 0.005
+ ParallaxShadowScale 1
+ FresnelPower 0.37
+ FresnelBias 0.34
+ Backscatterig 0
+ RefractionIntensity 0.99
+}

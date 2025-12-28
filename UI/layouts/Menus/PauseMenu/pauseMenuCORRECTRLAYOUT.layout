@@ -1,0 +1,677 @@
+FrameWidgetClass : "{E81F33FD5F8C893B}UI/layouts/Menus/PauseMenu/pauseMenu.layout" {
+ {
+  OverlayWidgetClass "{54C4A02A556443D7}" {
+   Prefab "{54C4A02A556443D7}"
+   Slot FrameWidgetSlot "{54C4A02CFA53051D}" {
+    Anchor 0 0 0 0
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 5329
+    OffsetRight -5329
+    SizeY 1080
+    OffsetBottom -1080
+    Alignment 0 0
+   }
+   Opacity 0.96
+   {
+    ImageWidgetClass "{5DF0783F29C7CC34}" {
+     Prefab "{5DF0783F29C7CC34}"
+     IsPixelPerfect 0
+    }
+   }
+  }
+  OverlayWidgetClass "{5DB8B556919FE5F2}" {
+   Prefab "{5DB8B556919FE5F2}"
+   Slot FrameWidgetSlot "{54C4A02CFA53051D}" {
+    Anchor 0 0 0 0
+    PositionX 680
+    OffsetLeft 680
+    PositionY 0
+    OffsetTop 0
+    SizeX 586.7
+    OffsetRight -1266.7
+    SizeY 1080
+    OffsetBottom -1080
+   }
+   {
+    VerticalLayoutWidgetClass "{5DB8B556919FE5EE}" {
+     Prefab "{5DB8B556919FE5EE}"
+     {
+      ImageWidgetClass "{5DB8B556919FE5EF}" {
+       Prefab "{5DB8B556919FE5EF}"
+       Slot LayoutSlot "{58CE98844C814511}" {
+        VerticalAlign 0
+        Padding 0 0 0 100
+       }
+       Color 0.231 0.231 0.231 1
+       Texture "{702F71193F15EE89}Assets/Images/ARGHMENU.edds"
+       Size 1920 350
+      }
+      ButtonWidgetClass "{5DB8B556919FE5ED}" {
+       Prefab "{5DB8B556919FE5ED}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ButtonTextComponent "{5548F0143AE99095}" {
+        }
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.784 0.353 0 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 1 0.25 0 1
+           m_cFocusLost 0.615 0.277 0 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 0.305 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+             Size 64 64
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              ScaleWidgetClass "{557478C2A0AF4E50}" {
+               Prefab "{557478C2A0AF4E50}"
+               Slot LayoutSlot "{557478C2A0AF4E68}" {
+                Padding -4 0 10 0
+               }
+               Color 0.7049 0.3422 0 1
+               {
+                ImageWidgetClass "{557098267D2A9494}" {
+                 Prefab "{557098267D2A9494}"
+                 Color 0.7843 0.3529 0 1
+                 Texture "{71648F15B3984B87}UI/Textures/Editor/Attributes/Arsenal/Attribute_Arsenal_AssaultRifles.edds"
+                 Size 64 64
+                 "Flip Horizontally" 1
+                 "Shadow Offset" -1 1
+                 "Shadow Size Increase" 1.5 1.5
+                }
+               }
+              }
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               Slot AlignableSlot "{66EC4333D57BA298}" {
+                Padding 0 0 0 0
+               }
+               Color 0.7843 0.3529 0 1
+               "Min Font Size" 64
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5E2}" {
+       Prefab "{5DB8B556919FE5E2}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 0.305 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 0.305 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5E0}" {
+       Prefab "{5DB8B556919FE5E0}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{5DB8B556919FE5DE}" {
+       Prefab "{5DB8B556919FE5DE}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ImageWidgetClass "{58CE9885694A54E8}" {
+       Prefab "{58CE9885694A54E8}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{5DB8B556919FE5D4}" {
+       Prefab "{5DB8B556919FE5D4}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.429 0.358 0.11 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 0.305 0 0 1
+           m_cFocusLost 0.429 0.358 0.11 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.429 0.358 0.11 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5E7}" {
+       Prefab "{5DB8B556919FE5E7}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.429 0.358 0.11 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.429 0.358 0.11 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.429 0.358 0.11 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5D2}" {
+       Prefab "{5DB8B556919FE5D2}"
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5E8}" {
+       Prefab "{5DB8B556919FE5E8}"
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{58CE988548151324}" {
+       Prefab "{58CE988548151324}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{58D09C4071FF2106}" {
+       Prefab "{58D09C4071FF2106}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       "Is Enabled" 1
+       "Is Visible" 1
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{6272B24C5CEA4665}" {
+       Prefab "{6272B24C5CEA4665}"
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{6272B2498E3383FB}" {
+       Prefab "{6272B2498E3383FB}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{58CEA11B695D636C}" {
+       Prefab "{58CEA11B695D636C}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0 0.413 0.992 0.118
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 0.031 0.544 0.992 1
+           m_cFocusLost 0 0.283 0.423 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 0.031 0.544 0.992 1
+           m_cFocusLost 0 0.283 0.423 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         Slot ButtonWidgetSlot "{5548E6E7E6AEDDC1}" {
+          Padding 7 1 -100 1
+         }
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              ScaleWidgetClass "{557478C2A0AF4E50}" {
+               Prefab "{557478C2A0AF4E50}"
+               {
+                ImageWidgetClass "{557098267D2A9494}" {
+                 Prefab "{557098267D2A9494}"
+                 Texture "{7DE52C14A13D1069}UI/Textures/MainMenu/Icons/Discord_textured_144_UI.edds"
+                 Size 144 144
+                }
+               }
+              }
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5EBC8EDCF9B16AA1}" {
+       Prefab "{5EBC8EDCF9B16AA1}"
+       "Is Enabled" 0
+       "Is Visible" 0
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DB8B556919FE5CF}" {
+       Prefab "{5DB8B556919FE5CF}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{5DB8B556919FE5CD}" {
+       Prefab "{5DB8B556919FE5CD}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{5DB8B556919FE5CB}" {
+       Prefab "{5DB8B556919FE5CB}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{5DB8B556919FE5C9}" {
+       Prefab "{5DB8B556919FE5C9}"
+       Slot LayoutSlot "{557478C3F0230865}" {
+        HorizontalAlign 1
+       }
+       components {
+        SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+         m_aEffects {
+          SCR_ButtonEffectColor "{5DB885898296DF89}" {
+           m_cFocusGained 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+          SCR_ButtonEffectColor "{5DF4771438691E29}" {
+           m_cFocusGained 1 0 0 1
+           m_cFocusLost 0.305 0 0 1
+          }
+         }
+        }
+       }
+       {
+        SizeLayoutWidgetClass "{557098260F312277}" {
+         Prefab "{557098260F312277}"
+         {
+          OverlayWidgetClass "{557098260F312272}" {
+           Prefab "{557098260F312272}"
+           {
+            ImageWidgetClass "{5DE677F5F2580D88}" {
+             Prefab "{5DE677F5F2580D88}"
+             Color 0.561 0.071 0.071 1
+            }
+            HorizontalLayoutWidgetClass "{557098267862A738}" {
+             Prefab "{557098267862A738}"
+             {
+              TextWidgetClass "{557098260F31227E}" {
+               Prefab "{557098260F31227E}"
+               FontProperties FontProperties "{546AF489DFD25402}" {
+                Italic 1
+                Bold 1
+                OutlineSize 4
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass "{5DBB2E2A5FBC5BD0}" {
+       Prefab "{5DBB2E2A5FBC5BD0}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      ButtonWidgetClass "{5DB8B556919FE5C4}" {
+       Prefab "{5DB8B556919FE5C4}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

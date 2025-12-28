@@ -1,0 +1,6 @@
+SCR_DestructibleBuildingEntity : "{3D43D052DC535184}Prefabs/ZBK/KitSewer/I8m_3_OffInv.et" {
+ ID "5B2E084DE9375A33"
+ coords 1506.548 174.987 12533.464
+ angles 0 -12.19 0
+ scale 0.999
+}

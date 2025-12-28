@@ -1,0 +1,12 @@
+Bacon_622120A5448725E3_InfectedCharacter : "{6734045E1A07091D}622120A5448725E3/Prefabs/Characters/Variants/Variant_CIV_Regular1.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   "Additional hit zones" {
+    SCR_CharacterHealthHitZone Health {
+     MaxHealth 30
+    }
+   }
+  }
+ }
+}

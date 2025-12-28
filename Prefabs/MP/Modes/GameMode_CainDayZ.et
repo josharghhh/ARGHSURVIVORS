@@ -1,0 +1,197 @@
+SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SignalsManagerComponent "{670413C72FAE901A}" {
+  }
+  SCR_CommunicationSoundComponent "{670413C72FAE900F}" {
+   Filenames {
+    "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp"
+   }
+  }
+  GarbageSystemConfigComponent "{670413C72FAE900D}" {
+   Config "{A4D57E0B09F30AD4}Configs/Systems/GarbageSystem/Coop_CombatOps.conf"
+  }
+  SCR_AdditionalGameModeSettingsComponent "{6170E11C3C452ACC}" {
+   m_bEnableTeamKillPunishment 0
+   m_eNametagRelationFilters SHOW_GROUP_MEMBERS
+   m_eNametagControllerFilters SHOW_PLAYERS
+  }
+  SCR_ArsenalManagerComponent "{6120A34EB1E9BBEF}" {
+   m_eArsenalTypesEnabled 5
+  }
+  SCR_CampaignBuildingManagerComponent "{670413C72FAE9003}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{5DF6FBB5913F3245}" : "{96A8B496A076F1C0}scripts/Game/Building/CampaignBuildingCompositionOutline.conf" {
+   }
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+   m_sPrefabToHoldSupplyOnRefund "{4BBE0A784C01900E}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_FreeRoamBuilding.et"
+  }
+  SCR_CommandingManagerComponent "{670413C72FAE9001}" {
+   m_sCommandsConfigPath "{54764D4E706F348C}Configs/Commanding/Commands.conf"
+  }
+  SCR_DebriefingScreenComponent "{670413C72FAE9000}" {
+   m_sHeaderTitle "#AR-CombatScenarioArland_Name"
+   m_BaseLayout SCR_DebriefingScreenUnevenFourTiles "{670413C72FAE9006}" {
+    m_TopLeftTile SCR_DebriefingScreenBigImageContent "{670413C72FAE6E6F}" {
+     m_sContentImage "{8E135C7AA80F6861}UI/Textures/MissionLoadingScreens/CO_Arland_05.edds"
+    }
+    m_TopRightTile SCR_DebriefingScreenFinishedObjectivesContent "{670413C72FAE6E6D}" {
+     m_sTitleText "#AR-DebriefingScreen_Objectives"
+    }
+    m_BottomLeftTile SCR_DebriefingScreenSummaryContent "{670413C72FAE6E92}" {
+     m_sTitleText "#AR-DebriefingScreen_Debriefing"
+     m_sSubtitleText "#AR-DebriefingScreen_Subtitle"
+     m_sSubtitleLostText "#AR-DebriefingScreen_Subtitle_Lost"
+    }
+    m_BottomRightTile SCR_DebriefingScreenStatisticsContent "{670413C72FAE6E93}" {
+     m_sTitleText "#AR-DebriefingScreen_Statistics"
+     m_aStatistics {
+      SCR_DebriefingScreenStatisticShotsFired "{670413C72FAE6E91}" {
+      }
+      SCR_DebriefingScreenStatisticKills "{670413C72FAE6E94}" {
+      }
+      SCR_DebriefingScreenStatisticDeaths "{670413C72FAE6E87}" {
+      }
+      SCR_DebriefingScreenStatisticDistanceWalked "{670413C72FAE6E85}" {
+      }
+      SCR_DebriefingScreenStatisticDistanceDriven "{670413C72FAE3910}" {
+      }
+     }
+    }
+   }
+  }
+  SCR_EntityCatalogManagerComponent "{5C9AD18D91F9E87E}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{5C9AD18D9D38E99E}" {
+     m_eEntityCatalogType CHARACTER
+     m_aEntityEntryList {
+      SCR_EntityCatalogEntry "{670413C72FAE391B}" {
+       m_sEntityPrefab "{6CB52AE4A03D9637}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Male.et"
+       m_aEntityDataList {
+        SCR_EntityCatalogLoadoutData "{670413C72FAE391A}" {
+        }
+        SCR_EntityCatalogSpawnerData "{670413C72FAE3919}" {
+         m_eSlotTypes 0
+        }
+       }
+      }
+      SCR_EntityCatalogEntry "{670413C72FAE3918}" {
+       m_sEntityPrefab "{A27AA9F45BE7C25B}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Female.et"
+       m_aEntityDataList {
+        SCR_EntityCatalogLoadoutData "{670413C72FAE3927}" {
+        }
+        SCR_EntityCatalogSpawnerData "{670413C72FAE3926}" {
+         m_eSlotTypes 0
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fRegenScale 0.85
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_aGroupFlags {
+   }
+  }
+  SCR_IdentityManagerComponent "{5AEEA80681EA61AF}" {
+   m_eIdentityItemGenerationType 6
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType FULL
+   m_iReceiveKillFeedType ALL
+  }
+  SCR_PlayerSpawnPointManagerComponent "{670413C72FAE3922}" {
+   m_bEnablePlayerSpawnPoints 1
+   m_eDeployableSpawnPointBudgetType NONE
+  }
+  SCR_RespawnBriefingComponent "{670413C72FAE3921}" {
+   m_sJournalConfigPath "{E8B9FDA6DF9066DE}Configs/Journal/Journal_CO_Arland.conf"
+   m_Info SCR_UIInfo "{670413C72FAE392A}" {
+    Description "#AR-CombatScenario_Briefing"
+   }
+   m_SimpleBriefingBackground "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
+   m_aGameModeHints {
+    SCR_HintUIInfo "{670413C72FAE3929}" {
+     Name "#AR-Workshop_TabName_Briefing"
+     Description "#AR-CombatScenario_Briefing"
+     Icon "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
+    }
+   }
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{670413C72FAE3937}" {
+    m_sForcedFaction "SURVIVORS"
+   }
+  }
+  SCR_RespawnTimerComponent "{670413C72FAE3936}" {
+  }
+  SCR_ScoringSystemComponent "{670413C72FAE3935}" {
+   m_iTeamKillScoreMultiplier 0
+   m_iSuicideScoreMultiplier 0
+  }
+  SCR_TimeAndWeatherHandlerComponent "{670413C72FAE3934}" {
+   m_iStartingHours 12
+   m_bRandomStartingDaytime 1
+   m_bRandomStartingWeather 1
+   m_bAllowHeaderSettings 1
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   m_aVotingTemplates {
+    SCR_VotingEditorIn "{670413C72FAE3931}" {
+     m_fThreshold 1
+     m_iMinParticipation 1
+     m_iMinVotes 300
+    }
+   }
+  }
+  SCR_WelcomeScreenComponent "{670413C72FAE3930}" {
+   Enabled 0
+   m_sHeaderTitle "Cain Survivors"
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{670413C72FAE393F}" {
+    m_LeftColumn SCR_WelcomeScreenFactionContent "{670413C72FAE0257}" {
+     m_sTitleText "#AR-DeployScreen_AvailableFactionsTitle"
+     m_sBottomTitleText "#AR-DeployScreen_MoreFactions"
+    }
+    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{670413C72FAE0256}" {
+     m_sTitleText "PVE Survival"
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{670413C72FAE0255}" {
+       m_sObjectiveQuadName "Explore"
+       m_sDescription "Scavenge, survive, and avoid hostile factions across CAIN."
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenIntroductionContent "{670413C72FAE0254}" {
+     m_sTitleText "Welcome"
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{670413C72FAE0252}" {
+       m_sContentImage "{8E135C7AA80F6861}UI/Textures/MissionLoadingScreens/CO_Arland_05.edds"
+       m_sContentTitleText "Overview"
+       m_sContentDescriptionText "Randomized survivor deployments with ARGH, Ballien, and Bacon zombie threats."
+      }
+     }
+    }
+   }
+  }
+  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+   Enabled 1
+   m_bEnableReconnect 1
+  }
+ }
+ coords 0 0 1.747
+ PlayerControllerPrefab "{CD2B8EF361478648}Prefabs/Characters/Core/DefaultPlayerControllerMP_ScenarioFramework.et"
+ m_bAutoPlayerRespawn 0
+ m_fAutoReloadTime 75
+ m_bUseSpawnPreload 1
+ m_aDisabledResourceTypes {
+  SUPPLIES
+ }
+}

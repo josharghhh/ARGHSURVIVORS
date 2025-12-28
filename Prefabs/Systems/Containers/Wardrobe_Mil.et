@@ -1,0 +1,9 @@
+Encounter_StorageEntity {
+ ID "6484158DC547478C"
+ components {
+  MeshObject "{6484158C3302AC37}" {
+   Object ""
+  }
+ }
+ coords -2.282 1.22 -7.761
+}

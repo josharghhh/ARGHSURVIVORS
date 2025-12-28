@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "671D5D14C38F9CDB"
+ components {
+  MeshObject "{671D5D14C38F9CD3}" {
+   Object "{1D2351F85CFA11F5}Assets/Characters/Uniforms/T_Shirts/Shirt_ION/rhs_ion_casual_shirt.xob"
+  }
+ }
+ coords 3.476 4.123 0.142
+}

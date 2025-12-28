@@ -1,0 +1,13 @@
+GenericEntity : "{D62DE437B96B9A32}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5B2E084DE3EA4CBC"
+ components {
+  MeshObject "{5B2E084DE3EA4CA3}" {
+   Materials {
+    MaterialAssignClass "{671299C0FB736455}" {
+     SourceMaterial "MatGround"
+     AssignedMaterial "{9047C306D5CA7A95}Assets/Structures/Military/Fortifications/Trenches/TrenchOld_01/Data/TrenchOld_02_450cm_dirt_ground.emat"
+    }
+   }
+  }
+ }
+}

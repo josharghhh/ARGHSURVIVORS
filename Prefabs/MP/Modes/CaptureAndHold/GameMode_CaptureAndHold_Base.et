@@ -1,0 +1,73 @@
+SCR_BaseGameMode : "{0F307326459A1395}Prefabs/MP/Modes/GameMode_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_CaptureAndHoldManager "{67036D0BA8D89DE4}" {
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_bPermitUnconsciousness 0
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_sDefaultGroupPrefab "{92F9879EA0B03967}Prefabs/Groups/CaptureAndHold_PlayableGroup.et"
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_PerceivedFactionManagerComponent "{61AA7E6E0C6A76F9}" {
+   m_eCharacterPerceivedFactionOutfitType HIGHEST_VALUE
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{67036D0BA8D89D96}" {
+   }
+  }
+  SCR_ScoringSystemComponent "{67036D0BA8D89D97}" {
+   m_aActions {
+    EndGameAction "{67036D0BA8D89D94}" {
+     m_eScoringMode SLM_Faction
+     m_iScoreLimit 500
+    }
+   }
+  }
+  SCR_WelcomeScreenComponent "{67036D0BA8D89D92}" {
+   m_sHeaderTitle "Capture & Hold"
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{67036D0BA8D89D93}" {
+    m_LeftColumn SCR_WelcomeScreenFactionContent "{67036D0BA8D89D90}" {
+     m_sTitleText "#AR-DeployScreen_AvailableFactionsTitle"
+    }
+    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{67036D0BA8D89D91}" {
+     m_sTitleText "#AR-DebriefingScreen_Objectives"
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{67036D0BA8D89D9E}" {
+       m_sObjectiveQuadName "Seize"
+       m_sDescription "#AR-CAH-Briefing_Condition_1"
+      }
+      SCR_WelcomeScreenMissionObjectives "{67036D0BA8D89D9F}" {
+       m_sObjectiveQuadName "Defend"
+       m_sDescription "#AR-CAH-Briefing_Condition_2"
+      }
+      SCR_WelcomeScreenMissionObjectives "{67036D0BA8D89D9C}" {
+       m_sObjectiveQuadName "Custom"
+       m_sDescription "#AR-CAH-Briefing_Condition_3"
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenIntroductionContent "{67036D0BA8D89D9D}" {
+     m_bIsInteractible 1
+     m_sTitleText "#AR-DeployScreen_OverviewTitle"
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{67036D0BA8D89D9B}" {
+       m_sContentImage "{2771A4843EF492BF}UI/Textures/MissionLoadingScreens/CAH_BriarsCoast_UI.edds"
+       m_sContentTitleText "#AR-CAH-Briefing_Contesting_Title"
+       m_sContentDescriptionText "#AR-CAH-Briefing_Contesting_Description"
+      }
+      SCR_WelcomeScreenIntroduction "{67036D0BA8D89D85}" {
+       m_sContentImage "{D81122324D585428}UI/Textures/MissionLoadingScreens/CAH_Morton_UI.edds"
+       m_sContentTitleText "#AR-CAH-Briefing_Capturing_Title"
+       m_sContentDescriptionText "#AR-CAH-Briefing_Capturing_Description"
+      }
+     }
+    }
+   }
+  }
+ }
+ PlayerControllerPrefab "{BB8EC6521FAD0623}Prefabs/Characters/Core/CaptureAndHoldPlayerController.et"
+}

@@ -1,0 +1,16 @@
+GameMaterial : "{76FF8F3BA9FD966A}Common/Materials/Game/soil_forest.gamemat" {
+ SoundInfo SoundInfo "{515AB906E32E91DF}" {
+  SurfaceSignalValue 2311
+ }
+ BallisticInfo BallisticInfo "{527AC079FE96BA51}" {
+  Density 1.44
+ }
+ ParticleEffectInfo ParticleEffectInfo "{66F2650C06741AD6}" : "code|default" {
+  VehicleDust +{
+   "{C258E9FD60423E0F}Particles/Vehicle/Helicopter/Rotor Collision Effects/Helicopter_Rotor_Collision_Main_Dirt.ptc"
+  }
+  Blast +{
+   "{2C7486D2E7E40717}Particles/Blasts/Blast_huge_default.ptc"
+  }
+ }
+}

@@ -1,0 +1,223 @@
+SCR_DestructibleBuildingEntity : "{4DF75B7B80E91836}Prefabs/Structures/Infrastructure/Waterworks/WaterStation_02/WaterStation_USSR_02_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Materials {
+    MaterialAssignClass "{66088BD0F842D27E}" {
+     SourceMaterial "ST_BRICKS_BARE_01B9FE0055DF4CF8"
+     AssignedMaterial "{01B9FE0055DF4CF8}Assets/_SharedData/Decals/ST_Bricks_Bare_01_Dmg_Decal_03.emat"
+    }
+    MaterialAssignClass "{66088BD0F842D256}" {
+     SourceMaterial "WaterStation_02_EXT"
+     AssignedMaterial "{CD7EE965622764A2}Assets/Structures/Infrastructure/Waterworks/WaterStation_02/Data/WaterStation_02_EXT_Metal.emat"
+    }
+   }
+  }
+ }
+ {
+  Building {
+   ID "660272B738709A79"
+   {
+    GenericEntity {
+     ID "562280A5E6703FC8"
+     coords 0 0 0
+    }
+   }
+  }
+  GameEnvironmentProbeEntity {
+   ID "660272B029BA8382"
+   LVReflectionBrightness -4.86
+   ReflectionColor 1 0.2471 0.2471 1
+   LVDiffuseBrightness -14.69
+  }
+  GenericEntity {
+   ID "660272B738709A9A"
+   {
+    GenericEntity {
+     ID "568C838903529A55"
+     components {
+      ActionsManagerComponent "{F32B667C3C823800}" {
+       Enabled 0
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "660272B738709ABC"
+   {
+    GenericEntity {
+     ID "568C83951A8094F3"
+     components {
+      SCR_DestructionMultiPhaseComponent "{6724320C8F600378}" {
+       "Additional hit zones" {
+        SCR_HitZone TEST {
+         MaxHealth 2000
+         "Collision multiplier" 0
+         "Melee multiplier" 0
+         "Kinetic multiplier" 0
+         "Fragmentation multiplier" 0
+         "Incendiary multiplier" 0
+         "Fire multiplier" 0
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  GenericEntity {
+   ID "6724A2D74430F360"
+   components {
+    MeshObject "{6724A2D5E29770D7}" {
+     Object "{232F40696F56D2C6}Assets/Structures/BuildingsParts/Infrastructure/ContainerSpreader_01/Dst/ContainerSpreader_01_Chain_dst_01.xob"
+    }
+   }
+   coords 2.75 5.279 -1.684
+   angles 5.062 -55.82 -180
+   scale 0.71
+  }
+  GenericEntity : "{1433D389FE2C6E0D}Prefabs/Systems/ARGH_VAULT.et" {
+   ID "6724A2D74430452E"
+   coords 0.829 0.23 -1.085
+   scale 0.08
+  }
+  GenericEntity : "{4213243821543182}Prefabs/Props/Remains/SkeletonRemains/SkeletonRemains_04_V1.et" {
+   ID "6724A2D74430F339"
+   coords 0.954 0.227 -2.52
+  }
+  $grp GenericEntity : "{840CB630CFF0404F}Prefabs/Props/Naval/BrightLIght.et" {
+   {
+    ID "6724A2D74430451E"
+    components {
+     LightSourceVisualizationObject "{5A02839A0D5BE210}" {
+      Size 5.347
+      LV 4.38
+     }
+    }
+    coords 0.219 3.038 -1.059
+    angles 42.454 -154.233 -3.331
+   }
+   {
+    ID "6724A2D744304575"
+    coords 1.328 -0.279 0.27
+    angles 67.015 -22.35 -162.799
+   }
+  }
+  GenericEntity : "{85DA3EE1728006EF}Assets/Ivy/GM_Placeable/E_Ivy_05.et" {
+   ID "6724320FE3189FC0"
+   coords -0.707 4.513 2.916
+   angles 88.558 180 180
+  }
+  GenericEntity : "{8F011B64BDF149DA}Prefabs/Props/Remains/SkeletonRemains/SkeletonRemains_05.et" {
+   ID "6724A2D74430F330"
+   coords 2.554 1.946 -1.556
+   angles -90 0 -55.821
+  }
+  GenericEntity : "{9095143EB8239580}Prefabs/Props/Remains/SkeletonRemains/SkeletonRemains_03_V1.et" {
+   ID "6724A2D74430F343"
+   coords 2.496 0.237 -0.052
+  }
+  GenericEntity : "{AC8DA9EB47B9954E}Assets/Ivy/Prefabs/Ivy_12.et" {
+   ID "6724320FE318988C"
+   coords -1.17 3.919 3.3
+   angles 0 -15.512 0
+   scale 0.55
+  }
+  $grp GenericEntity : "{BA200F4E11D0DF09}Assets/Ivy/Prefabs/Ivy_7.et" {
+   {
+    ID "6724320FE318980F"
+    coords -0.03 4.09 3.672
+    angles 0 -63.137 0
+   }
+   {
+    ID "6724320FE3189840"
+    coords 1.077 3.905 -3.274
+    angles 0 -52.284 0
+   }
+   {
+    ID "6724320FE318984A"
+    coords 0.137 3.958 -3.521
+    angles 0 -16.379 0
+   }
+   {
+    ID "6724320FE3189855"
+    coords -0.857 3.92 -3.348
+    angles 0 1.493 0
+   }
+   {
+    ID "6724320FE318985E"
+    coords -1.804 3.949 -3.027
+    angles 0 22.189 0
+   }
+   {
+    ID "6724320FE3189868"
+    coords -3.287 3.741 -1.707
+    angles 0 -120.781 0
+   }
+   {
+    ID "6724320FE3189872"
+    coords -3.38 3.826 1.264
+    angles 0 -76.195 0
+   }
+   {
+    ID "6724320FE318987C"
+    coords -2.57 3.734 2.569
+    angles 0 -52.284 0
+   }
+   {
+    ID "6724320FE3189894"
+    coords 2.677 3.918 2.175
+    angles 0 -127.553 0
+   }
+   {
+    ID "6724320FE318989C"
+    coords 3.253 3.757 1.136
+    angles 0 -122.827 0
+   }
+   {
+    ID "6724320FE31898A9"
+    coords 3.445 3.821 0.097
+    angles 0 -113.429 0
+   }
+   {
+    ID "6724320FE31898B1"
+    coords 3.294 3.803 -1.023
+    angles 0 -88.225 0
+   }
+   {
+    ID "6724320FE31898B8"
+    coords 2.63 3.829 -2.23
+    angles 0 -63.137 0
+   }
+  }
+  $grp GenericEntity : "{DE91FCBAFD54CEC9}Prefabs/Props/Remains/SkeletonRemains/SkeletonRemains_02_V3.et" {
+   {
+    ID "6724A2D74430F312"
+    coords 2.697 0.228 0.517
+    angles 0 -140.028 0
+   }
+   {
+    ID "6724A2D74430F32E"
+    coords 1.695 0.228 -2.206
+    angles 0 -15.439 0
+   }
+  }
+  ParticleEffectEntity : "{E931C0A6240D4D27}Prefabs/Particles/Smoke/Smoke_Smokestack_Medium.et" {
+   ID "672548A2DD36D0B0"
+   coords -0.749 5.846 0.751
+   scale 0.01
+  }
+  GenericEntity : "{FCBD2EF76EC54FFA}Prefabs/Structures/BuildingParts/Doors/Door_WoodenWall_01_LEFT_EXT_COV_B.et" {
+   ID "6724A2D59DAA996B"
+   components {
+    ActionsManagerComponent "{F32B667C3C823800}" {
+     Enabled 0
+    }
+   }
+   coords 0.997 1.587 -2.981
+   angles 0 -31.098 0
+   scale 0.673
+  }
+ }
+}

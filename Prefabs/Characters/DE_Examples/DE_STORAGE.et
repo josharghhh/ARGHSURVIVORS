@@ -1,0 +1,50 @@
+SCR_ChimeraCharacter : "{B3AB6D12D247DDB5}Prefabs/Characters/Factions/CIV/Businessman/Character_CIV_Businessman_Randomized.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{670F7E8C70B25789}" {
+   traderName "General Trader"
+   itemWhitelist {
+    "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et"
+   }
+  }
+  MeshObject "{520EA1D2F659C81F}" {
+   Object "{EC9A7A3715DB6672}Assets/Characters/Basebody/ToH_Basebody_Woman_01.xob"
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "General Trader"
+    Icon "{9164E45B9A237FE9}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Unarmed.edds"
+   }
+   m_VariantData SCR_EditableEntityVariantData "{6106974AAD84694F}" {
+    m_bRandomizeDefaultVariant 1
+    m_aVariants {
+     SCR_EditableEntityVariant "{6106974AACA0498F}" {
+      m_bEnabled 0
+     }
+     SCR_EditableEntityVariant "{6106974AAC961171}" {
+      m_bEnabled 0
+     }
+     SCR_EditableEntityVariant "{6106974AACC2F3E7}" {
+      m_bEnabled 0
+     }
+    }
+   }
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{22C0034660DD288C}Prefabs/Characters/Heads/Head_woman_03.et"
+     Body "{BD6F0BEDB610E5E9}Prefabs/Characters/Basebody/CharacterBasebody_Woman_01.et"
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{940ECDB0F69CBC5E}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/ION_Casual_Shirt_Brand.et"
+    }
+   }
+  }
+ }
+ coords 135.439 1 162.003
+}

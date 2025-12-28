@@ -1,0 +1,12 @@
+GenericEntity : "{D5BA3B82632E00F8}Prefabs/Props/Naval/Buoy_01_lightsource_base.et" {
+ ID "5A0283818DC75DC0"
+ components {
+  LightSourceVisualizationObject "{5A02839A0D5BE210}" {
+   Size 6.136
+   Color 1 0.0508 0.0277 1
+   LV 6.67
+  }
+ }
+ coords 0.746 2.186 -2.277
+ angles 42.454 -154.233 -3.331
+}

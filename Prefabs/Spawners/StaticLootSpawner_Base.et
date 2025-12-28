@@ -1,0 +1,4 @@
+ZEL_StaticLootSpawner {
+ ID "5C7030DD932A808A"
+ m_fRespawnDelay 180
+}

@@ -1,0 +1,13 @@
+SCR_DestructibleBuildingEntity : "{25B3E43A69BB50E8}Prefabs/Structures/Core/Building_Base.et" {
+ ID "5D08857CC0103ED9"
+ components {
+  MeshObject "{6718D59EA2A24B49}" {
+   Object "{25ED96EA0BC99F45}Assets/Structures/ZBKKitSewer/VegetalGround/EgoutGround16x32Asphalt.xob"
+  }
+  RigidBody "{5D08857CC0103EE6}" {
+   LayerPreset "BuildingFireView"
+   Active Active
+  }
+ }
+ coords 1707.731 0 1962.031
+}

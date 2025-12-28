@@ -1,0 +1,13 @@
+GenericEntity : "{FBC61238A0B3B56F}Prefabs/Props/Industrial/ConcretePanel_01_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{5528DB2148330C03}" {
+     SourceMaterial "ConcretePanel_01"
+     AssignedMaterial "{273053CA9C745B16}Assets/Rocks/Granite/Data/Granite_Cluster_04.emat"
+    }
+   }
+  }
+ }
+}

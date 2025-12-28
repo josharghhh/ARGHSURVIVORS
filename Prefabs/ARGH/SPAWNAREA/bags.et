@@ -1,0 +1,10 @@
+GenericEntity : "{53EB8BF116A99F3B}Prefabs/Props/Military/Sandbags/Sandbag_01_short_high_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  Hierarchy "{569E7A0B050F30C4}" {
+   Enabled 1
+  }
+ }
+ coords -0.154 0 0.066
+ angles 0 180 0
+}

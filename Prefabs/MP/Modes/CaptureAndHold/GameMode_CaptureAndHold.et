@@ -1,0 +1,7 @@
+SCR_BaseGameMode : "{4261E9B841D6C6DE}Prefabs/MP/Modes/CaptureAndHold/GameMode_CaptureAndHold_Base.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_WaveRespawnTimerComponent "{67036D0BB55FDD9B}" {
+  }
+ }
+}

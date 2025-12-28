@@ -1,0 +1,9 @@
+ParticleEffectEntity {
+ ID "671AB4172A5A879D"
+ components {
+  Hierarchy "{671AB4172A5A8783}" {
+  }
+ }
+ coords 0.151 3.169 0.296
+ EffectPath "{6E9B93F40649C26B}Particles/Portal/PortalEffect.ptc"
+}

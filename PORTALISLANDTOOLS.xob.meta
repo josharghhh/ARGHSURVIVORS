@@ -1,0 +1,61 @@
+MetaFileClass {
+ Name "{0616A1705B8B2549}PORTALISLANDTOOLS.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{671C236C55B36553}" {
+     SourceMaterial "bottom"
+     AssignedMaterial "{2EA6E606B556B29C}Assets/Islands/Data/bottom.emat"
+    }
+    MaterialAssignClass "{671C236C55B3657E}" {
+     SourceMaterial "terrain"
+     AssignedMaterial "{BE665DDCEA29DDE5}Assets/Islands/Data/terrain.emat"
+    }
+    MaterialAssignClass "{671C236C55B36578}" {
+     SourceMaterial "rockscave"
+     AssignedMaterial "{495B6404501F645E}Assets/Islands/Data/rockscave.emat"
+    }
+   }
+   MeshParams {
+    MeshParam bottom {
+    }
+    MeshParam caverocks {
+    }
+    MeshParam terrain {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_COLLIDER1 {
+     LayerPreset "Terrain"
+     SurfaceProperties {
+      "{5E4EA52B03682185}FireGeo_Material.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{671C236C55E62DF4}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{671C236C55E62CB0}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{671C236C55E62CFA}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{671C236C55E62C17}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{671C236C55E62C3A}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{671C236C55E62C57}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

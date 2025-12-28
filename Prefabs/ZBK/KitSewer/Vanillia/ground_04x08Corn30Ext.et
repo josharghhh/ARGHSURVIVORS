@@ -1,0 +1,20 @@
+SCR_DestructibleBuildingEntity {
+ ID "66F265066F048488"
+ components {
+  MeshObject "{66F265066F048481}" {
+   Object "{F0082A0D0AEB46DD}Assets/Structures/ZBKKitSewer/VegetalGround/EgoutGround08x04Corn30Ext.xob"
+   ClutterOccluder 1
+  }
+  RigidBody "{66F265066F04857B}" {
+   LayerPreset "BuildingFireView"
+   Active Active
+   ModelGeometry 1
+   Static 1
+  }
+  RplComponent "{66F265066F048579}" {
+  }
+  Hierarchy "{66F265066F04857F}" {
+  }
+ }
+ coords 1755.877 4 2123.987
+}

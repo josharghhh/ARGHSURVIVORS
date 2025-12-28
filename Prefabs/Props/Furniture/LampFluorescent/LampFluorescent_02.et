@@ -1,0 +1,15 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/DestructibleMultiPhase_Props_Base.et" {
+ ID "51F8C8429876E51B"
+ {
+  LightEntity : "{8351F4F8AB128B7B}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_02/LightPrefabs/LampStreet_E_02_light.et" {
+   ID "67243206E7F40413"
+   coords 0.051 -0.086 0.009
+   angles -86.771 0 0
+   LV -0.76
+   Type Point
+   Radius 10.757
+   NearPlane 0.142
+   SpotAngle 47.857
+  }
+ }
+}

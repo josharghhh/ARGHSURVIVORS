@@ -1,0 +1,11 @@
+SCR_DestructibleBuildingEntity : "{51043B1D2125E391}Prefabs/Structures/Military/Bunkers/ReinforcedFueltank_E_01/ReinforcedFueltank_E_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GameEnvironmentProbeEntity {
+   ID "5E74B3EC86AAD559"
+   LVReflectionBrightness 1.71
+   ReflectionDesaturation 0.53
+   LVDiffuseBrightness -0.3
+  }
+ }
+}

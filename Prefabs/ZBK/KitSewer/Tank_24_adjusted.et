@@ -1,0 +1,202 @@
+SCR_DestructibleBuildingEntity : "{25B3E43A69BB50E8}Prefabs/Structures/Core/Building_Base.et" {
+ ID "5D08857CC0103ED9"
+ components {
+  MeshObject "{66F80110DB52232D}" {
+   Object "{75F452C91BB7DE53}Assets/Structures/ZBKKitSewer/Tank24m/Reservoir24m.xob"
+   ClutterOccluder 1
+  }
+  RplComponent "{5D08857CC0103EE8}" {
+   Enabled 1
+  }
+ }
+ Flags 0x80403 0
+ coords 1719.568 0 2017.955
+ {
+  $grp GenericEntity : "{1AE4C30C542E6938}Prefabs/Structures/BuildingParts/Lights/LampeEgout02.et" {
+   {
+    ID "66F80110D4AD1575"
+    coords -4.593 9.203 -4.03
+    angles 90 0 0
+    {
+     LightEntity {
+      ID "5B2E0848E0D72AD4"
+      Radius 12
+     }
+    }
+   }
+   {
+    ID "66F80110D4AD1576"
+    coords -4.051 9.203 4.451
+    angles 90 270 -180
+    {
+     LightEntity {
+      ID "5B2E0848E0D72AD4"
+      Radius 12
+     }
+    }
+   }
+   {
+    ID "66F80110D4ADFB20"
+    coords 4.049 9.203 -4.565
+    angles 90 270 0
+    {
+     LightEntity {
+      ID "5B2E0848E0D72AD4"
+      Radius 12
+     }
+    }
+   }
+   {
+    ID "66F80110D4ADFB21"
+    coords 4.503 9.203 4.027
+    angles 90 0 180
+    {
+     LightEntity {
+      ID "5B2E0848E0D72AD4"
+      Radius 12
+     }
+    }
+   }
+  }
+  $grp SCR_DestructibleBuildingEntity : "{77DBE21DC831167C}Prefabs/Structures/Infrastructure/Waterworks/WaterTreatmentPlant_01/WaterTreatmentPlant_01_small.et" {
+   {
+    ID "66F80110D4ADC313"
+    components {
+     SoundComponent "{56DEF694BA0DE3B6}" {
+      Enabled 1
+     }
+    }
+    coords -7.115 2.394 -8.159
+    angles 0 90 0
+   }
+   {
+    ID "66F80110D4ADFB3F"
+    components {
+     SoundComponent "{56DEF694BA0DE3B6}" {
+      Enabled 1
+     }
+    }
+    coords 7.573 2.394 8.624
+    angles 0 90 0
+    scale 0.9
+   }
+  }
+  $grp StaticModelEntity : "{783A0981DA761AAB}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_end.et" {
+   {
+    ID "66F80110D4ADC311"
+    coords 4.713 1.4 -5.972
+    angles 0 -180 0
+   }
+   {
+    ID "66F80110D4ADDC95"
+    coords 4.713 1.4 -6.783
+    angles 0 -180 0
+   }
+   {
+    ID "66F80110D4AE1739"
+    coords 4.713 1.4 -9.293
+    angles 0 180 0
+   }
+   {
+    ID "66F80110D4AE4BE1"
+    coords 4.713 1.4 -9.959
+    angles 0 -180 0
+   }
+   {
+    ID "66F80110D4AEA731"
+    coords -10 1.4 5.718
+    angles 0 -90 0
+   }
+   {
+    ID "66F80110D4AEA736"
+    coords -9.181 1.372 11.708
+    angles 0 -90 0
+   }
+  }
+  $grp GenericEntity : "{939FD7733B05FBE4}Prefabs/ZBK/Props/SewerGrid/Plate01.et" {
+   {
+    ID "66F80110D4AEA730"
+    coords 6.045 0.937 -6.362
+   }
+   {
+    ID "66F80110D4AF6E58"
+    coords -6.827 0.949 10.372
+   }
+  }
+  $grp GenericEntity : "{A480627B91B06198}Prefabs/ZBK/Props/SewerGrid/Grid02.et" {
+   {
+    ID "66F80110D4AF8241"
+    coords -9.445 0.947 4.994
+   }
+   {
+    ID "66F80110D4AF8242"
+    coords 5.415 0.942 -8.655
+   }
+  }
+  $grp GenericEntity : "{AF301905965156CE}Prefabs/ZBK/KitFactory/KitStair/Vanil_EscPlein4m.et" {
+   {
+    ID "66F80110D4AF8240"
+    coords -5.7 0.94 -10.95
+   }
+   {
+    ID "66F80110DB503908"
+    coords 5.7 0.938 10.95
+    angles 0 180 0
+   }
+  }
+  GenericEntity : "{B15D3A5813E63289}Prefabs/ZBK/Props/SewerGrid/Grid01.et" {
+   ID "66F80110DB50390F"
+   coords 6.142 0.943 -10.764
+  }
+  StaticModelEntity : "{B38B5CEED13F6C00}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_6m.et" {
+   ID "66F80110DB50079D"
+   coords -10 1.4 11.707
+   angles 0 -90 0
+  }
+  $grp GenericEntity : "{C4DA133C938379B5}Prefabs/ZBK/KitFactory/KitFrameWork/MetalBeam_V380cm.et" {
+   {
+    ID "66F80110DB50079E"
+    coords 9.789 2.92 6.652
+   }
+   {
+    ID "66F80110DB50D5F4"
+    coords -9.808 2.92 -7.883
+   }
+   {
+    ID "66F80110DB511505"
+    coords -9.787 2.92 -6.629
+   }
+   {
+    ID "66F80110DB51416A"
+    coords 9.828 2.92 7.859
+   }
+  }
+  StaticModelEntity : "{C961CFEF127BA48D}Prefabs/Structures/Airport/AirfieldPipeline_01/AirfieldPipeline_01_90.et" {
+   ID "66F80110DB51153A"
+   coords 5.028 1.4 -11.701
+   angles 0 90 0
+  }
+  $grp GenericEntity : "{D31E0CFEE9D92E2F}Prefabs/ZBK/KitFactory/KitStair/StairEmpty2mTop.et" {
+   {
+    ID "66F80110DB511538"
+    coords -10.7 6.94 -4
+    angles 0 90 0
+   }
+   {
+    ID "66F80110DB51153B"
+    coords 10.7 4.938 8
+    angles 0 -90 0
+   }
+   {
+    ID "66F80110DB51A8FD"
+    coords 10.7 6.938 4
+    angles 0 -90 0
+   }
+   {
+    ID "66F80110DB51C1CD"
+    coords -10.7 4.94 -8
+    angles 0 90 0
+   }
+  }
+ }
+}

@@ -1,0 +1,18 @@
+GameEnvironmentProbeEntity {
+ ID "672A8A0678E88217"
+ coords 0 0 0
+ Priority 6
+ Rendering 0x1e 0
+ ExtProbeDiffuseWeight 0
+ PriorityProbe 1
+ LVReflectionBrightness 0.74
+ ReflectionColor 0 0 0 1
+ ReflectionDesaturation 0.55
+ LVDiffuseBrightness -1.43
+ DiffuseColor 0.1725 0.1725 0.1725 1
+ DiffuseDesaturation 0.04
+ SkyDesaturation 0.39
+ LVBackgroundColor 5.77
+ VisiblePercentWhite 66
+ VisiblePercentBlack 35
+}

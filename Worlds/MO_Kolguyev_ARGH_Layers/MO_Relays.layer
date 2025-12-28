@@ -1,0 +1,155 @@
+GenericEntity : "{07D58C64654F71A3}Prefabs/Compositions/Slotted/SlotFlatSmall/SandbagPosition_S_USSR_03.et" {
+ coords 10102.845 168.93 10281.486
+ angles 2.255 -56.067 -8.304
+}
+GenericEntity : "{084825E68F0FAF86}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_Scoped_S_USSR_01.et" {
+ coords 10112.95 168.793 10280.625
+ angles 0 75.203 0
+}
+SCR_DestructibleEntity : "{1EDCD7CE5F02D279}Prefabs/Structures/Walls/BarbedWire/NetFence_USSR_01/NetFence_USSR_01_pole.et" {
+ coords 10107.627 -0.001 10286.044
+ angles 0 -93.992 0
+}
+GenericEntity : "{32DE30B02A04B844}Prefabs/Compositions/Misc/SubCompositions/Fortifications/Sandbag_Corner_BarbedWire_USSR_01.et" {
+ coords 10111.715 168.25 10273.607
+ angles 0 39.55 0
+}
+MO_SpawnCategorizationTriggerEntity : "{3684DCA233B69D73}Prefabs/Systems/MO_SpawnCategorizationTrigger.et" {
+ coords 471.706 0 12386.489
+ scale 0.6
+ SphereRadius 9
+}
+SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+ coords 514.151 5.841 12426.217
+ angles 27.163 -48.806 -7.413
+ scale 0.683
+}
+GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRelayRadio.et" {
+ components {
+  SCR_CampaignMilitaryBaseComponent "{5C727AD73024FB00}" {
+   m_sBaseName "Udarnik Relay"
+   m_sBaseNameUpper "UDARNIK RELAY"
+  }
+ }
+ coords 4339.001 58.78 3135.619
+ angles 0 88.122 0
+}
+StaticModelEntity : "{5E04006B28C7C0B5}Prefabs/Structures/BuildingParts/Doors/Door_MetalGate_05/DoorSet_MetalGate_05_small_USSR.et" {
+ coords 10107.431 169.877 10285.975
+ angles 0 -178.991 0
+}
+Vehicle HotDog_base7 : "{62F69EF8F784A52B}Prefabs/Vehicles/Wheeled/ARGH_KART/HotDog_base.et" {
+ coords 4388.188 2.688 8144.514
+}
+StaticModelEntity : "{6A004A8F0571D456}Prefabs/Structures/Infrastructure/Towers/TransmitterTower_01/TransmitterTower_01_small.et" {
+ coords 10107.972 170.094 10290.03
+ {
+  GenericEntity : "{522DCD528AE27052}Prefabs/Systems/MilitaryBase/ConflictRelayRadio.et" {
+   components {
+    SCR_CampaignMilitaryBaseComponent "{5C727AD73024FB00}" {
+     m_sBaseName "Horn Hill Relay"
+     m_sBaseNameUpper "HORN HILL RELAY"
+    }
+   }
+   coords -0.02 1.2 -0.941
+   angles 0 -179.664 0
+  }
+ }
+}
+SCR_DestructibleEntity : "{74F66E977B10C100}Prefabs/Structures/Walls/BarbedWire/NetFence_USSR_01/NetFence_USSR_01_1m.et" {
+ coords 10105.854 -0.074 10286.162
+ angles 0 -172.962 0
+}
+GenericEntity : "{9273AB931008C271}Prefabs/Systems/AmbientPatrol/AmbientPatrolSpawnpoint_FIA.et" {
+ components {
+  SCR_AmbientPatrolSpawnPointComponent "{5CCEC6036BBF3EDD}" {
+   m_eGroupType FIRETEAM
+   m_fAILimitThreshold 0.9
+  }
+ }
+ coords 10106.945 169.972 10281.603
+}
+$grp ZEL_SafeZoneEntity : "{98AD581B92D08AF3}Prefabs/Zones/Safe/SafeZone.et" {
+ {
+  coords 477.331 4.912 12366.452
+  scale 3.543
+  SphereRadius 15
+  DrawShape 0
+ }
+ {
+  coords 486.38 -0.259 12347.684
+  scale 2.883
+  SphereRadius 15.3
+  DrawShape 0
+ }
+ {
+  coords 510.347 3.129 12352.626
+  scale 2.905
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 522.504 1.977 12349.544
+  SphereRadius 8
+  DrawShape 0
+ }
+ {
+  coords 502.69 2.526 12338.134
+  scale 2.883
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 500.647 0.766 12344.826
+  scale 2.883
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 475.377 -4.309 12326.385
+  scale 2.883
+  SphereRadius 16.8
+  DrawShape 0
+ }
+ {
+  coords 487.499 -1.508 12305.226
+  scale 2.883
+  SphereRadius 16.8
+  DrawShape 0
+ }
+ {
+  coords 516.004 -2.231 12305.067
+  scale 2.883
+  SphereRadius 16.8
+  DrawShape 0
+ }
+}
+$grp SCR_DestructibleEntity : "{9AE2BF8692551FE0}Prefabs/Structures/Walls/BarbedWire/NetFence_USSR_01/NetFence_USSR_01_3m.et" {
+ {
+  coords 10104.881 0 10292.144
+  angles 0 -1.99 0
+ }
+ {
+  coords 10107.845 -0.016 10292.271
+ }
+ {
+  coords 10110.862 -0.032 10292.271
+  angles 0 92.247 0
+ }
+ {
+  coords 10110.741 -0.066 10289.188
+  angles 0 92.247 0
+ }
+ {
+  coords 10110.621 0.195 10286.12
+  angles 0 179.913 0
+ }
+ {
+  coords 10105.016 0.016 10289.13
+  angles 0 -87.553 0
+ }
+ {
+  coords 10104.354 0.397 10286.122
+  angles 0 -76.298 0
+ }
+}

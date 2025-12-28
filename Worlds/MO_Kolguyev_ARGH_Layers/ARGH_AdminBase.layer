@@ -1,0 +1,631 @@
+$grp SCR_IndestructibleEnvironmentalEntity : "{1200EAC7C79003AF}Prefabs/Rocks/Granite/GraniteRock_03_V2.et" {
+ {
+  coords 95.21 600.736 12698.236
+  angles 0 65.188 0
+  scale 0.146
+ }
+ {
+  coords 91.222 600.999 12698.423
+  angles 0.985 71.448 9.279
+  scale 0.146
+ }
+}
+SCR_DestructibleBuildingEntity : "{284A7F21D3B7430F}Prefabs/Structures/Commerical/RadioStation.et" {
+ coords 93.255 800.732 12705.337
+ angles 0 90 0
+ {
+  Building {
+   ID "620946DECAF24C4B"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8D83C32EEC587"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "60F8D83C32EEC5EF"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24BAD"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9A7F8927B8E"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "60F8F9A7F8927BA7"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24BB5"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9A7F8927B8E"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "60F8F9A7F8927BA7"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24BBE"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9A7F8927B8E"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "60F8F9A7F8927BA7"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24C3F"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8D831A0EF5A64"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24C2A"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8D83168BA1458"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24C5B"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8D83168BA1458"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24BCF"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9B0100E96F6"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24BDC"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9B0100E96F6"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24B99"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "6103263883AA2478"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "6103263883AA2403"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "6103263883AA2410"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "6103263883AA241D"
+     coords 0 0 0.001
+    }
+    GenericEntity {
+     ID "6103263883AA242C"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "6103263883AA24CD"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24C6B"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9A08F1C2F67"
+     coords 0 0 0
+    }
+   }
+  }
+  Building {
+   ID "620946DECAF24C7D"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9A08F1C2F67"
+     coords 0 0 0
+    }
+   }
+  }
+  GameEnvironmentProbeEntity {
+   ID "620946DE3B6740B3"
+   coords -0.918 3.479 5.491
+  }
+  GenericEntity {
+   ID "620946DECAF24BFE"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9823ABB8508"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DE114DD327"
+   coords 0 0 0
+   {
+    GameEntity {
+     ID "620946DE1D8704D1"
+     coords -4.325 5.436 9.368
+    }
+    GenericEntity {
+     ID "620946DE1D852774"
+     coords -4.494 0.846 16.233
+    }
+    GenericEntity {
+     ID "620946DE1D8543FE"
+     coords -4.034 0.846 16.881
+    }
+    GenericEntity {
+     ID "620946DE1D85AFFB"
+     coords -3.833 0.846 11.88
+    }
+    GenericEntity {
+     ID "620946DE1D85DC7C"
+     coords -4.544 0.846 11.875
+    }
+    GenericEntity {
+     ID "620946DE1D85DC7D"
+     coords -2.865 0.846 14.602
+    }
+    GenericEntity {
+     ID "620946DE1D8A0997"
+     coords -5.319 0.846 2.911
+    }
+    GenericEntity {
+     ID "620946DE1D8A2C31"
+     coords -3.783 0.846 2.933
+    }
+    GenericEntity {
+     ID "620946DE1D8A2C32"
+     coords -4.609 0.846 2.93
+    }
+    GenericEntity {
+     ID "620946DE1D8AA1F0"
+     coords -2.949 0.846 2.859
+    }
+    GenericEntity {
+     ID "620946DE1D8B6C03"
+     coords -2.047 0.846 2.859
+    }
+    GenericEntity {
+     ID "620946DE1D8E3CAB"
+     coords -5.325 0.854 11.85
+    }
+    GenericEntity {
+     ID "620946DE1D8E54D1"
+     coords -4.472 0.854 12.839
+    }
+    GenericEntity {
+     ID "620946DE1D8E54D2"
+     coords -3.054 0.854 9.4
+    }
+    GenericEntity {
+     ID "620946DE1D8E8DAC"
+     coords -5.445 0.854 9.558
+    }
+    GenericEntity {
+     ID "620946DE1D8E8DAD"
+     coords -1.597 0.854 -0.304
+    }
+    GenericEntity {
+     ID "620946DE1D8EA570"
+     coords -1.597 0.854 -2.559
+    }
+    GenericEntity {
+     ID "620946DE1D8EA577"
+     coords -1.597 0.854 -1.056
+    }
+    GenericEntity {
+     ID "620946DE1D8F6B1C"
+     coords -1.597 0.854 -1.807
+    }
+    GenericEntity {
+     ID "620946DE1D8E54DE"
+     coords -4.093 6.513 1.527
+    }
+    GenericEntity {
+     ID "620946DE1D8E54D9"
+     coords -4.734 1.06 14.409
+    }
+    GenericEntity {
+     ID "620946DE1D89A24F"
+     coords -0.971 0.854 0.564
+    }
+    GenericEntity {
+     ID "620946DE1D89FAF3"
+     coords 0.687 0.854 -2.926
+    }
+    GenericEntity {
+     ID "620946DE1D89FAF4"
+     coords -3.474 0.854 3.347
+    }
+    GenericEntity {
+     ID "620946DE1D896CAF"
+     coords -2.11 8.401 -1.73
+    }
+    GenericEntity {
+     ID "620946DE1D89FAF5"
+     coords -2.168 8.336 -2.368
+    }
+    GenericEntity {
+     ID "620946DE1D854058"
+     coords -2.259 2.13 3.36
+    }
+    GenericEntity {
+     ID "620946DE1D8543F5"
+     coords -1.012 2.13 0.442
+    }
+    GenericEntity {
+     ID "620946DE1D84B341"
+     coords 1.186 0.854 2.567
+    }
+    GenericEntity {
+     ID "620946DE1D85405B"
+     coords -0.765 0.854 6.379
+    }
+    GenericEntity {
+     ID "620946DE1D85405C"
+     coords -1.584 0.854 6.379
+    }
+    GenericEntity {
+     ID "620946DE1D84B343"
+     coords -5.685 2.615 1.099
+    }
+    GenericEntity {
+     ID "620946DE1D866EB2"
+     coords -4.592 0.849 4.243
+    }
+    GenericEntity {
+     ID "620946DE1D86E37F"
+     coords -0.086 0.849 1.638
+    }
+    GenericEntity {
+     ID "620946DE1D86EB62"
+     coords -0.488 0.849 -2.017
+    }
+    GenericEntity {
+     ID "620946DE1D86EB65"
+     coords -2.025 0.849 6.364
+    }
+    GenericEntity {
+     ID "620946DE1D8704DD"
+     coords 1.244 0.849 1.988
+    }
+    GenericEntity {
+     ID "620946DE1D874D40"
+     coords -0.367 0.849 6.315
+    }
+    GenericEntity {
+     ID "620946DE1D866EB0"
+     coords -3.622 0.852 12.412
+    }
+    GenericEntity {
+     ID "620946DE1D882BB8"
+     coords -0.989 1.281 -0.204
+    }
+    GenericEntity {
+     ID "620946DE1D88BDF9"
+     coords -5.664 1.328 4.794
+    }
+    GenericEntity {
+     ID "620946DE1D896CA2"
+     coords -5.664 1.328 6.906
+    }
+    GenericEntity {
+     ID "620946DE1D8411F6"
+     coords -0.475 3.902 15.402
+    }
+    GenericEntity {
+     ID "620946DE1D8444F6"
+     coords 0.878 5.188 5.981
+    }
+    GenericEntity {
+     ID "620946DE1D8453C4"
+     coords 0.878 5.188 -0.518
+    }
+    GenericEntity {
+     ID "620946DE1D846B88"
+     coords -3.58 5.188 5.981
+    }
+    GenericEntity {
+     ID "620946DE1D846B8F"
+     coords -3.7 3.902 14.741
+    }
+    GenericEntity {
+     ID "620946DE1D8494DE"
+     coords 4.645 5.188 6.576
+    }
+    GenericEntity {
+     ID "620946DE1D8494DF"
+     coords 4.645 5.188 2.636
+    }
+    GenericEntity {
+     ID "620946DE1D84B35F"
+     coords 4.645 5.188 -3.668
+    }
+    GenericEntity {
+     ID "620946DE1D84E9BF"
+     coords 1.091 5.188 10.56
+    }
+    GenericEntity {
+     ID "620946DE1D8704D2"
+     coords -3.6 5.188 -4.186
+    }
+    GenericEntity {
+     ID "620946DE1D8704D3"
+     coords 1.392 5.188 -4.186
+    }
+    GenericEntity {
+     ID "620946DE1D879EEF"
+     coords -3.58 5.188 -0.518
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24C0F"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "65A70CD651A3C319"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B0A"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B1B"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B27"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B38"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B58"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24BED"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F98F8C65EC51"
+     coords 0 0 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "620946DECAF24B7B"
+   coords 0 0 0
+   {
+    GenericEntity {
+     ID "60F8F9818264C5AB"
+     coords 0 0 0
+    }
+    GenericEntity {
+     ID "60F8F9804DF11EA5"
+     coords 0 0 0
+    }
+   }
+  }
+ }
+}
+StaticModelEntity AdminBase_Spawner : "{321EBB0282EB9AD3}Prefabs/Systems/FastTravel/TPl_Destination.et" {
+ components {
+  MeshObject "{56ACD1C4DC78C87B}" {
+   Object ""
+  }
+ }
+ coords 89.673 801.898 12699.901
+ angles 0 0.001 0
+ scale 0.02
+}
+GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
+ coords 96.098 601.595 12702.705
+ angles 0 -90.684 0
+ {
+  DE_BankEntity {
+   ID "670498979565F8F9"
+   coords 0.007 -0.002 -0.028
+   angles -11.287 0.435 14.802
+  }
+ }
+}
+$grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+ {
+  coords 102.41 598.072 12697.938
+  angles -88.08 0 0
+ }
+ {
+  coords 107.455 598.147 12699.381
+  angles -90 -180 -180
+ }
+ {
+  coords 95.416 598.312 12696.075
+  angles -90 -180 -180
+ }
+ {
+  coords 90.566 598.312 12696.075
+  angles -90 -180 -180
+ }
+}
+SCR_ChimeraCharacter : "{5C6F313FE2C931B5}Prefabs/Characters/DE_Examples/DE_Admin_Trader.et" {
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Admin Trader"
+   traderMargin -100
+   fallbackSupplyCost 0
+   modes 510
+  }
+ }
+ coords 92.906 601.595 12705.637
+ angles 0 162.161 0
+}
+GenericEntity AdminTPVault : "{6673E4E9181F1470}Prefabs/Systems/ARGH_VAULT.et" {
+ coords 89.256 601.604 12700.401
+ scale 0.07
+}
+StaticModelEntity AdminBaseTeleporter : "{DEFAB7E592F00F0A}Prefabs/Systems/FastTravel/TP_Action.et" {
+ components {
+  MeshObject "{56ACD1C4DC78C87B}" {
+   Object ""
+  }
+  ActionsManagerComponent "{66E2552C476F85D3}" {
+   ActionContexts {
+    UserActionContext "{66E2552C476F85CB}" {
+     ContextName "Spawn Island"
+    }
+    UserActionContext "{671343B150075B80}" {
+     ContextName "Kamensk"
+    }
+   }
+   additionalActions {
+    FastTravelRandomAction "{66E2552C476F85CC}" {
+     ParentContextList {
+      "Spawn Island"
+      "Kamensk"
+     }
+     UIInfo UIInfo "{66E2552C476F85D0}" {
+      Name "Kamensk (Spawn Area)"
+     }
+     m_FastTravel_Destinations {
+      "MO_Spawn_Area_Kamensk"
+     }
+    }
+    FastTravelRandomAction "{671343B16710D6A6}" {
+     ParentContextList {
+      "Spawn Island"
+      "Kamensk"
+     }
+     UIInfo UIInfo "{671343B16710D6A7}" {
+      Name "Mineraly (Spawn Area)"
+     }
+     m_FastTravel_Destinations {
+      "MO_Spawn_Area_Mineraly"
+     }
+    }
+    FastTravelRandomAction "{66E2552C476F85CD}" {
+     ParentContextList {
+      "Spawn Island"
+      "Kamensk"
+     }
+     UIInfo UIInfo "{66E2552C476F85D1}" {
+      Name "Random Coastal (Spawn Area)"
+     }
+     m_FastTravel_Destinations {
+      "MO_Spawn_Area_RandomCoastal"
+     }
+    }
+    FastTravelRandomAction "{66E2552C476F85CE}" {
+     ParentContextList {
+      "Spawn Island"
+      "Kamensk"
+     }
+     UIInfo UIInfo "{66E2552C476F85D2}" {
+      Name "Ugoldar (Spawn Area)"
+     }
+     m_FastTravel_Destinations {
+      "MO_Spawn_Area_Ugoldar"
+     }
+    }
+    FastTravelRandomAction "{66E2552C476F85CF}" {
+     ParentContextList {
+      "Spawn Island"
+      "Kamensk"
+     }
+     UIInfo UIInfo "{66E2552C476F85D3}" {
+      Name "Starter Island"
+     }
+     m_FastTravel_Destinations {
+      "SpawnIslandTPArrive"
+     }
+    }
+   }
+  }
+ }
+ coords 89.691 802.163 12700.816
+ angles 0 180 0
+ scale 2.142
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C312DEEAEA72E37F}Prefabs/Structures/Industrial/CoalMineShaft_01/CoalMineShaft_USSR_01_entry.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

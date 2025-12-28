@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3E06C2088F0A9FF2}Assets/ARGH_CAVES/CAVESYSTEM/Data/diffuse_0_0_0_255.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

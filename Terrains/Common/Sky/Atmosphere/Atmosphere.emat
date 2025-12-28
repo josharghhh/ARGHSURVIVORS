@@ -1,0 +1,9 @@
+MatAtmosphere {
+ SolarIrradianceTint 1 0.773 0.561 1
+ GroundColor 1 0.861 0.702 1
+ RayleighScattering 0.991 0.507 0.198 1
+ MieScattering 1 0.773 0.561 1
+ MieAbsorption 1 0.773 0.561 1
+ AbsorptionScale 0.059
+ Absorption 1 0.773 0.561 1
+}

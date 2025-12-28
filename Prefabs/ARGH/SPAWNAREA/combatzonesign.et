@@ -1,0 +1,12 @@
+GenericEntity : "{BB664061CF5E85C4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Sign_US_01.et" {
+ ID "571A8EA386D283C2"
+ coords 9436.894 0.769 12301.437
+ angles 14.616 0 0
+ {
+  GenericEntity {
+   ID "571A8EA386D283DD"
+   coords 0 0.786 0.183
+   angles 8.396 0 0
+  }
+ }
+}

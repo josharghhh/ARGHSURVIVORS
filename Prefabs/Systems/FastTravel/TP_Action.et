@@ -1,0 +1,46 @@
+StaticModelEntity : "{A52C6DE05FE53B3B}Prefabs/Structures/Core/StaticObject_base.et" {
+ ID "56ACD1C4DB91DB10"
+ components {
+  MeshObject "{56ACD1C4DC78C87B}" {
+   Object "{C4A58FF95B12217C}Assets/Editor/DirIndicator/editor_DirIndicator.xob"
+   Materials {
+    MaterialAssignClass "{66E2552C476F8518}" {
+     SourceMaterial "DirIndicator_Arrow"
+     AssignedMaterial "{9E803923670AF578}Assets/Editor/DirIndicator/data/DirIndicator_Circle.emat"
+    }
+   }
+  }
+  ActionsManagerComponent "{66E2552C476F85D3}" {
+   ActionContexts {
+    UserActionContext "{66E2552C476F85CB}" {
+     ContextName "FastTravelContext"
+     Position PointInfo "{66E2552C476F85CF}" {
+     }
+     Radius 3
+    }
+   }
+   additionalActions {
+    FastTravelRandomAction "{66E2552C476F85CC}" {
+     ParentContextList {
+      "FastTravelContext"
+     }
+     UIInfo UIInfo "{66E2552C476F85C0}" {
+      Name "Fast Travel"
+     }
+     Duration 1
+     m_FastTravel_Origin ""
+     m_FastTravel_Destinations {
+      ""
+     }
+     m_Cooldown 10
+     m_EnableFade 1
+     m_FadeDuration 0.75
+    }
+   }
+  }
+  RplComponent "{66E2552C476F85C4}" {
+  }
+ }
+ coords 0 0 0
+ angles 0 -80 0
+}

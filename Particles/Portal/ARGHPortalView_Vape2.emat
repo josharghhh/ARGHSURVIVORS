@@ -1,0 +1,38 @@
+MatPBRBasicGlass {
+ Color 0.694 0.694 0.694 1
+ ApplyAlbedoToEmissive 1
+ SpecularMul 1.29
+ AlphaTest 0.077
+ AlphaMul 0.868
+ GlobalLayerMode Manual
+ GlobalLayerAngleEnd 0
+ GlobalLayerPosition 0
+ GlobalLayerContrast 1
+ GlobalLayerGlobalAO 0
+ GlobalLayerHeightPower 0.973
+ GlobalLayerBlending "Detailed with geometry mask"
+ RoughnessScale 1.768
+ MetalnessScale 0
+ AOScale 2.395
+ DielectricReflectance 0.02
+ CavityFromAO 0.048
+ GlobalAOPower 0
+ EmissiveMap "{F81E6899860CB6CB}Common/Textures/Light_profiles/StreetLamp_01_Mask.edds"
+ GlobalLayerBCRMap "{F81E6899860CB6CB}Common/Textures/Light_profiles/StreetLamp_01_Mask.edds"
+ GlobalLayerNoiseMap "{030148B4726411BA}Assets/_SharedData/Noises/ST_NoisePerlin_01_N.edds"
+ BCRMap "{F81E6899860CB6CB}Common/Textures/Light_profiles/StreetLamp_01_Mask.edds"
+ OpacityMap "{60972A1E2BFE9D6F}Assets/_SharedData/Glass/ST_Glass_Dirt_01_A.edds"
+ NormalPower 4
+ NMOMap "{A34F1113366DF8A2}Assets/_SharedData/Dirt/ST_destruct_rust_NMO.edds"
+ DetailNormalPower 4
+ HeightMap "{8499C3D2224044FD}Assets/PORTAL/longerportal.edds"
+ ParallaxScale 0.188
+ ParallaxShadowScale 1
+ FresnelPower 5
+ Backscatterig 1
+ RefractionIntensity 0.04
+ ChromaticIntensity 0.99
+ ApplyWorldNormal 1
+ DimIntensity 0.04
+ AlbedoRefractionTint 1
+}

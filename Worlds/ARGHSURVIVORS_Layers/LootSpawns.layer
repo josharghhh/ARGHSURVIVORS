@@ -1,0 +1,105 @@
+$grp GenericEntity : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
+ Backpack_ALICE_Medium_66E57B8FB63F6F08 {
+  coords 7391.261 17.084 4161.96
+ }
+ Backpack_ALICE_Medium_66E57B8FB63F6F2 {
+  coords 7451.008 14.732 4230.488
+  angles -0.597 -85.365 4.477
+ }
+ Backpack_ALICE_Medium_66E57B8FB63F6F3 {
+  coords 6989.531 10.804 3814.044
+  angles 2.89 -5.2 3.074
+ }
+ Backpack_ALICE_Medium_66E57B8FB63F6F4 {
+  coords 6379.726 6.794 3331.576
+  angles 2.052 38.367 -0.769
+ }
+ Backpack_ALICE_Medium_66E57B8FB63F6F5 {
+  coords 5344.17 65.403 3352.386
+  angles 0.51 42.74 19.465
+ }
+}
+$grp GenericEntity : "{496576D09C8BC5A6}Prefabs/Weapons/Rifles/M4A1/Rifle_M4A1_RAS_RCO_PEQ.et" {
+ Rifle_M4A1_RAS_RCO_PEQ_66E57B8F56D70A68 {
+  coords 7391.103 17.426 4162.726
+  angles 72.467 -55.449 -102.472
+ }
+ Rifle_M4A1_RAS_RCO_PEQ_66E57B8F56D70A2 {
+  coords 7450.23 15.077 4230.419
+  angles 75.506 -129.064 -90.28
+ }
+ Rifle_M4A1_RAS_RCO_PEQ_66E57B8F56D70A3 {
+  coords 6989.324 11.192 3814.779
+  angles 76.623 -63.39 -105.232
+ }
+ Rifle_M4A1_RAS_RCO_PEQ_66E57B8F56D70A4 {
+  coords 6380.066 7.161 3332.269
+  angles 72.87 -23.977 -109.708
+ }
+ Rifle_M4A1_RAS_RCO_PEQ_66E57B8F56D70A5 {
+  coords 5344.544 65.709 3353.066
+  angles 79.485 70.086 -17.973
+ }
+}
+$grp GenericEntity : "{4A553DA16504D30C}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_Base.et" {
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD {
+  coords 7391.39 17.101 4162.453
+  angles 0 0 -89.748
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD2 {
+  coords 7391.441 17.11 4162.557
+  angles -3.29 -59.216 -82.268
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD3 {
+  coords 7391.415 17.1 4162.304
+  angles 1.968 75.921 -92.687
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD4 {
+  coords 7450.677 14.732 4230.67
+  angles -2.52 -9.423 -92.178
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD5 {
+  coords 7450.427 14.738 4230.717
+  angles 0.253 -144.632 -79.465
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD6 {
+  coords 7450.527 14.734 4230.657
+  angles -0.597 -85.365 -85.271
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD7 {
+  coords 6989.654 10.829 3814.403
+  angles -0.311 70.694 -89.136
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD8 {
+  coords 6989.657 10.851 3814.655
+  angles 0.829 -64.475 -83.179
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD9 {
+  coords 6989.616 10.839 3814.548
+  angles 2.89 -5.2 -86.674
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD10 {
+  coords 6380.06 6.824 3331.751
+  angles 3.212 114.383 -90.88
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD11 {
+  coords 6380.236 6.845 3331.933
+  angles -2.898 -20.719 -84.427
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD12 {
+  coords 6380.132 6.831 3331.883
+  angles 2.052 38.367 -90.517
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD13 {
+  coords 5344.588 65.403 3352.673
+  angles 0.51 42.74 -70.283
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD14 {
+  coords 5344.682 65.403 3352.725
+  angles 13.665 -15.679 -72.618
+ }
+ Magazine_556x45_PmagWindowed_30rnd_Base_66E57B8F9AC6E7CD15 {
+  coords 5344.766 65.403 3352.343
+  angles -16.767 117.871 -87.311
+ }
+}

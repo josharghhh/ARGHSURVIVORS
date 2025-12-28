@@ -1,0 +1,9 @@
+SCR_DestructibleBuildingEntity : "{192034B00BB11182}Prefabs/Structures/Industrial/CoalMineShaft_01/CoalMineShaft_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{B97BD887A140E7F2}Assets/Structures/Industrial/CoalMineShaft_01/CoalMineShaft_01_end.xob"
+  }
+ }
+ coords 5.012 -0.795 22.095
+}

@@ -1,0 +1,10 @@
+SCR_DestructibleBuildingEntity {
+ ID "62FA04E7A7B4A7F7"
+ {
+  EnvironmentProbeEntity {
+   ID "62FA04E5190A1F93"
+   PriorityProbe 1
+   TopColor 0 0 0 1
+  }
+ }
+}

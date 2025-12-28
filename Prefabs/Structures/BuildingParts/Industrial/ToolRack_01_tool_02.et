@@ -1,0 +1,12 @@
+GenericEntity : "{533AC2E8A0F5272A}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5111E74D4E7A8DB6"
+ components {
+  SCR_ArsenalComponent "{5E56AE26E386A584}" {
+   m_eSupportedArsenalItemTypes 0
+   m_eSupportedArsenalItemModes 0
+  }
+  SCR_UniversalInventoryStorageComponent "{5E56AE26E8942B0C}" {
+   Enabled 0
+  }
+ }
+}

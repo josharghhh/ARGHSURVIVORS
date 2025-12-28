@@ -1,0 +1,51 @@
+ButtonWidgetClass "{66E22BC3EB6878D2}" : "{9ECCD201BCF07E95}UI/layouts/Menus/PauseMenu/PauseMenuButton.layout" {
+ Slot LayoutSlot "{557478C3F0230865}" {
+  Padding 0 4 0 4
+ }
+ components {
+  SCR_ButtonTextComponent "{5548F0143AE99095}" {
+  }
+  SCR_ModularButtonComponent "{5DE677F6BD17C469}" {
+   m_aEffects {
+    SCR_ButtonEffectColor "{5DB885898296DF89}" {
+     m_cFocusGained 1 0.597 0.198 0.149
+    }
+   }
+  }
+ }
+ {
+  SizeLayoutWidgetClass "{557098260F312277}" {
+   Prefab "{557098260F312277}"
+   Slot ButtonWidgetSlot "{5548E6E7E6AEDDC1}" {
+    Padding 0 6 0 6
+   }
+   HeightOverride 60
+   {
+    OverlayWidgetClass "{557098260F312272}" {
+     Prefab "{557098260F312272}"
+     {
+      ScaleWidgetClass "{66E22BC3EB6878DC}" {
+       Name "Scale0"
+       Slot OverlayWidgetSlot "{58D09C4047778BFD}" {
+        HorizontalAlign 2
+        Padding 0 0 20 0
+       }
+       "Z Order" 10
+       {
+        ImageWidgetClass "{66E22BC3EB6878DE}" {
+         Name "ActionIcon"
+         Slot AlignableSlot "{58D09C40452A7C7B}" {
+         }
+        }
+       }
+      }
+      ImageWidgetClass "{557098260F312273}" {
+       Prefab "{557098260F312273}"
+       "Is Visible" 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

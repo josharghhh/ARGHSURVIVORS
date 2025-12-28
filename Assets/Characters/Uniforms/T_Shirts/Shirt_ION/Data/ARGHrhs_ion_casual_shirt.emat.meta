@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{19BE8DE702AA33F2}Assets/Characters/Uniforms/T_Shirts/Shirt_ION/Data/ARGHrhs_ion_casual_shirt.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

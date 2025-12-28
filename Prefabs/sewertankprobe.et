@@ -1,0 +1,6 @@
+EnvironmentProbeEntity : "{94B6B47CDA125A63}Prefabs/Structures/Core/ProbeEnvEgout_base.et" {
+ ID "5B2D773BA8943E2E"
+ coords -2.158 11.681 0.206
+ angles 0 11.737 0
+ scale 0.917
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D1F3E514CF919545}622120A5448725E3/Prefabs/Characters/BlobThrower/BlobThrower_Head_Transparent.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

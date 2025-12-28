@@ -1,0 +1,10 @@
+MatPBRBasic {
+ SpecularMul 0.9
+ WetnessScale 0.9
+ RoughnessScale 0.9
+ MetalnessScale 0.9
+ AOScale 0.293
+ CavityFromAO 0.491
+ BCRMap "{BC25E9C5D8982CA6}Terrains/Common/Surfaces/Data/ForestConiferous_base_BCR.edds" "{59DC254EEF1058D8}UI/Textures/FieldManual/Gameplay/Navigation/Images/MapIcons/broadleaf-forest.edds" anim( 0 )
+ NMOMap "{9425370E0F1101C6}Terrains/Common/Surfaces/Data/ForestDeciduous_lush_NHO.edds" "{B904E200CBB05E82}Terrains/Common/Surfaces/Data/grass_05_BCR.edds" anim( 0 )
+}

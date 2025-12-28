@@ -1,0 +1,14 @@
+GenericEntity : "{D62DE437B96B9A32}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5D06F2A385CD7342"
+ components {
+  MeshObject "{66F265069B8E02AD}" {
+   Object "{1C00297C10C92256}Assets/Structures/ZBKKitSewer/VegetalGround/EgoutGround16x08Dirt.xob"
+  }
+  RigidBody "{5D06F2A385CD7330}" {
+   LayerPreset "BuildingFireView"
+   Active Active
+   ResponseIndex "HugeDestructible"
+  }
+ }
+ coords 1708.074 4 1964.11
+}

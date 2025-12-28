@@ -1,0 +1,5 @@
+GenericEntity : "{EFA7233213E77C2E}Prefabs/Systems/SpawnPoints/SpawnPosition.et" {
+ ID "5DCAAA1938741C83"
+ coords 9436.361 8.194 12333.077
+ angles 0 160.64 0
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{805CE8FEB91860C2}Assets/ARGH_CAVES/Maze1/ARGHMaze01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

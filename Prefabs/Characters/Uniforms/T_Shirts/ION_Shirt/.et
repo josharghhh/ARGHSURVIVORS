@@ -1,0 +1,13 @@
+GameEntity : "{74CE423A2EF162C5}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/ION_Shirt_base.et" {
+ ID "5104869D194C6243"
+ components {
+  MeshObject "{5104869D194C6262}" {
+   Materials {
+    MaterialAssignClass "{671D5D14D1CEFC06}" {
+     SourceMaterial "rhs_ion_casual_shirt"
+     AssignedMaterial "{59963428618B9891}Assets/Characters/Uniforms/T_Shirts/Shirt_ION/Data/rhs_ion_casual_shirt_brand.emat"
+    }
+   }
+  }
+ }
+}

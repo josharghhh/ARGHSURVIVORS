@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{1CC54D8849F58724}622120A5448725E3/Prefabs/Characters/BlobThrower/BlobThrower_BaseBody.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

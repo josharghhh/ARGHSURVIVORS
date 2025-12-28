@@ -1,0 +1,17 @@
+Encounter_StorageEntity {
+ ID "6484158D9D6F3DE1"
+ components {
+  MeshObject "{6484158C3302AC37}" {
+   Object ""
+  }
+  ActionsManagerComponent "{6484159806B3E4BF}" {
+   additionalActions {
+    Encounter_Loot_StorageUserAction "{6484159808019DE2}" {
+     m_sConfigs {
+      "{A1EC17FCF0968474}Configs/StorageLoot/SL_Weapon_Tier3(Millitay).conf" "{E1ABE132F839B799}Configs/StorageLoot/SL_Attachments.conf" "{9FFA2B83F0519F85}Configs/StorageLoot/SL_Equipment_Tier1.conf"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,96 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CharacterFactionAffiliationComponent "{67036D0C4AB23085}" {
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Survivor Scout"
+    Icon "{AE53796BC5D21A08}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Rifleman.edds"
+    IconSetName ""
+    m_Image "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
+    m_sFaction "SURVIVORS"
+    m_aAutoLabels {
+     SIZE_M ROLE_RIFLEMAN
+    }
+   }
+  }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    VisualIdentity VisualIdentity "{56E6D9456009D1C4}" {
+     Head "{19E3698B4874602E}Prefabs/Characters/Heads/Head_livonianHead_1.et"
+     Body "{0023F898C0FF18AA}Prefabs/Characters/Basebody/CharacterBasebody.et"
+    }
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{7429DFF39CEF10BD}Prefabs/Characters/HeadGear/Hat_BallCap/Hat_ballcap_ATACS.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{940ECDB0F69CBC5E}Prefabs/Characters/Uniforms/T_Shirts/ION_Shirt/ION_Casual_Shirt_Brand.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{C749B2C1C2CF3863}Prefabs/Characters/Uniforms/Civi_Pants/Civi_Jeans_Blue_Ripped.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{660952F979E8EBF2}Prefabs/Characters/Footwear/Boots_solomon_ultra_x/Footwear_Altama_Boots.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{443304F1EC50BC27}Prefabs/Items/Equipment/Backpacks/Backpack_Veshmeshok_Black.et"
+    }
+    LoadoutSlotInfo HandWear {
+     Prefab "{8266820FFDE17477}Prefabs/Characters/Handwear/Gloves_Wool_01/Gloves_Wool_01.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{67036D0C4AB23093}" {
+     TargetStorage "Pants/Civi_Jeans_Blue_Ripped.et"
+     PrefabsToSpawn {
+      "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" "{922F95F91943F69A}Prefabs/Items/Equipment/Maps/Map_Paper_01/PaperMap_01_folded_US.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB2306C}" {
+     TargetStorage "Back/Backpack_Veshmeshok_Black.et"
+     PrefabsToSpawn {
+      "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB2306D}" {
+     TargetStorage "Pants/Civi_Jeans_Blue_Ripped.et"
+     PrefabsToSpawn {
+      "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB2306E}" {
+     TargetStorage "Pants/Civi_Jeans_Blue_Ripped.et"
+     PrefabsToSpawn {
+      "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB26C27}" {
+     TargetStorage "Pants/Civi_Jeans_Blue_Ripped.et"
+     PrefabsToSpawn {
+      "{3805C0B87B9D2AB0}prefabs/weapons/Melee/Knife.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB26C26}" {
+     TargetStorage "Back/Backpack_Veshmeshok_Black.et"
+     PrefabsToSpawn {
+      "{528AEE2B8A058D9F}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17_tan.et"
+     }
+    }
+    ItemsInitConfigurationItem "{67036D0C4AB26C21}" {
+     TargetStorage "Back/Backpack_Veshmeshok_Black.et"
+     PrefabsToSpawn {
+      "{0CAD83389EE8E3DC}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd_tan.et" "{0CAD83389EE8E3DC}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd_tan.et"
+     }
+    }
+   }
+  }
+ }
+ coords -0.931 0.121 0.259
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{70CACC1F3F8923C0}Prefabs/Structures/Infrastructure/Waterworks/WaterStation_02"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

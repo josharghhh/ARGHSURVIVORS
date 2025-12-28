@@ -1,0 +1,90 @@
+$grp StaticModelEntity : "{DEFAB7E592F00F0A}Prefabs/Systems/FastTravel/TP_Action.et" {
+ {
+  components {
+   MeshObject "{56ACD1C4DC78C87B}" {
+    Object ""
+   }
+   ActionsManagerComponent "{66E2552C476F85D3}" {
+    additionalActions {
+     FastTravelRandomAction "{66E2552C476F85CC}" {
+      UIInfo UIInfo "{66E2552C476F85C0}" {
+       Name "Bunker (Safe Zone)"
+      }
+      m_FastTravel_Destinations {
+       "BUNKERARRIVAL"
+      }
+     }
+    }
+   }
+  }
+  coords 6228.98 0.559 8072.685
+  angles 0 89.525 0
+  scale 2.1
+ }
+ {
+  components {
+   MeshObject "{56ACD1C4DC78C87B}" {
+    Object ""
+   }
+   ActionsManagerComponent "{66E2552C476F85D3}" {
+    additionalActions {
+     FastTravelRandomAction "{66E2552C476F85CC}" {
+      UIInfo UIInfo "{66E2552C476F85C0}" {
+       Name "Bunker (Safe Zone)"
+      }
+      m_FastTravel_Destinations {
+       "BUNKERARRIVAL"
+      }
+     }
+    }
+   }
+  }
+  coords 7541.695 0.539 4497.777
+  angles 0 -151.938 0
+  scale 2.53
+ }
+ {
+  components {
+   MeshObject "{56ACD1C4DC78C87B}" {
+    Object ""
+   }
+   ActionsManagerComponent "{66E2552C476F85D3}" {
+    additionalActions {
+     FastTravelRandomAction "{66E2552C476F85CC}" {
+      UIInfo UIInfo "{66E2552C476F85C0}" {
+       Name "Bunker (Safe Zone)"
+      }
+      m_FastTravel_Destinations {
+       "BUNKERARRIVAL"
+      }
+     }
+    }
+   }
+  }
+  coords 4428.098 0.55 3400.472
+  angles 0 30.193 0
+  scale 2.97
+ }
+ BUNKERTP {
+  components {
+   MeshObject "{56ACD1C4DC78C87B}" {
+    Object ""
+   }
+   ActionsManagerComponent "{66E2552C476F85D3}" {
+    additionalActions {
+     FastTravelRandomAction "{66E2552C476F85CC}" {
+      UIInfo UIInfo "{66E2552C476F85C0}" {
+       Name "Bunker (Safe Zone"
+      }
+      m_FastTravel_Destinations {
+       "BUNKERARRIVAL"
+      }
+     }
+    }
+   }
+  }
+  coords 12046.668 0.869 10514.82
+  angles 0 167.688 0
+  scale 2.82
+ }
+}

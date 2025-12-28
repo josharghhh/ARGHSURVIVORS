@@ -1,0 +1,10 @@
+SCR_DestructibleBuildingEntity : "{192034B00BB11182}Prefabs/Structures/Industrial/CoalMineShaft_01/CoalMineShaft_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  GameEntity : "{68F2D79548A1A0D2}Prefabs/Structures/BuildingParts/Lights/LightIndustrial_01_on_exterior.et" {
+   ID "6720E22D7A855230"
+   coords 0.019 3.069 0.063
+   angles -88.835 180 0
+  }
+ }
+}

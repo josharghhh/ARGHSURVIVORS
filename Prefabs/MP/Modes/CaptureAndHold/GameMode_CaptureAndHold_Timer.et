@@ -1,0 +1,15 @@
+SCR_BaseGameMode : "{26758D3CAD920EF2}Prefabs/MP/Modes/CaptureAndHold/GameMode_CaptureAndHold.et" {
+ ID "56B2B479C6B96951"
+ components {
+  SCR_GameGameModeStateComponent "{67036D0BAA0A28A4}" {
+   m_fDuration 900
+  }
+  SCR_ScoringSystemComponent "{56B6E8B5672C8335}" {
+   m_aActions {
+    EndGameAction "{56B6E8B55072E456}" {
+     m_iScoreLimit 2000
+    }
+   }
+  }
+ }
+}

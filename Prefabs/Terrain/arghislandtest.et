@@ -1,0 +1,21 @@
+GenericEntity : "{D62DE437B96B9A32}Prefabs/Structures/BuildingParts/BuildingParts_Base.et" {
+ ID "5D06F2A385CD7342"
+ components {
+  MeshObject "{66F2650684E14CCD}" {
+   Object "{919949EFFD3D9AAD}Assets/Islands/PORTALISLANDTOOLS.xob"
+   Materials {
+    MaterialAssignClass "{671AA8EC1492CE64}" {
+     SourceMaterial "material_0"
+     AssignedMaterial "{003244BB00581E05}Common/Materials/default_MatTerrainObj_TerrShadows.emat"
+    }
+   }
+  }
+  RigidBody "{5D06F2A385CD7330}" {
+   LayerPreset "BuildingFireView"
+   Active Active
+   ResponseIndex "HugeDestructible"
+  }
+ }
+ coords 6 -0.51 -3.7
+ angles 0 180 0
+}

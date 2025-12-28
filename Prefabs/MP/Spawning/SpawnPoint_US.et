@@ -1,0 +1,8 @@
+SCR_SpawnPoint : "{E7F4D5562F48DDE4}Prefabs/MP/Spawning/SpawnPoint_Base.et" {
+ ID "544EB04DCBFBD126"
+ m_sFaction "SURVIVORS"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Survivor Spawn"
+  Icon "{96A4D96494EB796B}Configs/Factions/workshop.edds"
+ }
+}

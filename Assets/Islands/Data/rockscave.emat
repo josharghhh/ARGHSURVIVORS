@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{5979A597BE313142}Assets/Islands/Data/rockscave_BCR.edds"
+ NMOMap "{61A11E05674663DC}Assets/Islands/Data/rockscave_NMO.edds"
+}

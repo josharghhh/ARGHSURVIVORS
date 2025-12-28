@@ -1,0 +1,58 @@
+SCR_FactionManager : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ ID "56B2B4776E6E4499"
+ components {
+  SCR_FactionAliasComponent "{670413C551B81B4F}" {
+   m_aFactionAliases {
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B40}" {
+     m_sAlias "PLAYERS"
+     m_sFactionKey "SURVIVORS"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B5D}" {
+     m_sAlias "SURVIVORS"
+     m_sFactionKey "SURVIVORS"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B5C}" {
+     m_sAlias "US"
+     m_sFactionKey "SURVIVORS"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B5B}" {
+     m_sAlias "BLUFOR"
+     m_sFactionKey "SURVIVORS"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B5A}" {
+     m_sAlias "ARGH"
+     m_sFactionKey "ARGH"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B58}" {
+     m_sAlias "MUTANTS"
+     m_sFactionKey "BALLIEN_BC_FACTION"
+    }
+    SCR_ScenarioFrameworkFactionAliasConfig "{670413C551B81B57}" {
+     m_sAlias "ZOMBIES"
+     m_sFactionKey "BACON_622120A5448725E3_FACTION"
+    }
+   }
+  }
+  SCR_FactionRelationsInitializerComponent "{6CA3CABAA7F4REL0}" {
+   m_sSourceFactionKey "SURVIVORS"
+   m_sTargetFactionKeys "ARGH,BALLIEN_BC_FACTION,BACON_622120A5448725E3_FACTION,US,USSR,FIA"
+   m_bHostileToAllFactions 1
+   m_bBidirectional 1
+  }
+ }
+ coords 0 0 3
+ Factions {
+  SCR_Faction "{6CA3CA9D88A0DE11}" {
+   m_bIsPlayable 1
+  }
+  SCR_Faction "{6CA3CA9D88B8FDFF}" : "{884B59401973C5AA}Configs/Factions/ARGH.conf" {
+   m_bIsPlayable 0
+  }
+  SCR_Faction "{670413C551B81B52}" {
+   m_bIsPlayable 0
+  }
+  SCR_Faction "{6CA3CA9D88D4869F}" : "{3FA20B01D950D31E}Configs/Factions/Non-Combatant.conf" {
+   m_bIsPlayable 0
+  }
+ }
+}

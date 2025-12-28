@@ -1,0 +1,21 @@
+SCR_DestructibleBuildingEntity : "{E55BCA5665DCDC2A}Prefabs/ZBK/KitSewer/I8m_4_Var.et" {
+ ID "5B2E084DE9375A33"
+ coords 11.816 2.75 13.344
+ {
+  EnvironmentProbeEntity {
+   ID "5B2E0844A8FA1996"
+   Priority 5
+   NearPlane 3.426
+  }
+  SCR_DestructibleBuildingEntity : "{26E63F26D0DC80A6}Prefabs/ZBK/KitSewer/Vanillia/Vanil_LiaisonGrid.et" {
+   ID "66F8011F16D9BBF9"
+   coords 4 0 0
+   angles 0 90 0
+  }
+  StaticModelEntity : "{94856A98B7E57648}Prefabs/Structures/Infrastructure/Waterworks/FloodGate_01/FloodGate_01_concrete_closed.et" {
+   ID "66F8011F16D9BBFB"
+   coords -0.46 0.215 -0.019
+   angles 0 90 0
+  }
+ }
+}

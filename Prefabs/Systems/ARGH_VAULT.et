@@ -1,0 +1,23 @@
+GenericEntity : "{45ED81B5CA80680D}Prefabs/Structures/BuildingParts/Doors/HatchFrame_Lightbeacon_EXT_B.et" {
+ ID "522A78442C2C4DFA"
+ components {
+  MeshObject "{61B367470698533A}" {
+   Object "{565D74A3DFBD00E3}Assets/Props/ARGHVAULT/Vault_AR_Ready.xob"
+   Materials {
+    MaterialAssignClass "{66EEC774DBDD5C94}" {
+     SourceMaterial "lightbeacon_01"
+     AssignedMaterial "{D29F80E4C352696F}Assets/Structures/BuildingsParts/Doors/Data/HatchDoor_LightBeacon_camouflage_01_EXT.emat"
+    }
+    MaterialAssignClass "{66EEC774DBDD4770}" {
+     SourceMaterial "lightbeacon_01_INT"
+     AssignedMaterial "{6D2B48E1859EADE5}Assets/Structures/BuildingsParts/Doors/Data/HatchDoor_LightBeacon_camouflage_01_INT.emat"
+    }
+   }
+  }
+  RigidBody "{61B367470704E02F}" {
+   LayerPreset "Building"
+  }
+ }
+ coords 0.829 0.23 -1.085
+ scale 0.08
+}

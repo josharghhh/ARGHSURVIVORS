@@ -1,0 +1,7 @@
+GenericEntity : "{372DCA487884C4E8}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR_Weapons.et" {
+ ID "0000000000000001"
+ components {
+  SCR_ArsenalComponent "{USR_ARSL_COMP}" {
+  }
+ }
+}

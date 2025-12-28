@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{56F7B7BCAD9C41B4}Terrains/Common/Sky/SkyBox/SkyDome_Sun.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

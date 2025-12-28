@@ -1,0 +1,90 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/DestructibleMultiPhase_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  DL_LootSpawnComponent "{66B442257E6A201D}" {
+   Enabled 0
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{93DE9D4CB0D55651}Assets/Props/Civilian/Suitcase_04_open/Suitcase_04_open.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Mass 10
+   ResponseIndex "SmallDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" : "{76DA308CC9E2AB84}Prefabs/Props/Core/DestructionMultiPhase_Base.ct" {
+   Enabled 1
+   m_fBaseHealth 300
+   m_fDamageThresholdMaximum 10000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{67157E0E24F5F1B8}" {
+     m_ModelPrefabs {
+      "{996CA7F851482AF2}Assets/Props/Civilian/Suitcase_04_open/Dst/Suitcase_04_open_dst_01.xob" "{00721E614CAF1B62}Assets/Props/Civilian/Suitcase_04_open/Dst/Suitcase_04_open_dst_02.xob"
+     }
+     m_fMass 5
+     m_eMaterialSoundType PLASTIC_SOLID
+    }
+    SCR_ParticleSpawnable "{67157E0E24F5D5EF}" {
+     m_Particle "{63D673751320F318}Particles/Props/Dest_Prop_Wood_Medium.ptc"
+    }
+   }
+   m_eMaterialSoundType BREAK_PLASTIC
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ {
+  $grp GenericEntity : "{CFA2C84A318F29B1}Prefabs/Items/Core/10000ARGHDE_Item_Cash.et" {
+   {
+    ID "67157E0DEBF7A90A"
+    coords 0.087 0.055 0.15
+    angles 0 -149.004 0
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A910"
+    coords -0.049 0.055 0.065
+    angles 0 -149.004 0
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A91B"
+    coords -0.069 0.045 0.115
+    angles 0 180 180
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A91D"
+    coords -0.069 0.045 0.009
+    angles 0 180 180
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A922"
+    coords -0.069 0.045 0.228
+    angles 0 180 180
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A929"
+    coords 0.173 0.045 0.228
+    angles 0 180 180
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A933"
+    coords 0.173 0.045 0.115
+    angles 0 180 180
+    scale 0.959
+   }
+   {
+    ID "67157E0DEBF7A95B"
+    coords 0.173 0.045 0.009
+    angles 0 180 180
+    scale 0.959
+   }
+  }
+ }
+}

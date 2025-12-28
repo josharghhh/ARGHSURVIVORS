@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{FE3B5AAB408F3D13}Assets/Props/ARGHVAULT/Data/Material_2_BCR.edds"
+ NMOMap "{C6E3E13999F86F8D}Assets/Props/ARGHVAULT/Data/VAULT_NMO.edds"
+}

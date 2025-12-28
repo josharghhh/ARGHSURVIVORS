@@ -1,0 +1,82 @@
+SCR_DestructibleEntity : "{BE5D837410B95C7A}Prefabs/Props/Commercial/SignPub_01_V1.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{672D65B1627112F2}" {
+     SourceMaterial "SignPub_01_Text_Decals"
+     AssignedMaterial "{693EBF7F2AFABA21}Assets/Props/Commercial/SignPub_01/Data/SignPub_01_Pub_V1.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "TinyDestructible"
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 0
+  }
+  SCR_EditableEntityComponent "{58AAE805A125F1AB}" : "{996046FE206C699A}Prefabs/Editor/Components/Default_SCR_EditableEntityComponent.ct" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-EditableEntity_SignPub_01_Name"
+    m_Image "{EFECB8E3AD1D2B11}UI/Textures/EditorPreviews/Auto/Props/Commercial/E_SignPub_01.edds"
+    m_aAuthoredLabels {
+    }
+    m_aAutoLabels {
+     THEME_COMMERCIAL ENTITYTYPE_OBJECT SIZE_S
+    }
+   }
+  }
+  SCR_PreviewEntityComponent "{58AAE805A12414B8}" : "{6CADA7A88A6265FD}Prefabs/Editor/Components/PreviewEntityComponentClass.ct" {
+   m_bRuntime 0
+   m_aEntries {
+    SCR_BasePreviewEntry "{672D5602D07B57BE}" {
+     m_iParentID -1
+     m_Mesh "{2CE593C7CFD3805C}Assets/Props/Commercial/SignPub_01/SignPub_01.xob"
+     m_Flags 0
+     m_Shape MESH
+     m_iPivotID ""
+     m_vScale 1 1 1
+     m_vPosition 0 0 0
+     m_vAngles 0 0 0
+    }
+   }
+  }
+ }
+ MaxHealth 500
+ "Collision multiplier" 1
+ "Melee multiplier" 1
+ "Kinetic multiplier" 1
+ "Fragmentation multiplier" 1
+ "Explosive multiplier" 90
+ "Incendiary multiplier" 1
+ BaseDamageMultiplier 1
+ DamageReduction 0
+ DamageThreshold 0
+ DestroyAtNoHealth 1
+ FirstDestructionPhase SCR_BaseDestructionPhase "{672D5602D07B4D5E}" {
+  m_sPhaseModel "{2CE593C7CFD3805C}Assets/Props/Commercial/SignPub_01/SignPub_01.xob"
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{672D5602D07B4D54}" {
+  Threshold 0
+  m_aPhaseDestroySpawnObjects {
+   SCR_DebrisSpawnable "{672D5602D07B4D49}" {
+    m_vOffsetPosition 0 0 0
+    m_vOffsetRotation 0 0 0
+    m_ModelPrefabs {
+     "{823C4D9F357E788E}Assets/Props/Commercial/SignPub_01/dst/SignPub_01_dst_03.xob"
+    }
+    m_fMass 10
+    m_fLifetimeMin 5
+    m_fLifetimeMax 10
+    m_fDistanceMax 200
+    m_fPriority 0
+    m_fDamageToImpulse 0.1
+    m_fMaxDamageToSpeedMultiplier 2
+    m_fRandomVelocityLinear 0.5
+    m_fRandomVelocityAngular 180
+    m_eMaterialSoundType WOOD_PLANK_SMALL
+   }
+  }
+ }
+ m_fMomentumToDamageScale 0.05
+}

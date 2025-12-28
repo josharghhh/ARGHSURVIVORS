@@ -1,0 +1,24 @@
+GenericEntity {
+ ID "6714ACA00F466B06"
+ components {
+  MeshObject "{6714ACA00F466BF3}" {
+   Object "{4EEEDB409B815DF7}Assets/Props/Fabric/Flags/FlagpoleCH.xob"
+  }
+  RigidBody "{6714ACA00F464333}" {
+   ModelGeometry 1
+   Static 1
+  }
+  RplComponent "{6714ACA00F464334}" {
+  }
+  Hierarchy "{6714ACA00F46432A}" {
+  }
+ }
+ Flags 0x80003 0
+ {
+  GenericEntity : "{0CF2FF7A7C43A665}Prefabs/Props/Fabric/Flags/Flag_ARGH.et" {
+   ID "6714ACA00F466B04"
+   coords 0.014 2.583 1.444
+   angles 0 90 -30
+  }
+ }
+}

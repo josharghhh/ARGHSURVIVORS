@@ -1,0 +1,18 @@
+FrameWidgetClass {
+ {
+  HorizontalLayoutWidgetClass "{66A66CF3BE2D75EA}" {
+   Prefab "{66A66CF3BE2D75EA}"
+   {
+    ImageWidgetClass "{670E178B797F17B9}" {
+     Name "Image1"
+     Slot LayoutSlot {
+     }
+     Color 0.9333 0.5173 0.366 1
+     "Inherit Color" 1
+     Texture "{4719D996C4679DDB}Assets/Images/HUD.edds"
+     Size 128 32
+    }
+   }
+  }
+ }
+}

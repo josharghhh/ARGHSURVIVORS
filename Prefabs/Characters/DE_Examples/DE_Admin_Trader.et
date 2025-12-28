@@ -1,0 +1,26 @@
+SCR_ChimeraCharacter : "{B39C4B8E0885A29A}Prefabs/Characters/DE_Examples/DE_Trader_Starter.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Admin Trader"
+   traderMargin -100
+   fallbackSupplyCost 0
+   types 8388606
+   modes 510
+   itemWhitelist {
+   }
+  }
+  SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+   EnableDamage 0
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Jacket {
+     Prefab "{437606D496774D92}Prefabs/Characters/Uniforms/Tops/Vergy_Crye/Vergy_Crye_WTiger.et"
+    }
+   }
+  }
+ }
+ coords 3393.904 0.465 9216.964
+ angles 0 162.161 0
+}

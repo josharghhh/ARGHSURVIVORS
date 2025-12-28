@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2F104C0656E232A4}Assets/ARGH_CAVES/CAVESYSTEM/ARGHSYSTEM01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F1EF2B83503662CB}Assets/Structures/Signs/Large/Data/SIGN_ARGHBASE.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

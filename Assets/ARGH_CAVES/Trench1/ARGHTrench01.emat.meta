@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BB8BE7FEF0404DBE}Assets/ARGH_CAVES/Trench1/ARGHTrench01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

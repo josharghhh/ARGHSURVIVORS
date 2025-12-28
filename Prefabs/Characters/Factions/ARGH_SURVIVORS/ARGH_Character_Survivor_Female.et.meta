@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A27AA9F45BE7C25B}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Female.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

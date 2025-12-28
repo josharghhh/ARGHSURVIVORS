@@ -1,0 +1,12 @@
+ImageWidgetClass "{66E22BC3E3F8C729}" {
+ Name "Separator"
+ Slot LayoutSlot "{58CE9885539D1E43}" {
+  VerticalAlign 1
+  Padding 0 2 0 2
+ }
+ Color 1 1 1 0.078
+ Size 2 2
+ Mask "{A1433FBA32E51BBC}UI/Textures/ProgressMasks/ProgressMaskHorizontal_1024x1.edds"
+ "Transition width" 1
+ Progress 0.5
+}

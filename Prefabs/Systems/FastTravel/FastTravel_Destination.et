@@ -1,0 +1,11 @@
+StaticModelEntity : "{A52C6DE05FE53B3B}Prefabs/Structures/Core/StaticObject_base.et" {
+ ID "56ACD1C4DB91DB10"
+ components {
+  MeshObject "{56ACD1C4DC78C87B}" {
+   Object "{00F93DED0E59DDBE}Assets/Editor/CompositionSlot/SlotFlatLarge_01_Empty.xob"
+  }
+  RplComponent "{67036D0BFF4AA0CD}" {
+  }
+ }
+ coords 100.822 0.653 115.018
+}

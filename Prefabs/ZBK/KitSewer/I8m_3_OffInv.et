@@ -1,0 +1,24 @@
+SCR_DestructibleBuildingEntity : "{1109B3CAF82D65DC}Prefabs/ZBK/KitSewer/I8m_0.et" {
+ ID "5B2E084DE9375A33"
+ {
+  EnvironmentProbeEntity {
+   ID "5B2E0844A8FA1996"
+   NearPlane 0.1
+   FarPlane 6
+   InteriorProbe 1
+  }
+  GenericEntity {
+   ID "5B2E0844A8FA1998"
+   coords -4 0 0
+  }
+  GenericEntity {
+   ID "5B2E0844A8FA1999"
+   {
+    LightEntity {
+     ID "5B2E0848E0D72AD4"
+     Enabled 0
+    }
+   }
+  }
+ }
+}

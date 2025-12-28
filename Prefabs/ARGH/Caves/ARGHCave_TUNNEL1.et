@@ -1,0 +1,20 @@
+SCR_IndestructibleEnvironmentalEntity : "{B94DDC61F0B7F9D7}Prefabs/Rocks/Rock_Base.et" {
+ ID "1133272B892A2239"
+ components {
+  MeshObject "{67277DCC52C18967}" {
+   Object "{850C5AAF9A441866}Assets/ARGH_CAVES/Tunnel01/Final-Tunnel01.xob"
+   LODFactors {
+    100 40 20 10 5 2 1
+   }
+  }
+  RigidBody "{67277DCC52C18950}" {
+   Layers 0x4082 0
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ Flags 0x10503 0x80000
+ coords 1190.505 2.314 12432.707
+ angles 3.477 0 0
+ scale 3.22
+}

@@ -1,0 +1,168 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5DFF03E4AD9D1E88}" {
+   Prefab "{5DFF03E4AD9D1E88}"
+   {
+    ScaleWidgetClass "{5CFCF5E894AE6629}" {
+     Prefab "{5CFCF5E894AE6629}"
+     {
+      ImageWidgetClass "{5CFCF5E894AE6628}" {
+       Prefab "{5CFCF5E894AE6628}"
+       Texture "{4A14C3C63F0087EB}Assets/Images/load.edds"
+       Size 1600 900
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass "{5E04A017BD489B2A}" {
+   Prefab "{5E04A017BD489B2A}"
+   {
+    OverlayWidgetClass "{5DFF03E4AD9D1E85}" {
+     Prefab "{5DFF03E4AD9D1E85}"
+     {
+      SizeLayoutWidgetClass "{66C4955ABA7DB64E}" {
+       Prefab "{66C4955ABA7DB64E}"
+       Slot OverlayWidgetSlot "{66C4955ABA7DB66C}" {
+        HorizontalAlign 0
+       }
+       {
+        ScaleWidgetClass "{66C4955A8FEB0346}" {
+         Prefab "{66C4955A8FEB0346}"
+         {
+          ImageWidgetClass "{66C4955A96F3A4C2}" {
+           Prefab "{66C4955A96F3A4C2}"
+           "Blend Mode" Additive
+           Saturation 0.952
+          }
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5DFF03E4AD9D1EFB}" {
+       Prefab "{5DFF03E4AD9D1EFB}"
+       {
+        FrameWidgetClass "{5DFF03E4AD9D1EF9}" {
+         Prefab "{5DFF03E4AD9D1EF9}"
+         {
+          OverlayWidgetClass "{5E04A00D30403301}" {
+           Prefab "{5E04A00D30403301}"
+           {
+            HorizontalLayoutWidgetClass "{5D0C8953FFAEEDEB}" {
+             Prefab "{5D0C8953FFAEEDEB}"
+             {
+              TextWidgetClass "{5D0C8953F31DD7E3}" {
+               Prefab "{5D0C8953F31DD7E3}"
+               Text "YOU ARE PLAYING WITH CONSOLE AND PC MY DUDES"
+               "Font Size" 24
+               "Min Font Size" 24
+               FontProperties FontProperties "{5D0C8952E5D99021}" {
+                Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        FrameWidgetClass "{5DFF03E4AD9D1EFE}" {
+         Prefab "{5DFF03E4AD9D1EFE}"
+         {
+          OverlayWidgetClass "{5E04A00D30403301}" {
+           Prefab "{5E04A00D30403301}"
+           {
+            HorizontalLayoutWidgetClass "{5D0C8953FFAEEDEB}" {
+             Prefab "{5D0C8953FFAEEDEB}"
+             {
+              TextWidgetClass "{5D0C8953F31DD7E3}" {
+               Prefab "{5D0C8953F31DD7E3}"
+               Text "yeah we got mods"
+               "Font Size" 24
+               "Min Font Size" 24
+               FontProperties FontProperties "{5D0C8952E5D99021}" {
+                Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      VerticalLayoutWidgetClass "{5DFF03E4AD9D1EE1}" {
+       Prefab "{5DFF03E4AD9D1EE1}"
+       Slot OverlayWidgetSlot "{5DFE96D622552BA2}" {
+        HorizontalAlign 1
+        VerticalAlign 1
+        Padding 350 0 350 0
+       }
+       {
+        TextWidgetClass "{5DFF03E4AD9D1EE5}" {
+         Prefab "{5DFF03E4AD9D1EE5}"
+         "Is Enabled" 1
+        }
+        TextWidgetClass "{5DFF03E4AD9D1EDB}" {
+         Prefab "{5DFF03E4AD9D1EDB}"
+         Slot LayoutSlot "{552D08C8C5E2D281}" {
+          SizeMode Fill
+         }
+         Color 0.9177 0.1536 0.022 1
+         Text "Brought to you by JOSHARGH"
+         "Font Size" 32
+         "Min Font Size" 32
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+          OutlineSize 11
+          ShadowSize 8
+          ShadowOffset 1 1
+         }
+         Offset 2 2
+        }
+        RichTextWidgetClass "{5DFF03E4AD9D1ED9}" {
+         Prefab "{5DFF03E4AD9D1ED9}"
+         Slot LayoutSlot "{56908743C9509EDB}" {
+          HorizontalAlign 1
+          SizeMode Fill
+         }
+         Color 1 0.3363 0 1
+         Text "SCAVENGE, FIGHT, SURVIVE"\
+         "WIP PVE PVP "\
+         ""\
+         "ARGP 4EVA"
+         "Font Size" 64
+         "Min Font Size" 52
+         "Horizontal Alignment" Center
+         "Vertical Alignment" Center
+         Wrap 0
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+          Bold 1
+          OutlineSize 7
+          ShadowSize 8
+          ShadowColor 0.1417 0.1147 0.0751 1
+          ShadowOffset 1 1
+         }
+         Offset 1.5 1.5
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5DFF03E4AD9D1ED0}" {
+       Prefab "{5DFF03E4AD9D1ED0}"
+       {
+        RichTextWidgetClass "{5DFF03E4AD9D1ED5}" {
+         Prefab "{5DFF03E4AD9D1ED5}"
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

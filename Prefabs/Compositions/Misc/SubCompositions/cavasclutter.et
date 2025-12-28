@@ -1,0 +1,89 @@
+GenericEntity : "{9B7F08BF4C938AD2}Prefabs/Structures/Military/Camps/Canvas_Covers/Soviet/CanvasCover_Medium_Soviet.et" {
+ ID "52F0B4ADDCC2C24E"
+ components {
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "HugeDestructible"
+  }
+  SCR_SlotCompositionComponent "{5706EA5A4E440E1A}" : "{F27DCA13BB9C3F3B}Prefabs/Editor/Components/SlotCompositionComponent.ct" {
+   m_bOrientChildrenToTerrain 0
+  }
+  Hierarchy "{672C4A0A7193E37E}" {
+   Enabled 1
+  }
+ }
+ coords 47.202 0 64.143
+ angles 0 91.446 0
+ {
+  $grp GenericEntity : "{4BE795374BE3D67E}Prefabs/Props/Industrial/BarrelFuel_01_closed.et" {
+   {
+    ID "672C4A0A71935948"
+    components {
+     Hierarchy "{672C4A0A71938AA6}" {
+      Enabled 1
+     }
+    }
+    coords -1.004 0 1.74
+    angles 0 -157.357 0
+   }
+   {
+    ID "672C4A0A7193594A"
+    components {
+     Hierarchy "{672C4A0A71938AB3}" {
+      Enabled 1
+     }
+    }
+    coords -0.25 0 1.781
+    angles 0 119.161 0
+    {
+     GenericEntity : "{62B2ADC4243454F9}Prefabs/Props/Civilian/Jerrycan_01.et" {
+      ID "672C4A0A71935949"
+      components {
+       Hierarchy "{672C4A0A71938ABA}" {
+        Enabled 1
+       }
+      }
+      coords 0.098 0.994 0.016
+      angles 0 33.276 0
+     }
+    }
+   }
+  }
+  GenericEntity : "{5F76887813B86AD4}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V6_covered.et" {
+   ID "672C4A0A7193594F"
+   coords 0.173 0 -1.132
+   angles 0 179.449 0
+  }
+  $grp GenericEntity : "{62B2ADC4243454F9}Prefabs/Props/Civilian/Jerrycan_01.et" {
+   {
+    ID "672C4A0A7193E300"
+    components {
+     Hierarchy "{672C4A0A71938AAD}" {
+      Enabled 1
+     }
+    }
+    coords 0.361 0 1.738
+    angles 0 170.507 0
+   }
+   {
+    ID "672C4A0A7193E301"
+    components {
+     Hierarchy "{672C4A0A71938AA9}" {
+      Enabled 1
+     }
+    }
+    coords 0.187 0 1.749
+    angles 0 -179.165 0
+   }
+  }
+  GenericEntity : "{FCBEDECB2A39B6BC}Prefabs/Props/Military/Generators/GeneratorPortable_USSR_01.et" {
+   ID "672C4A0A7193E30C"
+   components {
+    Hierarchy "{672C4A0A71938A91}" {
+     Enabled 1
+    }
+   }
+   coords 0.183 0.551 -1.385
+   angles 0 85.644 0
+  }
+ }
+}

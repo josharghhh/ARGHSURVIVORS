@@ -1,0 +1,5 @@
+MatPBRBasic {
+ GlobalLayerMode Manual
+ GlobalLayerAngleEnd 33.45
+ BCRMap "{F0BF54C674272CEA}Assets/Images/poster2.edds" clampu clampv
+}

@@ -1,0 +1,14 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  DE_CashComponent "{670418B090C46931}" {
+   value 50
+  }
+  MeshObject "{670418B73536EE86}" {
+   Object "{D2FEA373245638BE}Assets/Cash/stack50.xob"
+  }
+ }
+ coords 9432.375 4.255 12307.361
+ angles 0 -176.058 0
+ scale 0.64
+}

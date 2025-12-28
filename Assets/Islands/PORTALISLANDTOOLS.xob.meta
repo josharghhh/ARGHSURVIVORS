@@ -1,0 +1,77 @@
+MetaFileClass {
+ Name "{919949EFFD3D9AAD}Assets/Islands/PORTALISLANDTOOLS.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{671AA8E82838F78C}" {
+     SourceMaterial "bottom"
+     AssignedMaterial "{2EA6E606B556B29C}Assets/Islands/Data/bottom.emat"
+    }
+    MaterialAssignClass "{671AA8E82838F463}" {
+     SourceMaterial "terrain"
+     AssignedMaterial "{BE665DDCEA29DDE5}Assets/Islands/Data/terrain.emat"
+    }
+    MaterialAssignClass "{671AA8E82838F460}" {
+     SourceMaterial "rockscave"
+     AssignedMaterial "{495B6404501F645E}Assets/Islands/Data/rockscave.emat"
+    }
+   }
+   MeshParams {
+    MeshParam bottom {
+    }
+    MeshParam caverocks {
+    }
+    MeshParam terrain {
+    }
+   }
+   GeometryParams {
+    GeometryParam UTM_bottom {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{5E4EA52B03682185}FireGeo_Material.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_caverocks {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{5E4EA52B03682185}FireGeo_Material.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+    GeometryParam UTM_terrain {
+     LayerPreset "FireGeo"
+     SurfaceProperties {
+      "{5E4EA52B03682185}FireGeo_Material.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   Common TXOCommonClass "{671AA8E827E85B67}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{671AA8E827E85862}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{671AA8E827E85835}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{671AA8E827E8580E}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{671AA8E827E858E5}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{671AA8E827E858B0}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

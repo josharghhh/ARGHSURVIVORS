@@ -1,0 +1,27 @@
+FrameWidgetClass "{670E178875C7709C}" : "{47864BB47AB0B1F4}UI/layouts/HUD/CampaignMP/CampaignMainHUD.layout" {
+ {
+  VerticalLayoutWidgetClass "{59FA8187416ABB88}" {
+   Prefab "{59FA8187416ABB88}"
+   {
+    SizeLayoutWidgetClass "{59FA818607A32C7B}" {
+     Prefab "{59FA818607A32C7B}"
+     {
+      HorizontalLayoutWidgetClass "{59F6AA9222C9831D}" {
+       Prefab "{59F6AA9222C9831D}"
+       "Is Visible" 0
+      }
+     }
+    }
+    SizeLayoutWidgetClass "{59FA81859D0F6536}" {
+     Prefab "{59FA81859D0F6536}"
+     {
+      HorizontalLayoutWidgetClass "{59F6AA97583438F4}" {
+       Prefab "{59F6AA97583438F4}"
+       "Is Visible" 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

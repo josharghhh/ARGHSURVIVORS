@@ -1,0 +1,4 @@
+TerrainMaterial {
+ BCRMiddleMap "{781F4B8E01EA1C7D}Assets/uvtunnel_diffuse_0_0_0_255_Diffuse.1001.edds"
+ NHOMiddleMap "{B35F1B0E4DBCBE0A}Assets/uvtunnel_diffuse_0_0_0_255_Normal.1001.edds"
+}

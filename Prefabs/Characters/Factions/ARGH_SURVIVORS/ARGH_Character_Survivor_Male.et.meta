@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6CB52AE4A03D9637}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Male.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+Encounter_StorageEntity {
+ ID "648C1AE967A38548"
+ components {
+  MeshObject "{648C1AE967A38522}" {
+   Object ""
+  }
+  ActionsManagerComponent "{648C1AE967A3F8E7}" {
+   additionalActions {
+    Encounter_Loot_StorageUserAction "{648C1AE967A3E014}" {
+     m_sConfigs {
+      "{5D4F4CFAF12AEDA7}Configs/Loot/Cain_Tier_03_Heavy.conf" "{A39E713E3F7617DE}Configs/Loot/Tier_Medical.conf" "{30A273E6AA706B58}Configs/Loot/Tier_Utils.conf"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,43 @@
+Encounter_StorageEntity {
+ ID "6484158D83D0BDF2"
+ components {
+  MeshObject "{6484158C3302AC37}" {
+   Object ""
+  }
+  SCR_UniversalInventoryStorageComponent "{6484158D83D0BDF3}" {
+   Attributes SCR_ItemAttributeCollection "{6484158D83D0BDF4}" {
+    m_SlotType SLOT_LOOT_STORAGE
+   }
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 5500
+   MaxItemSize 10000 10000 10000
+   m_fMaxWeight 26
+  }
+  SCR_InventoryStorageManagerComponent "{6484158D83D0BDF5}" {
+  }
+  ActionsManagerComponent "{6484158D83D0BDF6}" {
+   ActionContexts {
+    UserActionContext "{6484158D83D0BDF7}" {
+     ContextName "Default"
+     Position PointInfo "{6484158D83D0BDF8}" {
+     }
+     Radius 2
+    }
+   }
+   additionalActions {
+    Encounter_Loot_StorageUserAction "{6484158D83D0BDF9}" {
+     ParentContextList {
+      "Default"
+     }
+     Duration 0.5
+     m_sConfigs {
+      "{6C8294C98D20D0A8}Configs/StorageLoot/SL_Weapon_Tier2(Police).conf"
+     }
+    }
+   }
+  }
+  RplComponent "{6484158D83D0BDFA}" {
+  }
+ }
+ coords 0.01 0.896 0.283
+}

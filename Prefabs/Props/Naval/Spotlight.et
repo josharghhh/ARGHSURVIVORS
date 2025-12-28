@@ -1,0 +1,9 @@
+GenericEntity : "{D5BA3B82632E00F8}Prefabs/Props/Naval/Buoy_01_lightsource_base.et" {
+ ID "5A0283818DC75DC0"
+ components {
+  LightSourceVisualizationObject "{5A02839A0D5BE210}" {
+   Size 0.75
+   Color 1 0.0508 0.0277 1
+  }
+ }
+}

@@ -1,0 +1,5 @@
+MatPBRBasic {
+ BCRMap "{6AE7427F48C82D08}Assets/Cash/100_BCR.edds"
+ NormalPower 1.66
+ NMOMap "{523FF9ED91BF7F96}Assets/Cash/100_NMO.edds"
+}

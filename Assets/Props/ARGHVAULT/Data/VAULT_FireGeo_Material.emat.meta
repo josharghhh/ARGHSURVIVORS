@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{043D3F3ECE7980AB}Assets/Props/ARGHVAULT/Data/VAULT_FireGeo_Material.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

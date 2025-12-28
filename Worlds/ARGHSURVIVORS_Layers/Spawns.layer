@@ -1,0 +1,146 @@
+$grp SCR_SpawnPoint : "{5A2220DD0C16958C}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ {
+  components {
+   FactionAffiliationComponent "{BDBAC1FDB7C5C7AD}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Kosomolsk Foothills"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 5696.171 2.248 8416.701
+  angles 0 -94 0
+  m_fRandomSpawnRadius 20
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Kosomolsk Foothills"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{2D94EF841825BC73}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Udarnik Valley"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 7321.203 56.729 8782.27
+  angles 0 72 0
+  m_fRandomSpawnRadius 20
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Udarnik Valley"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{CA966A14AC3C7758}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Bunkers North"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 9547.557 129.478 10099.285
+  angles 0 -94 0
+  m_fRandomSpawnRadius 50
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Bunkers North"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{3DFA0916FD7F9B9F}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Southern Plateau"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 11595.679 5.173 10958.572
+  angles 0 104 0
+  m_fRandomSpawnRadius 15
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Southern Plateau"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{77B3D0E27DF788D9}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Cain Fields"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 9980.099 5.505 9027.459
+  angles 0 -12 0
+  m_fRandomSpawnRadius 50
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Cain Fields"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{335545F57C00E1CF}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Farmlands"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 8903.13 2.531 7681.262
+  angles 0 54 0
+  m_fRandomSpawnRadius 25
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Farmlands"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{DEC8FBBCDE4A56D1}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Harbor Town"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 7937.24 7.128 5486.651
+  angles 0 140 0
+  m_fRandomSpawnRadius 25
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Harbor Town"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{7823649C7017989A}" {
+    "faction affiliation" "SURVIVORS"
+   }
+   SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+    DisplayName "Frozen South"
+    MainType Spawnpoint
+    UnitType Infantry
+   }
+  }
+  coords 7082.991 2.545 3994.431
+  angles 0 -25 0
+  m_fRandomSpawnRadius 25
+  m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+   Name "Frozen South"
+  }
+ }
+}

@@ -1,0 +1,257 @@
+GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
+ coords 9274.56 3.174 12443.366
+}
+$grp SCR_ChimeraCharacter : "{394C560F503A5531}Prefabs/Characters/DE_Examples/DE_Trader_US_Weapons.et" {
+ {
+  components {
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+    EnableDamage 0
+   }
+  }
+  coords 3713.314 3.477 3773.524
+  angles 0 -131.264 0
+ }
+ {
+  components {
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+    EnableDamage 0
+   }
+  }
+  coords 2694.328 221.118 6969.544
+  angles 0 167.319 0
+ }
+}
+$grp GenericEntity : "{4433A092ECFE98D9}Prefabs/Structures/Military/Bunkers/AircraftShelter_E_01/AircraftShelter_E_01_chimney_green.et" {
+ {
+  coords 11918.235 9.142 10638.009
+ }
+ {
+  coords 6441.894 28.117 3853.696
+ }
+}
+$grp GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
+ {
+  coords 11820.216 12.697 10751.799
+  angles 0 -84.613 0
+ }
+ {
+  coords 6215.375 38.636 7980.008
+  angles 0 143.058 0
+ }
+ {
+  coords 5965.654 2.7 8299.428
+  angles 0 169.739 0
+ }
+ {
+  coords 3555.083 4.208 7901.427
+  angles 0 147.973 0
+ }
+ {
+  coords 4582.843 41.034 3552.823
+  angles 0 -72.817 0
+ }
+}
+DecalEntity : "{46679C8491043813}Prefabs/Decals/Dirt/Decal_Dirt_Patch_04_V2.et" {
+ coords 8160.378 -0.062 8580.505
+ angles -90 0 -27.257
+ scale 6
+ ClutterOccluder 1
+}
+$grp SCR_ChimeraCharacter : "{4D5ACFDF431400A9}Prefabs/Characters/DE_Examples/MO_Trader_Basic.et" {
+ {
+  coords 6440.19 23.914 3844.468
+  angles 0 134.576 0
+ }
+ {
+  coords 11099.274 100.931 10370.597
+  angles 0 -99.759 0
+ }
+ {
+  coords 11924.536 5.272 10632.146
+  angles 0 76.023 0
+ }
+ {
+  coords 6070.736 39.799 7979.655
+  angles 0 81.554 0
+ }
+}
+DecalEntity : "{9EE74738BD9E8CDB}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_02.et" {
+ coords 8155.219 0.171 8580.178
+ angles -90 0 25.992
+ scale 5
+}
+$grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/LightPrefabs/LightIndustrial_01_light_spot_exterior.et" {
+ {
+  coords 8152.531 287.301 8571.777
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 8716.169 13.056 7318.119
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 6072.191 42.955 7980.302
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 11925.375 8.396 10632.868
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.9
+  Dynamic 1
+ }
+ {
+  coords 6441.414 27.01 3844.058
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+}
+$grp GenericEntity : "{C6EA723C0E2C52E7}Prefabs/Items/Core/DE_Item_Cash.et" {
+ {
+  coords 9274.843 3.201 12443.087
+  angles 2.632 -0.37 -8.013
+ }
+ {
+  coords 9274.957 3.205 12442.834
+  angles 0 0 0
+ }
+ {
+  coords 9274.879 3.229 12443.817
+  angles 0 0 0
+ }
+ {
+  coords 9274.784 3.207 12443.469
+  angles 0 0 0
+ }
+ {
+  coords 9274.93 3.22 12443.325
+  angles 0 0 0
+ }
+ {
+  coords 9274.93 3.246 12443.325
+  angles 0 0 0
+ }
+ {
+  coords 9274.93 3.272 12443.325
+  angles 0 0 0
+ }
+}
+SCR_DestructibleBuildingEntity : "{D424A3CD07F7A6F0}Prefabs/Structures/Houses/Village/House_Village_E_1I08/House_Village_E_1I08t.et" {
+ coords 8156.261 1.176 8571.703
+ angles 0 -26.907 0
+}
+$grp ParticleEffectEntity : "{E931C0A6240D4D27}Prefabs/Particles/Smoke/Smoke_Smokestack_Medium.et" {
+ {
+  coords 3712.293 9.422 3776.639
+ }
+ {
+  coords 4431.494 8.368 8210.351
+ }
+ {
+  coords 10064.539 12.942 10833.929
+ }
+ {
+  coords 6119.257 431.577 6255.014
+ }
+ {
+  coords 8718.034 16.57 7322.155
+ }
+ {
+  coords 6072.075 46.796 7984.599
+ }
+ {
+  coords 11918.221 10.774 10638.021
+ }
+ {
+  coords 11099.218 106.796 10370.605
+ }
+ {
+  coords 6441.887 29.48 3853.752
+ }
+ {
+  coords 2696.044 228.086 6967.146
+ }
+ {
+  coords 3543.514 17.422 7903.936
+ }
+ {
+  coords 8152.692 293.473 8568.34
+ }
+}
+$grp SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
+ {
+  coords 8714.639 9.485 7319.044
+  angles 0 119.267 0
+ }
+ {
+  coords 6125.351 424.498 6254.544
+  angles 0 -79.523 0
+ }
+ {
+  coords 3544.456 12.088 7904.398
+  angles 0 56.102 0
+ }
+ {
+  coords 8152.885 284.866 8569.862
+  angles 0 0 0
+ }
+}
+$grp SCR_ChimeraCharacter : "{FEC00FA145521381}Prefabs/Characters/DE_Examples/DE_Trader_USSR_Weapons.et" {
+ {
+  components {
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+    EnableDamage 0
+   }
+  }
+  coords 4429.866 2.308 8207.554
+  angles 0 -79.036 0
+ }
+ {
+  components {
+   DE_TraderComponent "{66F68382BBCE97CA}" {
+    traderName "Black Market Arms Dealer"
+    factionKey ""
+    types 462142
+   }
+   SCR_CharacterDamageManagerComponent "{55872AD7B4E959F2}" {
+    EnableDamage 0
+   }
+   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+    Slots {
+     LoadoutSlotInfo Hat {
+      Prefab "{19231774D1D67091}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_TigerStripe.et"
+     }
+     LoadoutSlotInfo Jacket {
+      Prefab "{3D17E4FA8F819ECD}Prefabs/Characters/Uniforms/Jacket_US_BDU_TigerStripe.et"
+     }
+     LoadoutSlotInfo Pants {
+      Prefab "{5E17C1AE66A6FF00}Prefabs/Characters/Uniforms/Pants_KZS/Pants_KZS.et"
+     }
+    }
+   }
+  }
+  coords 10061.476 6.847 10835.666
+  angles 0 80.134 0
+ }
+}
