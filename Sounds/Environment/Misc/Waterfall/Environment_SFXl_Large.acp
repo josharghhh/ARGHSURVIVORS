@@ -1,0 +1,443 @@
+AudioClass {
+ signals {
+  SignalClass "16397" {
+   id 16397
+   name "Signal Occlusion"
+   tl 0 -208
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 23
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "17420:1" {
+         id 17420
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    23 52
+   }
+   outputsport {
+    37
+   }
+   inputvalues {
+    1 1000
+   }
+   inputvaluesmin {
+    0 0
+   }
+   inputvaluesmax {
+    1 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+  SignalClass "19469" {
+   id 19469
+   name "Signal Reverb"
+   tl 512 256
+   res "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+   conns {
+    IOPConnectionClass iopConnection {
+     port 35
+     conn {
+      ConnectionsClass connections {
+       id 8
+       links {
+        ConnectionClass "17420:1" {
+         id 17420
+         port 1
+        }
+       }
+      }
+     }
+    }
+   }
+   inputsport {
+    1 35 112
+   }
+   outputsport {
+    39 105 107 106 110
+   }
+   inputvalues {
+    40 0 0
+   }
+   inputvaluesmin {
+    0 0 0
+   }
+   inputvaluesmax {
+    100 1 16000
+   }
+   path "{76CBB40EF7F227B6}Sounds/_SharedData/Signals/Reverb/Reverb_Base.sig"
+  }
+ }
+ sounds {
+  SoundClass "4105" {
+   id 4105
+   name "SOUND_WATERFALL_LARGE_LP"
+   version 5
+   tl 256 0
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "10252:1" {
+       id 10252
+       port 1
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "3090:65" {
+       id 3090
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   outState 22539
+   outStatePort 79879
+  }
+ }
+ mixers {
+  MixerClass "22539" {
+   id 22539
+   name "OutputState"
+   version 4
+   tl 768 0
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass "con:79879" {
+     id 79879
+     links {
+      ConnectionClass "4105:65" {
+       id 4105
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:300039" {
+     id 300039
+     links {
+      ConnectionClass "21533:65" {
+       id 21533
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:301063" {
+     id 301063
+     links {
+      ConnectionClass "23581:65" {
+       id 23581
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:302087" {
+     id 302087
+     links {
+      ConnectionClass "20509:65" {
+       id 20509
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    234889216 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb_Small" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin" "VON_Reverb_Medium" "VON_Reverb_Large"
+   }
+  }
+ }
+ constants {
+  ConstantClass "10252" {
+   id 10252
+   name "Constant 1"
+   version 5
+   tl 253.5 -76.25
+   "Constant values" {
+    IOPConstantsValueClass Trigger {
+     Key "Trigger"
+     Value 1
+     Port 1
+    }
+   }
+  }
+  ConstantClass "17420" {
+   id 17420
+   name "Constant 0"
+   version 5
+   tl -256 -144
+   "Constant values" {
+    IOPConstantsValueClass "0" {
+     Key "0"
+     Port 1
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass "3090" {
+   id 3090
+   name "Shader"
+   version 5
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "12316:65" {
+       id 12316
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "5139:65" {
+       id 5139
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "7189:65" {
+       id 7189
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "2052:65" {
+       id 2052
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   ITD 0
+  }
+ }
+ amplitudes {
+  AmplitudeClass "5139" : "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf" {
+   id 5139
+   version 5
+   tl 1.41 -363.358
+   parent "{BA1F5E72DA797274}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-30LUFS_to_-25LUFS.conf"
+  }
+ }
+ frequency {
+  FrequencyClass "7189" : "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf" {
+   id 7189
+   version 5
+   tl 2.66 -285.858
+   parent "{0005FE42A6D80399}Sounds/_SharedData/Configs/Frequency/_SharedData/Frequency_DynamicUpdate.conf"
+   ins {
+    ConnectionsClass "con:4" {
+     id 4
+     links {
+      ConnectionClass "16397:37" {
+       id 16397
+       port 37
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   pu {
+    16 0
+   }
+  }
+ }
+ banks_local {
+  BankLocalClass "2052" {
+   id 2052
+   name "Waterfall Large"
+   version 7
+   tl -256 0
+   Volume -12
+   Pitch -2
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass "hot-bubbling-mud-99785_normalized.wav" {
+     Filename "{556B6DB4F851A944}Sounds/Environment/Misc/Waterfall/hot-bubbling-mud-99785_normalized.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass "12316" {
+   id 12316
+   name "Spatiality"
+   version 5
+   tl 1.41 -443.358
+   SpatialFactorSource AzimuthCurve
+   Curve0 {
+    CurvePoint "1" {
+     X 10
+    }
+    CurvePoint "2" {
+     X 60
+     Y 1
+    }
+   }
+   Curve90 {
+    CurvePoint "1" {
+     X 10
+    }
+    CurvePoint "2" {
+     X 30
+     Y 1
+    }
+   }
+  }
+ }
+ auxOuts {
+  AuxOutClass "20509" {
+   id 20509
+   name "AuxOut Revverb INT Large"
+   version 5
+   tl 513.521 702.479
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "4105:5" {
+       id 4105
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "19469:110" {
+       id 19469
+       port 110
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "19469:39" {
+       id 19469
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 302087
+  }
+  AuxOutClass "21533" {
+   id 21533
+   name "AuxOut Reverb INT Small"
+   version 5
+   tl 512 448
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "4105:5" {
+       id 4105
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "19469:107" {
+       id 19469
+       port 107
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "19469:39" {
+       id 19469
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 300039
+  }
+  AuxOutClass "23581" {
+   id 23581
+   name "AuxOut Reverb INT Medium"
+   version 5
+   tl 513.521 574.479
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "4105:5" {
+       id 4105
+       port 5
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "19469:106" {
+       id 19469
+       port 106
+      }
+     }
+    }
+    ConnectionsClass "con:2" {
+     id 2
+     links {
+      ConnectionClass "19469:39" {
+       id 19469
+       port 39
+      }
+     }
+    }
+   }
+   pi {
+    7 0
+   }
+   OSPort 301063
+  }
+ }
+ version 1
+}

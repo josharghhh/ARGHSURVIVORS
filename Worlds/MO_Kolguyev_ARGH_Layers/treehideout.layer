@@ -1,0 +1,65 @@
+$grp GenericEntity : "{195946E5B8F56100}Prefabs/Compositions/TreeHideout/TreeHideout_0.et" {
+ {
+  coords 3779.989 345.632 6398.007
+ }
+ {
+  coords 4114.78 360.682 5701.928
+ }
+ {
+  coords 4729.856 536.756 6134.943
+ }
+ {
+  coords 5601.912 445.795 5933.04
+ }
+ {
+  coords 6237.29 295.206 7152.831
+ }
+ {
+  coords 7029.01 95.04 5118.043
+ }
+ {
+  coords 6400.596 171.325 4695.287
+ }
+ {
+  coords 4263.516 149.655 4112.808
+  angles 0 147.487 0
+ }
+ {
+  coords 5464.306 9.802 2989.293
+ }
+ {
+  coords 7903.492 103.853 6132.271
+ }
+ {
+  coords 7302.187 359.447 7164.222
+ }
+ {
+  coords 8217.559 175.934 8231.003
+ }
+ {
+  coords 7807.139 114.788 9062.354
+ }
+ {
+  coords 9744.36 112.571 9857.277
+ }
+}
+SCR_DestructibleBuildingEntity : "{9B576CEAEDDCB4EA}Prefabs/Compositions/SignalHillMilitaryBase/SignalHillMilitaryBase.et" {
+ coords 8673.798 6.998 5718.724
+ angles 0 -77.671 0
+}
+GenericEntity : "{F410E65512A3B79C}Prefabs/Compositions/MontfortCastle/MontfortCastle.et" {
+ coords 8820.16 34.947 10392.547
+ angles 0 -79.034 0
+ {
+  $grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
+   {
+    coords 4.108 -37.949 23.014
+    angles -86.567 -67.409 -78.357
+   }
+   {
+    coords 28.737 -38.931 35.55
+    angles -80.926 -81.614 -64.084
+   }
+  }
+ }
+}

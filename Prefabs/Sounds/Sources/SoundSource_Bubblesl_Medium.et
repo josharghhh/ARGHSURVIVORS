@@ -1,0 +1,10 @@
+GenericEntity : "{11B3A6066129ABD6}Prefabs/Sounds/Sources/SoundSource_Base.et" {
+ ID "56B7086A616791C5"
+ components {
+  SoundComponent "{56B7086A4B90F246}" {
+   Filenames {
+    "{F7E5EF42E5535343}Sounds/Environment/Misc/Waterfall/BUBBLESEnvironment_SFXl_Large.acp"
+   }
+  }
+ }
+}

@@ -1,0 +1,14 @@
+ParticleEffectEntity : "{F87BDCA400309DB2}Prefabs/Particles/EnvironmentParticle_Base.et" {
+ ID "6530AD13A4C2F9E4"
+ components {
+  SignalsManagerComponent "{67383C7192227042}" {
+  }
+  SoundComponent "{67383C719222781C}" {
+   Filenames {
+    "{94D1A361FF97B00D}Sounds/Environment/Misc/Spring/Environment_SulphurLake_Spring.acp"
+   }
+  }
+ }
+ UseFrameEvent 1
+ EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
+}

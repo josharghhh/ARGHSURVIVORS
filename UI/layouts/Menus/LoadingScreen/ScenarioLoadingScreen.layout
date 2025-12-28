@@ -53,11 +53,11 @@ FrameWidgetClass {
              {
               TextWidgetClass "{5D0C8953F31DD7E3}" {
                Prefab "{5D0C8953F31DD7E3}"
-               Text "YOU ARE PLAYING WITH CONSOLE AND PC MY DUDES"
+               Text "you are playing with console and pc my dudes"
                "Font Size" 24
                "Min Font Size" 24
                FontProperties FontProperties "{5D0C8952E5D99021}" {
-                Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+                Font "{EE35F7F5567BF385}UI/FONTS/PLANE.fnt"
                }
               }
              }
@@ -81,7 +81,7 @@ FrameWidgetClass {
                "Font Size" 24
                "Min Font Size" 24
                FontProperties FontProperties "{5D0C8952E5D99021}" {
-                Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+                Font "{EE35F7F5567BF385}UI/FONTS/PLANE.fnt"
                }
               }
              }
@@ -110,11 +110,11 @@ FrameWidgetClass {
           SizeMode Fill
          }
          Color 0.9177 0.1536 0.022 1
-         Text "Brought to you by JOSHARGH"
+         Text "brought to you by joshargh"
          "Font Size" 32
          "Min Font Size" 32
          FontProperties FontProperties "{546AF489DFD25402}" {
-          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+          Font "{EE35F7F5567BF385}UI/FONTS/PLANE.fnt"
           OutlineSize 11
           ShadowSize 8
           ShadowOffset 1 1
@@ -128,17 +128,17 @@ FrameWidgetClass {
           SizeMode Fill
          }
          Color 1 0.3363 0 1
-         Text "SCAVENGE, FIGHT, SURVIVE"\
-         "WIP PVE PVP "\
+         Text "scavenge, fight, survive"\
+         "wip pve pvp "\
          ""\
-         "ARGP 4EVA"
+         "argp 4eva"
          "Font Size" 64
          "Min Font Size" 52
          "Horizontal Alignment" Center
          "Vertical Alignment" Center
          Wrap 0
          FontProperties FontProperties "{546AF489DFD25402}" {
-          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+          Font "{EE35F7F5567BF385}UI/FONTS/PLANE.fnt"
           Bold 1
           OutlineSize 7
           ShadowSize 8
@@ -154,8 +154,9 @@ FrameWidgetClass {
        {
         RichTextWidgetClass "{5DFF03E4AD9D1ED5}" {
          Prefab "{5DFF03E4AD9D1ED5}"
+         Text "hint text"
          FontProperties FontProperties "{546AF489DFD25402}" {
-          Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+          Font "{EE35F7F5567BF385}UI/FONTS/PLANE.fnt"
          }
         }
        }

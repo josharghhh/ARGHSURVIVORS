@@ -2156,6 +2156,67 @@ $grp Tree : "{7D5C8883A0DF9D96}PrefabLibrary/DefaultLibrary/Vegetation/Trees/t_p
   scale 1.125
  }
 }
+$grp ParticleEffectEntity : "{815D11CFF3A86DE2}Prefabs/Particles/Water/BUBBLEARGH.et" {
+ {
+  coords 515.174 0.932 12407.905
+ }
+ {
+  coords 518.802 0.932 12404.958
+ }
+ {
+  coords 524.924 0.932 12403.876
+ }
+ {
+  coords 497.968 0.932 12399.433
+ }
+ {
+  coords 498.385 0.932 12387.498
+ }
+ {
+  coords 498.226 0.932 12363.576
+ }
+ {
+  coords 520.718 0.932 12374.512
+ }
+ {
+  coords 503.85 0.932 12377.318
+ }
+ {
+  coords 508.851 0.932 12363.456
+ }
+ {
+  coords 519.915 0.932 12325.564
+  {
+   GenericEntity {
+    ID "673847ED748A3BCF"
+    coords 7.587 0 -4.809
+   }
+  }
+ }
+ {
+  coords 509.415 0.932 12333.873
+ }
+ {
+  coords 520.692 0.932 12338.651
+ }
+ {
+  coords 510.5 0.932 12343.146
+ }
+ {
+  coords 493.976 0.932 12328.885
+ }
+ {
+  coords 504.412 0.932 12317.838
+  scale 2.99
+ }
+ {
+  coords 509.714 0.932 12366.29
+  scale 2.99
+ }
+ {
+  coords 502.952 0.932 12327.104
+ }
+}
 $grp Tree : "{8276BD47FD46680D}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_1f_aut.et" {
  {
   Flags 0 0x80000
@@ -3070,7 +3131,7 @@ $grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/Li
   Dynamic 1
  }
  {
-  coords 526.056 6.138 12412.067
+  coords 525.981 6.138 12411.906
   angles -88.713 -180 -180
   Color 0.6529 0.2747 0.076 1
   LV 8.43
@@ -3080,17 +3141,7 @@ $grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/Li
   Dynamic 1
  }
  {
-  coords 518.953 5.789 12414.943
-  angles -88.713 -180 -180
-  Color 0.6529 0.2747 0.076 1
-  LV 8.43
-  Type Point
-  Radius 44
-  NearPlane 0.9
-  Dynamic 1
- }
- {
-  coords 525.598 11.521 12417.504
+  coords 518.667 5.789 12413.751
   angles -88.713 -180 -180
   Color 0.6529 0.2747 0.076 1
   LV 8.43
@@ -3111,16 +3162,6 @@ $grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/Li
  }
  {
   coords 506.94 11.11 12302.538
-  angles -88.713 -180 -180
-  Color 0.6529 0.2747 0.076 1
-  LV 8.43
-  Type Point
-  Radius 44
-  NearPlane 0.9
-  Dynamic 1
- }
- {
-  coords 515.951 11.076 12304.97
   angles -88.713 -180 -180
   Color 0.6529 0.2747 0.076 1
   LV 8.43
@@ -9798,7 +9839,7 @@ SCR_ChimeraCharacter : "{B39C4B8E0885A29A}Prefabs/Characters/DE_Examples/DE_Trad
   }
  }
  coords 509.71 6.928 12303.397
- angles 0 0.088 0
+ angles 0 -62.231 0
  scale 0.997
 }
 $grp Tree : "{BD344F8170C3FA17}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_2sw_aut.et" {
@@ -9894,8 +9935,8 @@ $grp SCR_DestructibleEntity : "{C0760C6F3B2EB37A}Prefabs/ARGH/Signs/AFRAMESIGN_B
  }
 }
 SCR_DestructibleBuildingEntity : "{C4FD5AA3368F166C}Prefabs/Structures/Industrial/Sheds/ShedMetal_03/ShedMetal_03_v1.et" {
- coords 509.442 190.179 12303.094
- angles 0 168.64 0
+ coords 504.061 190.503 12302.675
+ angles 0 178.071 0
  scale 1.43
 }
 $grp Tree : "{C732468B6A1C885F}Prefabs/Vegetation/Tree/t_pinus_sylvestris/t_pinus_sylvestris_2f.et" {

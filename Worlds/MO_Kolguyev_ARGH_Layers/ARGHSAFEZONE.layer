@@ -201,118 +201,6 @@ $grp GenericEntity {
   coords 511.959 7.385 12301.308
  }
 }
-$grp ParticleEffectEntity {
- {
-  coords 497.039 1.428 12333.286
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 522.517 1.428 12362.204
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 502.87 1.428 12330.076
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 491.886 1.783 12334.019
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 493.742 1.783 12323.342
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 517.354 1.428 12406.243
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 529.367 1.428 12400.737
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 498.635 1.428 12386.816
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 509.117 1.428 12336.575
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 508.728 1.428 12369.571
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 519.957 1.428 12381.509
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 496.505 1.428 12372.865
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 504.322 1.428 12373.484
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 499.555 1.428 12399.035
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 520.369 1.428 12404.593
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 497.768 1.428 12362.807
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 507.073 1.428 12401.499
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 508.58 1.428 12362.214
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 505.717 1.428 12320.987
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 507.668 1.428 12344.017
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 519.893 1.428 12326.716
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
- {
-  coords 518.369 1.428 12342.698
-  scale 3.46
-  EffectPath "{72422CA5430DA2D7}Particles/Enviroment/Water/Water_steam_01.ptc"
- }
-}
 SplineShapeEntity {
  coords 488.636 0.992 12361.487
  Points {
@@ -470,11 +358,11 @@ GenericEntity : "{013DD5713343455C}Prefabs/Particles/explosion_debris_Rock/dst_r
  components {
   MeshObject "{5C929B8B503EFEC0}" {
    Materials {
-    MaterialAssignClass "{6732BA80E8C4B421}" {
+    MaterialAssignClass "{67383C7141DDF5BC}" {
      SourceMaterial "StoneWall_01"
      AssignedMaterial "{A9A30D7C0EE90FA0}Terrains/Common/Water/River/CainWaterfallSurface_01.emat"
     }
-    MaterialAssignClass "{6732BA80E8C4B410}" {
+    MaterialAssignClass "{67383C7141DDF59A}" {
      SourceMaterial "StoneWall_01_MLOD"
      AssignedMaterial "{38F850160315AA95}Assets/Props/Agricultural/WaterTank_01/Data/WaterTank_01_V2_MLOD.emat"
     }
@@ -483,7 +371,7 @@ GenericEntity : "{013DD5713343455C}Prefabs/Particles/explosion_debris_Rock/dst_r
  }
  coords 524.503 -6.559 12413.706
  angles 1.943 89.311 69.677
- scale 99.603
+ scale 100
 }
 $grp SCR_IndestructibleEnvironmentalEntity : "{01ACC51FDECAD098}Prefabs/ARGH/Caves/ARGHCave_CORNER1.et" {
  {
@@ -706,54 +594,6 @@ $grp GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" 
   scale 0.997
  }
 }
-GenericEntity : "{4EF68238FE2FC26B}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_04.et" {
- coords 518.554 7.044 12305.813
- angles 0 80.979 0
- {
-  GenericEntity {
-   ID "5706BA96DB36C431"
-   coords -0.25 -0.027 1.781
-   {
-    GenericEntity {
-     ID "6692E02CD27D3EC3"
-     coords 0.098 0.994 0.017
-    }
-   }
-  }
-  GenericEntity {
-   ID "5706BA96DB36C434"
-   coords -1.005 -0.027 1.74
-  }
-  GenericEntity {
-   ID "58B2BAC0F7EA75C3"
-   coords 1.416 -0.017 0.902
-   angles 0 92.176 0
-   {
-    GenericEntity {
-     ID "56E09476C0EC798D"
-     components {
-      DL_LootSpawnComponent "{66B442257E6A201D}" {
-       Enabled 0
-      }
-     }
-    }
-   }
-  }
-  GenericEntity {
-   ID "5706BA96DB36C40A"
-   coords 0.36 -0.027 1.738
-  }
-  GenericEntity {
-   ID "5706BA96DB36C43F"
-   coords 0.187 -0.027 1.749
-  }
-  GenericEntity {
-   ID "5706BA96DB36C437"
-   coords 1.038 -0.017 -1.977
-   angles 0 89.909 0
-  }
- }
-}
 $grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
  {
   coords 507.844 -0.341 12384.572
@@ -778,9 +618,9 @@ $grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/
 }
 $grp SCR_DestructibleEntity : "{510AAC7765BE2F0B}Prefabs/Structures/Walls/Wooden/WoodenFence_04/WoodenFence_04_4m_Pole.et" {
  {
-  coords 492.42 189.733 12301.128
+  coords 492.387 189.733 12301.118
   angles 0 -16.718 0
-  scale 3.702
+  scale 3.85
  }
  {
   coords 486.438 189.045 12305.411
@@ -1025,7 +865,7 @@ $grp GenericEntity : "{8E2EC761EEED615A}Prefabs/ARGH/Signs/WARNING.et" {
  }
  {
   coords 524.476 2.176 12339.813
-  angles 0 29.559 0
+  angles 0 -9.033 0
  }
  {
   coords 493.388 2.914 12384.541
@@ -1170,14 +1010,6 @@ $grp SCR_IndestructibleEnvironmentalEntity : "{A7606C7E96A39B5D}Prefabs/Rocks/Gr
   coords 487.744 184.203 12328.924
   angles 19.096 127.723 -95.669
   scale 1.9
- }
-}
-$grp ParticleEffectEntity : "{A9B17C22B4099625}Prefabs/Particles/Water/Waterfall_mist.et" {
- {
-  coords 521.511 -0.417 12411.572
- }
- {
-  coords 509.752 -19.692 12361.387
  }
 }
 $grp SCR_ChimeraCharacter : "{B39C4B8E0885A29A}Prefabs/Characters/DE_Examples/DE_Trader_Starter.et" {

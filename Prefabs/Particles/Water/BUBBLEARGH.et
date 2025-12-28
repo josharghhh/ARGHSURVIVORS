@@ -1,0 +1,27 @@
+ParticleEffectEntity : "{F87BDCA400309DB2}Prefabs/Particles/EnvironmentParticle_Base.et" {
+ ID "6530AD13A4C2F9E4"
+ components {
+  SignalsManagerComponent "{673847E11E8E7FAF}" {
+  }
+  SoundComponent "{673847E11E8E7F92}" {
+   Filenames {
+    "{94D1A361FF97B00D}Sounds/Environment/Misc/Spring/Environment_SulphurLake_Spring.acp"
+   }
+  }
+ }
+ UseFrameEvent 1
+ EffectPath "{03A7DE78866DAC05}Particles/Enviroment/Water/ARGHBUBBLESwaater_01.ptc"
+ {
+  GenericEntity : "{B2D6B6D08B68242C}Prefabs/Sounds/Sources/SoundSource_Bubblesl_Medium.et" {
+   ID "673847ED748A3BCF"
+   components {
+    SoundComponent "{56B7086A4B90F246}" {
+     Filenames {
+      "{F7E5EF42E5535343}Sounds/Environment/Misc/Waterfall/BUBBLESEnvironment_SFXl_Large.acp"
+     }
+    }
+   }
+   coords 0 0 0
+  }
+ }
+}

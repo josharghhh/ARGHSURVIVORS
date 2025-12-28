@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F7E5EF42E5535343}Sounds/Environment/Misc/Waterfall/BUBBLESEnvironment_SFXl_Large.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}
