@@ -13,6 +13,9 @@ SCR_DestructibleBuildingEntity : "{4DF75B7B80E91836}Prefabs/Structures/Infrastru
     }
    }
   }
+  SCR_DestructibleBuildingComponent "{6650B44ABA836E58}" {
+   Enabled 0
+  }
  }
  {
   Building {

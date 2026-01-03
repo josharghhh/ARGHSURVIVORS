@@ -1,0 +1,36 @@
+SCR_DestructibleBuildingEntity : "{A4B690DEC3D39B11}Prefabs/Structures/Infrastructure/Naval/Sheds/BoatShed_01/BoatShed_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{506EDA9D46FC6C06}" {
+   Materials {
+    MaterialAssignClass "{684234B51A0F3BCB}" {
+     SourceMaterial "BoatShed_01_Ext"
+     AssignedMaterial "{46D45ADCC20CBC03}Assets/Structures/Infrastructure/Naval/Sheds/BoatShed_01/Data/BoatShed_01_Ext_Weathered_V2.emat"
+    }
+    MaterialAssignClass "{684234B51A0F3A3F}" {
+     SourceMaterial "BoatShed_01_MLOD"
+     AssignedMaterial "{553D6BB4B6F9454E}Assets/Structures/Infrastructure/Naval/Sheds/BoatShed_01/Data/BoatShed_01_weathered_V2_MLOD.emat"
+    }
+   }
+  }
+ }
+ {
+  GenericEntity : "{27E6A33EF99706A4}Prefabs/Structures/BuildingParts/Doors/Door_BoatShed_01_A_RIGHT_EXT_COV_B.et" {
+   ID "684234B51A0FDA9C"
+   components {
+    ActionsManagerComponent "{F32B667C3C823800}" {
+     Enabled 0
+    }
+    Hierarchy "{7642683606C70747}" {
+     Enabled 1
+     PivotID "Socket_door_01"
+     AutoTransform 1
+    }
+   }
+   coords 0 0 0
+  }
+  GenericEntity : "{832EA6ECA170FB2A}Prefabs/Structures/Infrastructure/Naval/Sheds/BoatShed_01/HouseAddons/BoatShed_01_floor.et" {
+   ID "684234B51A0FDA93"
+  }
+ }
+}

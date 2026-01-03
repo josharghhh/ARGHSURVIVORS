@@ -1,3 +1,85 @@
+$grp StaticModelEntity : "{09277B76FF010FCB}Prefabs/Structures/Infrastructure/Waterworks/Well_02/Well_02_blue.et" {
+ {
+  coords 492.116 186.417 12396.388
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 523.476 185.469 12355.005
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 529.342 184.581 12302.794
+  angles -0.158 -13.701 0.624
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 6078.72 0.24 7986.651
+  angles -0.596 84.211 -0.243
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 11097.253 0 10374.313
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 11933.059 -0.001 10650.485
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 3713.09 0 3765.615
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+ {
+  coords 2684.738 0 6959.993
+  angles 0.262 176.094 -0.588
+  {
+   GenericEntity : "{D5247F493225CA91}Prefabs/Props/Civilian/WateringCan_01.et" {
+    coords -0.17 0.411 0.42
+    angles 0 -23.412 0
+   }
+  }
+ }
+}
 GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
  coords 9274.56 3.174 12443.366
 }
@@ -155,6 +237,24 @@ $grp GenericEntity : "{C6EA723C0E2C52E7}Prefabs/Items/Core/DE_Item_Cash.et" {
  {
   coords 9274.93 3.272 12443.325
   angles 0 0 0
+ }
+}
+$grp GenericEntity : "{C9FD2230AF5AC2D8}Prefabs/Structures/Infrastructure/Waterworks/WellPump_01/WellPump_01_base.et" {
+ {
+  coords 11820.879 12.228 10755.834
+ }
+ {
+  coords 6215.944 37.139 7991.067
+ }
+ {
+  coords 8152.719 283.5 8576.829
+ }
+ {
+  coords 5974.381 2.437 8297.073
+ }
+ {
+  coords 3556.635 4.219 7902.257
+  angles 0 55.041 0
  }
 }
 SCR_DestructibleBuildingEntity : "{D424A3CD07F7A6F0}Prefabs/Structures/Houses/Village/House_Village_E_1I08/House_Village_E_1I08t.et" {

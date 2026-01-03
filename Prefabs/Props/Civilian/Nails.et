@@ -1,0 +1,7 @@
+GenericEntity {
+ ID "646639DE94635653"
+ components {
+  DL_LootSpawnComponent "{67387DF96FA77B7E}" {
+  }
+ }
+}

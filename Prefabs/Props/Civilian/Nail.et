@@ -1,0 +1,12 @@
+GenericEntity {
+ ID "65F74BD2237056F1"
+ components {
+  DL_LootSpawnComponent "{67387DF9786ECD43}" {
+  }
+  InventoryItemComponent "{65F74BD2EBA257F8}" {
+   Attributes SCR_ItemAttributeCollection "{65F74BD2DA553C8B}" {
+    m_bStackable 1
+   }
+  }
+ }
+}

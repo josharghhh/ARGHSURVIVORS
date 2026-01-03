@@ -1,0 +1,15 @@
+MatPBRBasic {
+ Color 1 1 1 1
+ Sort translucent
+ CastShadow 0
+ AlphaTest 0.028
+ AlphaMul 0.143
+ BlendMode AlphaBlend
+ RoughnessScale 1.5
+ MetalnessScale 0
+ BCRMap "{54C3D80507B2D396}Assets/Structures/Signs/Large/Data/hardwarestore.edds"
+ OpacityMap "{54C3D80507B2D396}Assets/Structures/Signs/Large/Data/hardwarestore.edds"
+ GlobalMapsUVTransform MatUVTransform "{5A0445722C806C62}" {
+  OffsetU -1
+ }
+}

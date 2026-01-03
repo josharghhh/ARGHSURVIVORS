@@ -48,7 +48,7 @@ SCR_DestructibleBuildingEntity : "{9B576CEAEDDCB4EA}Prefabs/Compositions/SignalH
  angles 0 -77.671 0
 }
 GenericEntity : "{F410E65512A3B79C}Prefabs/Compositions/MontfortCastle/MontfortCastle.et" {
- coords 8820.16 34.947 10392.547
+ coords 8801.032 35.448 10428.187
  angles 0 -79.034 0
  {
   $grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {

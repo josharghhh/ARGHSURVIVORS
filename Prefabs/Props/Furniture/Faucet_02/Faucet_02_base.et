@@ -1,0 +1,30 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/DestructibleMultiPhase_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  ActionsManagerComponent "{B2C3D4E5F60789A1}" {
+   ActionContexts {
+    UserActionContext "{B2C3D4E5F60789A2}" {
+     ContextName "Default"
+     Position PointInfo "{B2C3D4E5F60789A3}" {
+     }
+    }
+   }
+   additionalActions {
+    FM_DrinkWaterPlayerAction "{B2C3D4E5F60789A4}" {
+     ParentContextList {
+      "Default"
+     }
+     UIInfo UIInfo "{B2C3D4E5F60789A5}" {
+      Name "Drink Water"
+     }
+     Duration 3
+     "Sort Priority" -1
+     m_iWaterValue 0.25
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

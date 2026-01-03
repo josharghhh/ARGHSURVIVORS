@@ -1,0 +1,8 @@
+GenericEntity {
+ ID "670A032A04BE63EA"
+ components {
+  DL_LootSpawnComponent "{68467C8EC758239C}" {
+  }
+ }
+ coords 55.862 1 93.503
+}

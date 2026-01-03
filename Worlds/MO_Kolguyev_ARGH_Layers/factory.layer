@@ -7199,6 +7199,11 @@ $grp Tree : "{63EC570555671B9D}Prefabs/Vegetation/Tree/t_pinus_sylvestris/T_Pinu
  }
 }
 GenericEntity : "{67B5336A6D63CCA4}Prefabs/Props/Construction/PlankPile/PlankPile_01_Medium.et" {
+ components {
+  DL_LootSpawnComponent "{66B442257E6A201D}" {
+   Enabled 0
+  }
+ }
  coords 3451.202 4.853 9308.737
  angles 0 -0.198 0
 }

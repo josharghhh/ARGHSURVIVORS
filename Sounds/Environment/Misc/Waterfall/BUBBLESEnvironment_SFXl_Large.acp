@@ -82,7 +82,7 @@ AudioClass {
    id 4105
    name "SOUND_WATERFALL_LARGE_LP"
    version 5
-   tl 256 0
+   tl 256 -1.15
    ins {
     ConnectionsClass "con:0" {
      id 0
@@ -115,7 +115,7 @@ AudioClass {
    id 22539
    name "OutputState"
    version 4
-   tl 768 0
+   tl 768 -0.87
    res "{B764D803219C775E}Sounds/FinalMix.afm"
    ins {
     ConnectionsClass "con:79879" {
@@ -279,7 +279,7 @@ AudioClass {
    name "Waterfall Large"
    version 7
    tl -256 0
-   Volume -12
+   Volume -36
    Pitch -2
    "Loop count" 255
    "Infinite loop" 1

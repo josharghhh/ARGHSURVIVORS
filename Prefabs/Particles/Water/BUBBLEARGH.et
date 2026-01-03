@@ -16,8 +16,7 @@ ParticleEffectEntity : "{F87BDCA400309DB2}Prefabs/Particles/EnvironmentParticle_
    ID "673847ED748A3BCF"
    components {
     SoundComponent "{56B7086A4B90F246}" {
-     Filenames {
-      "{F7E5EF42E5535343}Sounds/Environment/Misc/Waterfall/BUBBLESEnvironment_SFXl_Large.acp"
+     Filenames +{
      }
     }
    }

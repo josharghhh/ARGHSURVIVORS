@@ -2701,6 +2701,31 @@ Bacon_622120A5448725E3_InfectedSpawnerEntity : "{91BA3EE6F6B3423A}622120A5448725
  m_bSpawnInfectedBomber 1
  m_fMinSpawnDelaySeconds 60
 }
+GameEnvironmentProbeEntity : "{94B6B47CDA125A62}Prefabs/Structures/Core/ProbeEnvCave_base.et" {
+ coords 1469.447 28.809 12529.67
+ Priority 6
+ Rendering 0x1a 0
+ LVReflectionBrightness 0.65
+ ReflectionColor 0 0 0 1
+ ReflectionDesaturation 0.43
+ LVDiffuseBrightness -20
+ DiffuseColor 0.0103 0.011 0.0118 1
+ DiffuseDesaturation 0.68
+ SkyDesaturation 0.6
+ EnableHDRModifications 1
+ VisiblePercentWhite 93
+ VisiblePercentBlack 99
+ {
+  ProbeVolume : "{CD5BB05FBEEBAE01}Prefabs/Structures/Core/ProbeVolume_Base.et" {
+   coords 39.16 0 4.773
+   angles 0 -11.052 0
+   Box BoundingVolume "{6842D415522F12E4}" {
+    Size 600 100 100
+   }
+   BoxReflection 1
+  }
+ }
+}
 $grp StaticModelEntity : "{DEFAB7E592F00F0A}Prefabs/Systems/FastTravel/TP_Action.et" {
  B_ACTION {
   components {

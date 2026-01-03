@@ -1,0 +1,175 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{6845057976844E7E}" {
+   Name "Metabolism_Overlay"
+   Slot FrameWidgetSlot "{6845057976844E56}" {
+    Anchor 0 1 0 1
+    OffsetLeft 0
+    PositionY -100
+    OffsetTop -100
+    SizeX 1920
+    OffsetRight -1920
+    SizeY 60
+    OffsetBottom 40
+    Alignment 0 0
+   }
+   {
+    HorizontalLayoutWidgetClass "{6845057976844E2B}" {
+     Name "Metabolism_Row"
+     Slot OverlayWidgetSlot "{6845057976844E1B}" {
+      HorizontalAlign 1
+      VerticalAlign 3
+     }
+     {
+      HorizontalLayoutWidgetClass "{6845057976844E14}" {
+       Name "Metabolism_WaterBlock"
+       Slot LayoutSlot "{6845057976844E01}" {
+        Padding 0 0 14 0
+       }
+       {
+        ImageWidgetClass "{6845057976844EFE}" {
+         Name "Metabolism_WaterIcon"
+         Slot LayoutSlot "{6845057976844EE8}" {
+          Padding 0 4 6 4
+         }
+         IsPixelPerfect 1
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Texture "{662B76D3A3A8D51D}Assets/Images/Metabolism/Icons/color_full/water.edds"
+         Size 50 50
+        }
+        TextWidgetClass "{6845057976844EC2}" {
+         Name "Metabolism_WaterText"
+         Slot LayoutSlot "{6845057976844EB9}" {
+          VerticalAlign 1
+          Padding 0 6 0 0
+         }
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Text "100%"
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{6845057976844EA8}" {
+       Name "Metabolism_FoodBlock"
+       Slot LayoutSlot "{6845057976844EA3}" {
+        Padding 0 0 14 0
+       }
+       {
+        ImageWidgetClass "{6845057976844EA6}" {
+         Name "Metabolism_FoodIcon"
+         Slot LayoutSlot "{6845057976844E9F}" {
+          Padding 0 4 6 4
+         }
+         IsPixelPerfect 1
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Texture "{84E081860ADD96F1}Assets/Images/Metabolism/Icons/color_full/food.edds"
+         Size 50 50
+        }
+        TextWidgetClass "{6845057976844E88}" {
+         Name "Metabolism_FoodText"
+         Slot LayoutSlot "{6845057976844E83}" {
+          HorizontalAlign 1
+          VerticalAlign 1
+          Padding 0 6 0 0
+         }
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Text "100%"
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{6845057976844E84}" {
+       Name "Metabolism_StaminaBlock"
+       Slot LayoutSlot "{6845057976844F7F}" {
+        Padding 0 0 14 0
+       }
+       {
+        ImageWidgetClass "{6845057976844F72}" {
+         Name "Metabolism_StaminaIcon"
+         Slot LayoutSlot "{6845057976844F75}" {
+          Padding 0 4 6 4
+         }
+         IsPixelPerfect 1
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Texture "{CBF4C5125BD91D41}Assets/Images/Metabolism/Icons/color_full/stamina.edds"
+         Size 50 50
+        }
+        TextWidgetClass "{6845057976844F61}" {
+         Name "Metabolism_StaminaText"
+         Slot LayoutSlot "{6845057976844F64}" {
+          VerticalAlign 1
+          Padding 0 6 0 0
+         }
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Text "100%"
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{6845057976844F5C}" {
+       Name "Metabolism_BloodBlock"
+       Slot LayoutSlot "{6845057976844F51}" {
+        Padding 0 0 14 0
+       }
+       {
+        ImageWidgetClass "{6845057976844F54}" {
+         Name "Metabolism_BloodIcon"
+         Slot LayoutSlot "{6845057976844F4F}" {
+          Padding 0 4 6 4
+         }
+         IsPixelPerfect 1
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Texture "{9796DBB023919592}Assets/Images/Metabolism/Icons/color_full/blood.edds"
+         Size 50 50
+        }
+        TextWidgetClass "{6845057976844F3A}" {
+         Name "Metabolism_BloodText"
+         Slot LayoutSlot "{6845057976844F3E}" {
+          VerticalAlign 1
+          Padding 0 6 0 0
+         }
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Text "100%"
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{6845057976844F30}" {
+       Name "Metabolism_HealthBlock"
+       Slot LayoutSlot "{6845057976844F35}" {
+        Padding 0 0 0 0
+       }
+       {
+        ImageWidgetClass "{6845057976844F2A}" {
+         Name "Metabolism_HealthIcon"
+         Slot LayoutSlot "{6845057976844F22}" {
+          Padding 0 4 6 4
+         }
+         IsPixelPerfect 1
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Texture "{EA8C4563A585B8BF}Assets/Images/Metabolism/Icons/color_full/health.edds"
+         Size 40 40
+        }
+        TextWidgetClass "{6845057976844F1F}" {
+         Name "Metabolism_HealthText"
+         Slot LayoutSlot "{6845057976844F1C}" {
+          VerticalAlign 1
+          Padding 0 6 0 0
+         }
+         Color 1 1 1 1
+         "Inherit Color" 1
+         Text "100%"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
