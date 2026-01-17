@@ -1,12 +1,13 @@
 // -----------------------------------------------------------------------------
-// ARGHSURVIVORS Persistence Serializers
+// ARGH_PersistenceSerializers.c
 // 
-// Purpose: Persist component state for survival gameplay mechanics.
-// Some serializers are stubs (no state to persist), others are fully functional.
-//
+// All persistence serializers for ARGHSURVIVORS addon.
+// Location: ARGH/Shared/Serializers/
+// 
 // REAL SERIALIZERS:
 //   - InventoryStorageManagerComponentSerializer: Saves/restores inventory contents
 //   - SCR_DamageManagerComponentSerializer: Saves/restores health state
+//   - ARGH_CharacterControllerMetabolismSerializer: Saves/restores metabolism state
 //
 // STUB SERIALIZERS: (No state to persist, just satisfy config references)
 //   - Player/AI components, editor components, etc.
@@ -20,6 +21,10 @@ class EntityPrefabPersistenceConfigRule : StubPersistenceRuleBase {}
 
 class SCR_CharacterSerializer : GenericEntitySerializer {}
 class SCR_VehicleSerializer : GenericEntitySerializer {}
+
+// -----------------------------------------------------------------------------
+// STUB SERIALIZERS
+// -----------------------------------------------------------------------------
 
 class ControlledByComponentSerializer : ScriptedComponentSerializer
 {
@@ -64,6 +69,76 @@ class SCR_AudioBlacklistComponentSerializer : ScriptedComponentSerializer
 }
 
 class FuelManagerComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_PrefabResourceLoadComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_ArmorManagerComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_AuthoritySwitcherComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_GameModePointComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_LightEditorManagerComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_MannedEditorComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_MarketVillageComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_PowerConsumerEditorComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_PowerSourceEditorComponentSerializer : ScriptedComponentSerializer
+{
+	override static typename GetTargetType() { return GenericComponent; }
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+}
+
+class SCR_TriggerEntitySerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
@@ -293,72 +368,48 @@ class SCR_DamageManagerComponentSerializer : ScriptedComponentSerializer
 	}
 }
 
-class SCR_PrefabResourceLoadComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+// -----------------------------------------------------------------------------
+// REAL SERIALIZER: ARGH_CharacterControllerMetabolismSerializer
+// 
+// Persists character metabolism state (hydration, energy).
+// Restores survival meter values on character load.
+// -----------------------------------------------------------------------------
 
-class SCR_ArmorManagerComponentSerializer : ScriptedComponentSerializer
+class ARGH_CharacterControllerMetabolismSerializer : ScriptedComponentSerializer
 {
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+	override static typename GetTargetType() { return SCR_CharacterControllerComponent; }
 
-class SCR_AuthoritySwitcherComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
+	{
+		SCR_CharacterControllerComponent ctrl = SCR_CharacterControllerComponent.Cast(component);
+		if (!ctrl)
+			return ESerializeResult.DEFAULT;
 
-class SCR_GameModePointComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+		context.WriteValue("metab_version", 1);
+		context.WriteValue("metab_hydration", ctrl.GetHydration());
+		context.WriteValue("metab_energy", ctrl.GetEnergy());
+		return ESerializeResult.OK;
+	}
 
-class SCR_LightEditorManagerComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
+	{
+		SCR_CharacterControllerComponent ctrl = SCR_CharacterControllerComponent.Cast(component);
+		if (!ctrl)
+			return true;
 
-class SCR_MannedEditorComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+		int version;
+		float hydration = 1.0;
+		float energy = 1.0;
 
-class SCR_MarketVillageComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
+		if (context.ReadValue("metab_version", version))
+		{
+			context.ReadValue("metab_hydration", hydration);
+			context.ReadValue("metab_energy", energy);
+			ctrl.SetMetabolismLoaded(true);
+		}
 
-class SCR_PowerConsumerEditorComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
-
-class SCR_PowerSourceEditorComponentSerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
-}
-
-class SCR_TriggerEntitySerializer : ScriptedComponentSerializer
-{
-	override static typename GetTargetType() { return GenericComponent; }
-	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
-	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
+		ctrl.SetHydration(hydration);
+		ctrl.SetEnergy(energy);
+		return true;
+	}
 }
