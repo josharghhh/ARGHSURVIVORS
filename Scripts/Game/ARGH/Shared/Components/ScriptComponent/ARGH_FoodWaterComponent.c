@@ -1,4 +1,15 @@
-// File: FM_FoodWaterComponent.c
+// -----------------------------------------------------------------------------
+// ARGH_FoodWaterComponent.c
+// 
+// Modded FM_FoodWaterComponent for survival metabolism integration.
+// Location: ARGH/Shared/Components/ScriptComponent/
+// 
+// Handles:
+//   - Food/drink item consumption
+//   - Energy and hydration restoration via RPC
+//   - Gadget activation and deletion after use
+// -----------------------------------------------------------------------------
+
 modded class FM_FoodWaterComponentClass
 {
 }
@@ -33,7 +44,9 @@ modded class FM_FoodWaterComponent
 		if (character)
 		{
 			SCR_CharacterControllerComponent charController = SCR_CharacterControllerComponent.Cast(character.GetCharacterController());
-			if (!charController || charController.GetLifeState() != ECharacterLifeState.ALIVE)
+			if (!charController)
+				return;
+			if (charController.GetLifeState() != ECharacterLifeState.ALIVE)
 				return;
 		}
 		

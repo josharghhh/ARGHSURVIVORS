@@ -505,10 +505,10 @@ class ARGH_SCR_AmbientFlyingVehicleSpawnPointComponent : SCR_AmbientVehicleSpawn
 					DebugDumpFlyingGroupTree(catalog.m_aGroups, true, "", false);
 				}
 
-				array<ref ARGH_AmbientFlyingVehicleSpawnRule> flat = {};
-				FlattenFlyingEnabledGroups(catalog.m_aGroups, flat, true);
-				return flat;
-			}
+			array<ref ARGH_AmbientFlyingVehicleSpawnRule> flat = {};
+			FlattenFlyingEnabledGroups(catalog.m_aGroups, flat, true);
+			return flat;
+		}
 
 		if (catalog.m_aVehicles && catalog.m_aVehicles.Count() > 0)
 			return catalog.m_aVehicles;

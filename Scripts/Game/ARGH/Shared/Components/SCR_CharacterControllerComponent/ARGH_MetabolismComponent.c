@@ -1,3 +1,16 @@
+// -----------------------------------------------------------------------------
+// ARGH_MetabolismComponent.c
+// 
+// Modded SCR_CharacterControllerComponent for survival metabolism system.
+// Location: ARGH/Shared/Components/SCR_CharacterControllerComponent/
+// 
+// Handles:
+//   - Hydration and energy tracking (server-authoritative)
+//   - Starvation/dehydration damage (server-only)
+//   - Health regeneration when fed/hydrated (server-only)
+//   - HUD updates (client-only via ARGH_MetabolismHUD)
+// -----------------------------------------------------------------------------
+
 [BaseContainerProps(configRoot: true)]
 class ARGH_MetabolismConfig : Managed
 {
@@ -72,7 +85,7 @@ modded class SCR_CharacterControllerComponent
     }
 
     // ==============================
-    // Metabolism Variables (Replicated)
+    // REPLICATED PROPERTIES
     // ==============================
     [RplProp()]
     private float m_fHydration = 1.0;
@@ -84,11 +97,14 @@ modded class SCR_CharacterControllerComponent
     [RplProp()]
     private bool m_bIsHungry = false;
 
+    // ==============================
+    // SERVER-ONLY VARIABLES
+    // ==============================
     private float m_fLastStamina = 0;
     private float m_fStaminaCheckTimer = 0;
     private bool m_bMetabolismLoaded = false;
 
-    // Drain/regen tuning (per second; UpdateMetabolism passes timeSlice in ms) — pulled from config
+    // Drain/regen tuning (per second; UpdateMetabolism passes timeSlice in ms)
     private float m_fBaseHydrationRate = 0.0100;
     private float m_fBaseEnergyRate = 0.0080;
     private float m_fSprintMultiplier = 2.0;
@@ -98,6 +114,9 @@ modded class SCR_CharacterControllerComponent
     private float m_fHealthRegenRate = 0.0100;
     private float m_fEmptyThreshold = 0.02;
 
+    // ==============================
+    // CLIENT-ONLY VARIABLES
+    // ==============================
     private Widget m_wStatusRoot;
     private Widget m_wStatusOverlay;
     private Widget m_wStatusRow;
@@ -186,12 +205,14 @@ modded class SCR_CharacterControllerComponent
     }
 
     // ==============================
-    // Main Metabolism Loop (Server + Owner)
+    // SERVER-ONLY: Main Metabolism Loop
     // ==============================
     override void UpdateMetabolism(float timeSlice)
     {
         // Always run on the authoritative side.
-        if (!characterOwner || !Replication.IsServer())
+        if (!characterOwner)
+            return;
+        if (!Replication.IsServer())
             return;
 
         float multiplier = 1.0;
@@ -214,10 +235,12 @@ modded class SCR_CharacterControllerComponent
 
     override bool CheckIsSprinting()
     {
-        if (!characterOwner) return false;
+        if (!characterOwner)
+            return false;
 
         SCR_CharacterStaminaComponent stamComponent = SCR_CharacterStaminaComponent.Cast(characterOwner.FindComponent(SCR_CharacterStaminaComponent));
-        if (!stamComponent) return false;
+        if (!stamComponent)
+            return false;
 
         float currentStamina = stamComponent.GetStamina();
         bool isSprinting = false;
@@ -262,10 +285,12 @@ modded class SCR_CharacterControllerComponent
 
     override void HandleStaminaState()
     {
-        if (!characterOwner) return;
+        if (!characterOwner)
+            return;
 
         SCR_CharacterStaminaComponent stamComponent = SCR_CharacterStaminaComponent.Cast(characterOwner.FindComponent(SCR_CharacterStaminaComponent));
-        if (!stamComponent) return;
+        if (!stamComponent)
+            return;
 
         float currentStamina = stamComponent.GetStamina();
 
@@ -281,21 +306,28 @@ modded class SCR_CharacterControllerComponent
     override void ApplyDamageFromDehydration(float timeSlice)
     {
         // Trigger damage when we're effectively empty.
-        if (!characterOwner || m_fHydration > m_fEmptyThreshold) return;
+        if (!characterOwner)
+            return;
+        if (m_fHydration > m_fEmptyThreshold)
+            return;
         ApplyMetabolicDamage(m_fDehydrationDamageRate, timeSlice);
     }
 
     override void ApplyDamageFromStarvation(float timeSlice)
     {
         // Trigger damage when we're effectively empty.
-        if (!characterOwner || m_fEnergy > m_fEmptyThreshold) return;
+        if (!characterOwner)
+            return;
+        if (m_fEnergy > m_fEmptyThreshold)
+            return;
         ApplyMetabolicDamage(m_fStarvationDamageRate, timeSlice);
     }
 
     override void ApplyMetabolicDamage(float damageRate, float timeSlice)
     {
         SCR_DamageManagerComponent dmgMgr = SCR_DamageManagerComponent.GetDamageManager(characterOwner);
-        if (!dmgMgr) return;
+        if (!dmgMgr)
+            return;
 
         // damageRate is per second; timeSlice is in ms
         float damage = damageRate * (timeSlice / 1000.0);
@@ -329,14 +361,19 @@ modded class SCR_CharacterControllerComponent
 
     override void HandleHealthRegeneration(float timeSlice)
     {
-        if (!characterOwner || m_fHydration <= 0 || m_fEnergy <= 0) return;
+        if (!characterOwner)
+            return;
+        if (m_fHydration <= 0 || m_fEnergy <= 0)
+            return;
 
         SCR_CharacterDamageManagerComponent dmgMgr = SCR_CharacterDamageManagerComponent.Cast(SCR_DamageManagerComponent.GetDamageManager(characterOwner));
-        if (!dmgMgr) return;
+        if (!dmgMgr)
+            return;
 
         float curHealth = dmgMgr.GetHealth();
         float maxHealth = dmgMgr.GetMaxHealth();
-        if (maxHealth <= 0 || curHealth >= maxHealth) return;
+        if (maxHealth <= 0 || curHealth >= maxHealth)
+            return;
 
         float regenAmount = m_fHealthRegenRate * (timeSlice / 1000.0);
         float newHealth = Math.Clamp(curHealth + regenAmount, 0.0, maxHealth);
@@ -345,7 +382,7 @@ modded class SCR_CharacterControllerComponent
     }
 
     // ==============================
-    // Getters and Setters
+    // PUBLIC API - Getters and Setters
     // ==============================
     override bool CanSprint() { return m_fHydration > 0 && m_fEnergy > 0; }
 
@@ -387,6 +424,9 @@ modded class SCR_CharacterControllerComponent
         Rpc(RPC_RequestEnergyChange, amount);
     }
 
+    // ==============================
+    // RPC DEFINITIONS
+    // ==============================
     [RplRpc(RplChannel.Reliable, RplRcver.Server)]
     protected void RPC_RequestHydrationChange(float amount)
     {
@@ -406,21 +446,21 @@ modded class SCR_CharacterControllerComponent
     override bool IsThirsty() { return m_bIsThirsty; }
     override bool IsHungry() { return m_bIsHungry; }
 
-    void SetHydration(float value)
+    override void SetHydration(float value)
     {
         m_fHydration = Math.Clamp(value, 0.0, 1.0);
         m_bIsThirsty = m_fHydration < 0.25;
     }
 
-    void SetEnergy(float value)
+    override void SetEnergy(float value)
     {
         m_fEnergy = Math.Clamp(value, 0.0, 1.0);
         m_bIsHungry = m_fEnergy < 0.1;
     }
 
-    void SetMetabolismLoaded(bool value)
+    override void SetMetabolismLoaded(bool loaded)
     {
-        m_bMetabolismLoaded = value;
+        m_bMetabolismLoaded = loaded;
     }
 
     // ==============================
@@ -432,12 +472,13 @@ modded class SCR_CharacterControllerComponent
     }
 
     // ==============================
-    // HUD - Local Client Only
+    // CLIENT-ONLY: HUD Management
     // ==============================
     override void ClearOrphanedWidgets()
     {
         WorkspaceWidget workspace = GetGame().GetWorkspace();
-        if (!workspace) return;
+        if (!workspace)
+            return;
 
         Widget child = workspace.GetChildren();
         while (child)
@@ -517,9 +558,13 @@ modded class SCR_CharacterControllerComponent
         {
             float currentStamina = stamComponent.GetStamina();
             if (currentStamina > 1.0)
+            {
                 staminaPercent = Math.Floor(currentStamina);
+            }
             else
+            {
                 staminaPercent = Math.Floor(currentStamina * 100);
+            }
         }
 
         int healthPercent = 0;
@@ -582,13 +627,21 @@ modded class SCR_CharacterControllerComponent
 
         int index = 4;
         if (percent >= 90)
+        {
             index = 0;
+        }
         else if (percent >= 75)
+        {
             index = 1;
+        }
         else if (percent >= 45)
+        {
             index = 2;
+        }
         else if (percent >= 20)
+        {
             index = 3;
+        }
 
         for (int i = 0; i < icons.Count(); i++)
         {
