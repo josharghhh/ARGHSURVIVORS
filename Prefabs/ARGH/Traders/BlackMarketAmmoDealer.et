@@ -1,0 +1,32 @@
+SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Ammo Dealer"
+   cardPayment 1
+   traderMargin 0.5
+   types 262966
+   modes AMMUNITION
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{E12126CDE731EED5}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_01.et"
+    }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{E9FBA343CD7A6869}Prefabs/Characters/Vests/Vest_TV102/variants/Vest_TV102_rifleman_EMR_3.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{D0BE9BC05C232757}Prefabs/Characters/WYQ_RandomizedLoadoutManager/WYQ_Randomized_Armored_Vest.et"
+    }
+    LoadoutSlotInfo HandWear {
+     Prefab "{E4C98F783EAB35FF}Prefabs/Characters/Handwear/Gloves_MechanixMpact/GRS_Fingerless_Gloves.et"
+    }
+    LoadoutSlotInfo NVS_NVGSlot {
+    }
+   }
+  }
+ }
+ coords 517.561 7.027 12303.216
+ angles 0 -10.807 0
+}

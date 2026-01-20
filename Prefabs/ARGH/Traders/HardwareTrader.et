@@ -1,0 +1,36 @@
+SCR_ChimeraCharacter : "{B39C4B8E0885A29A}Prefabs/Characters/DE_Examples/DE_Trader_Starter.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Hrdware Trader"
+   factionKey "US"
+   modes DEFAULT
+   itemWhitelist {
+    "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" "{D125E11C31A965AA}Prefabs/BaseBuilding/Storage/Safe/SafeBook.et" "{703F2DB693C60ABF}Prefabs/Props/Civilian/NewBasePlans.et" "{98772037608AC4D7}Prefabs/Props/Civilian/Nail.et" "{344BEBA1D2C8095C}Prefabs/Props/Civilian/Nails.et" "{06F1E252DC029B8C}Prefabs/Props/Civilian/Plank.et" "{9CAC68BA551417A4}Prefabs/Stuff/Axe/Axe.et" "{D5D3CC0E5FA82395}Prefabs/Saw/Saw.et"
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{7429DFF39CEF10BD}Prefabs/Characters/HeadGear/Hat_BallCap/Hat_ballcap_ATACS.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{52D2EEBAD7B55681}Prefabs/Uniforms/Tops/Tshirt/Tshirt_TrapstarBlack.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   ActionContexts {
+    UserActionContext "{520EA1D2F659CE17}" {
+     Radius 1
+    }
+    UserActionContext "{5A26F8E7B44B5FB6}" {
+     Radius 1.25
+    }
+   }
+  }
+ }
+ coords 490.834 7.385 12290.935
+ angles 0 85.427 0
+ scale 0.997
+}

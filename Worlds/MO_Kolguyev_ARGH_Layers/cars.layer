@@ -70,6 +70,24 @@ $grp Vehicle : "{62F69EF8F784A52B}Prefabs/Vehicles/Wheeled/ARGH_KART/HotDog_base
   coords 6440.237 30.706 3927.57
  }
 }
+$grp Vehicle : "{91C605C1DF2A6778}Prefabs/Vehicles/Wheeled/ARGH_KART/Hamburger.et" {
+ Hamburger3 {
+  coords 8291.56 29.969 6344.391
+  angles 0 105 0
+ }
+ Hamburger2 {
+  coords 7734.607 313.993 8079.839
+  angles 0 105 0
+ }
+ Hamburger1 {
+  coords 5922.998 43.922 7972.142
+  angles 0 105 0
+ }
+ Hamburger4 {
+  coords 6298.914 6.544 3231.242
+  angles 0 105 0
+ }
+}
 Vehicle OrangeKart1 : "{E5AD62CF0CA35887}Prefabs/Vehicles/Wheeled/ARGH_KART/OrangeKart2.et" {
  coords 7395.631 71.463 8746.107
  angles 0 105.463 0

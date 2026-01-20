@@ -1,0 +1,33 @@
+SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Gear and Wearable Dealer"
+   cardPayment 1
+   traderMargin 0.5
+   types 556160
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{0C5C33A79F921FE9}Prefabs/Characters/HeadGear/Hat_BallCap/Hat_ballcap_OD_backwards.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{9945D5435F12C370}Prefabs/Characters/Vests/Vest_M79GrenadeCarrier/Vest_M79GrenadeCarrier.et"
+    }
+    LoadoutSlotInfo HandWear {
+     Prefab "{1E991CD19C6F7659}Prefabs/Characters/Handwear/Gloves_MechanixMpact/Gloves_mpack_Brown.et"
+    }
+    LoadoutSlotInfo NVS_NVGSlot {
+    }
+    LoadoutSlotInfo Head {
+    }
+   }
+  }
+ }
+ coords 494.096 7.081 12304.851
+ angles 0 87.974 0
+}

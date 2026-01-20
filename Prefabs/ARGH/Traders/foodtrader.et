@@ -1,0 +1,39 @@
+SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
+ ID "520EC961A090B1EE"
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Food Trader"
+   cardPayment 1
+   traderMargin 0.5
+   types 0
+   itemWhitelist {
+    "{07DACEB908D3BA94}Prefabs/FoodDrink/Apple.et" "{872ADB5D62B35D43}Prefabs/FoodDrink/ArmyCrackers.et" "{B00F6699B5E40D29}Prefabs/FoodDrink/Cabbage.et" "{9145D72FF5EFC119}Prefabs/FoodDrink/CanteenSoviet.et" "{218E66B4534651E1}Prefabs/FoodDrink/CanteenUS.et" "{33B9574AD526D5AE}Prefabs/FoodDrink/Capsicum.et" "{7247A8706B43BC8C}Prefabs/FoodDrink/Cherry.et" "{2AE74C2A5647003D}Prefabs/FoodDrink/chipsExtraCheese.et" "{8B3A6788BF261FDA}Prefabs/FoodDrink/DryMeat.et" "{356AE47BFE19A47D}Prefabs/FoodDrink/EggMedium.et" "{0021D6AEE15D1D30}Prefabs/FoodDrink/EggSmall.et" "{D4D02A2479893CB7}Prefabs/FoodDrink/HoneyComb.et" "{4D55B4A53AC736A5}Prefabs/FoodDrink/Mango.et" "{0A13D9E72CF41133}Prefabs/FoodDrink/MRE.et" "{439A037A2A45E6CF}Prefabs/FoodDrink/Mushroom.et" "{610CFCE348C1782F}Prefabs/FoodDrink/Pear.et" "{43BDECFD73CE845A}Prefabs/FoodDrink/Plum.et" "{6EB3ACE174E7244B}Prefabs/FoodDrink/Potato.et" "{08291808B6FF2553}Prefabs/FoodDrink/Pumpkin.et" "{EB82B10E9C7D11A7}Prefabs/FoodDrink/Tomato.et"
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab ""
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{17DBD854BFF6CD8D}Prefabs/Characters/Uniforms/Shirt_Turtleneck_01/Shirt_Turtleneck_01_grey_Dirty.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{537FD11C135757AC}Prefabs/Characters/Uniforms/Pants_Trousers_01/Pants_Trousers_01_DarkGrey_Dirty.et"
+    }
+    LoadoutSlotInfo Back {
+    }
+    LoadoutSlotInfo Vest {
+    }
+    LoadoutSlotInfo HandWear {
+    }
+    LoadoutSlotInfo NVS_NVGSlot {
+    }
+    LoadoutSlotInfo Head {
+    }
+   }
+  }
+ }
+ coords 503.412 7.013 12311.984
+ angles 0 164.694 0
+}

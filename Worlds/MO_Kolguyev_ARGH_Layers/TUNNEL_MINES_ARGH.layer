@@ -9,11 +9,6 @@ $grp GenericEntity : "{1433D389FE2C6E0D}Prefabs/Systems/ARGH_VAULT.et" {
   angles 0 -12.554 0
   scale 0.071
  }
- FACTORY_VAULT {
-  coords 3389.927 0.356 9214.644
-  angles 0 72.528 0
-  scale 0.143
- }
  TUNNEL_VAULT {
   coords 3662.024 79.274 7667.813
   angles 0 -12.554 0
@@ -41,16 +36,6 @@ $grp StaticModelEntity : "{321EBB0282EB9AD3}Prefabs/Systems/FastTravel/TPl_Desti
   angles 0 6.5 0
   scale 0.01
  }
- FACTORY_DEST {
-  components {
-   MeshObject "{56ACD1C4DC78C87B}" {
-    Object ""
-   }
-  }
-  coords 3391.835 25.693 9212.409
-  angles 1.091 84.275 -1.645
-  scale 0.041
- }
  TUNNELEXIT_DEST {
   components {
    MeshObject "{56ACD1C4DC78C87B}" {
@@ -61,10 +46,6 @@ $grp StaticModelEntity : "{321EBB0282EB9AD3}Prefabs/Systems/FastTravel/TPl_Desti
   angles 0 6.5 0
   scale 0.01
  }
-}
-GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
- coords 3395.682 0.337 9216.988
- angles 0 -150.106 0
 }
 $grp GenericEntity : "{50E6B9A280033487}622120A5448725E3/Prefabs/Spawner/InfectedSpawner_AssemblyPoint.et" {
  {
@@ -88,10 +69,6 @@ $grp GenericEntity : "{50E6B9A280033487}622120A5448725E3/Prefabs/Spawner/Infecte
  {
   coords 1651.271 7.973 12564.543
  }
-}
-SCR_ChimeraCharacter : "{5C6F313FE2C931B5}Prefabs/Characters/DE_Examples/DE_Admin_Trader.et" {
- coords 3393.904 0.465 9216.964
- angles 0 162.161 0
 }
 $grp SCR_DestructibleBuildingEntity : "{6B51F7E1825B1162}MINES/ShaftEnding.et" {
  {
@@ -2770,28 +2747,6 @@ $grp StaticModelEntity : "{DEFAB7E592F00F0A}Prefabs/Systems/FastTravel/TP_Action
   coords 1301.174 187.871 12492.776
   angles 0 166.34 0
   scale 5.665
- }
- FACTORY_ACTION {
-  components {
-   MeshObject "{56ACD1C4DC78C87B}" {
-    Object ""
-   }
-   ActionsManagerComponent "{66E2552C476F85D3}" {
-    additionalActions {
-     FastTravelRandomAction "{66E2552C476F85CC}" {
-      UIInfo UIInfo "{66E2552C476F85C0}" {
-       Name "Tunnell Entrance (Factory)"
-      }
-      m_FastTravel_Destinations {
-       "B_DEST"
-      }
-     }
-    }
-   }
-  }
-  coords 3391.136 26.523 9213.91
-  angles 0 -104.217 0
-  scale 5.103
  }
  TUNNEL_ACTION {
   components {
