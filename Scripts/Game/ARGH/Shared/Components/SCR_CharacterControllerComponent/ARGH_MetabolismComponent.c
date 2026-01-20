@@ -194,7 +194,10 @@ modded class SCR_CharacterControllerComponent
         }
         else
         {
-            GetGame().GetCallqueue().Remove(UpdateMetabolism);
+            if (Replication.IsServer())
+            {
+                GetGame().GetCallqueue().Remove(UpdateMetabolism);
+            }
             
             if (IsOwner())
             {
@@ -446,19 +449,23 @@ modded class SCR_CharacterControllerComponent
     override bool IsThirsty() { return m_bIsThirsty; }
     override bool IsHungry() { return m_bIsHungry; }
 
-    override void SetHydration(float value)
+    void SetHydration(float value)
     {
         m_fHydration = Math.Clamp(value, 0.0, 1.0);
         m_bIsThirsty = m_fHydration < 0.25;
+        if (Replication.IsServer())
+            Replication.BumpMe();
     }
 
-    override void SetEnergy(float value)
+    void SetEnergy(float value)
     {
         m_fEnergy = Math.Clamp(value, 0.0, 1.0);
         m_bIsHungry = m_fEnergy < 0.1;
+        if (Replication.IsServer())
+            Replication.BumpMe();
     }
 
-    override void SetMetabolismLoaded(bool loaded)
+    void SetMetabolismLoaded(bool loaded)
     {
         m_bMetabolismLoaded = loaded;
     }

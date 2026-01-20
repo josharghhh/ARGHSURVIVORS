@@ -55,7 +55,7 @@ SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Buil
    }
   }
  }
- coords 58.591 0.001 29.809
+ coords 502.32 190.867 12294.531
  {
   $grp GenericEntity : "{A8FA561E6D07478B}Prefabs/Structures/BuildingParts/Doors/Door_PierShed_01_A_LEFT_EXT_COV_B.et" {
    {

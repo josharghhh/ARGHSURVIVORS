@@ -1,0 +1,5 @@
+SCR_DestructibleEntity : "{510AAC7765BE2F0B}Prefabs/Structures/Walls/Wooden/WoodenFence_04/WoodenFence_04_4m_Pole.et" {
+ coords 483.575 188.501 12308.126
+ angles 0 -16.718 0
+ scale 4.069
+}

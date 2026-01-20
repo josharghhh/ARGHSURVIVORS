@@ -251,6 +251,9 @@ $grp GenericEntity {
     Object "{042B93598F44BCB3}Cut from mod - barber/assets/Barber/Cut_station/wbread-cutstation.xob"
    }
    RigidBody "{6842D4080E72201C}" {
+    Active Active
+   }
+   RplComponent "{6868643BF161E8EF}" {
    }
   }
   coords 490.579 7.071 12300.595
@@ -1409,6 +1412,22 @@ SCR_DestructibleBuildingEntity : "{1EB7F56F2D294872}Prefabs/Structures/Infrastru
     }
    }
   }
+  GenericEntity {
+   ID "59B86300E7A5DD89"
+   components {
+    ActionsManagerComponent "{F32B667C3C823800}" {
+     Enabled 0
+    }
+   }
+  }
+  GenericEntity {
+   ID "59B86300E7A5DDB4"
+   components {
+    ActionsManagerComponent "{F32B667C3C823800}" {
+     Enabled 0
+    }
+   }
+  }
  }
 }
 $grp GenericEntity : "{2365CF3E9B7444E9}Prefabs/ARGH/Signs/ATMRIGHT.et" {
@@ -1591,12 +1610,12 @@ $grp SCR_DestructibleEntity : "{510AAC7765BE2F0B}Prefabs/Structures/Walls/Wooden
   scale 4.069
  }
  {
-  coords 478.847 190.057 12322.293
+  coords 478.863 190.058 12322.238
   angles 0 -16.718 0
   scale 4.069
  }
  {
-  coords 476.297 189.603 12322.132
+  coords 476.329 189.607 12322.024
   angles 0 -16.718 0
   scale 4.069
  }
@@ -2676,18 +2695,6 @@ GenericEntity : "{BCE07A58672955B9}Prefabs/Props/Civilian/Bucket_01.et" {
   }
  }
  coords 488.223 2.365 12309.1
-}
-$grp SCR_DestructibleEntity : "{C0760C6F3B2EB37A}Prefabs/ARGH/Signs/AFRAMESIGN_BASE.et" {
- {
-  coords 517.936 10.047 12306.729
-  angles -14.665 -10.819 1.081
-  scale 2.09
- }
- {
-  coords 514.714 10.104 12306.081
-  angles -14.665 -10.819 1.081
-  scale 2.09
- }
 }
 $grp GenericEntity : "{C1977A326F2AA011}Prefabs/Structures/Signs/Military/SignCheckpoint_01_stop.et" {
  {
