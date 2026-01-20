@@ -173,6 +173,7 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 {
 	// Serializer version for forward compatibility
 	protected static const int SERIALIZER_VERSION = 1;
+	protected static const int POST_LOAD_RECONCILE_DELAY_MS = 500;
 	
 	//------------------------------------------------------------------------------------------------
 	override static typename GetTargetType() 
@@ -262,6 +263,17 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 		if (!items || items.IsEmpty())
 			return true;
 		
+		// Clear any existing/loadout items so persistence doesn't stack duplicates on relog.
+		array<IEntity> existingItems();
+		invManager.GetItems(existingItems, EStoragePurpose.PURPOSE_ANY);
+		foreach (IEntity existingItem : existingItems)
+		{
+			if (!existingItem)
+				continue;
+			
+			SCR_EntityHelper.DeleteEntityAndChildren(existingItem);
+		}
+		
 		// Spawn items and insert into inventory
 		EntitySpawnParams params();
 		params.TransformMode = ETransformMode.WORLD;
@@ -305,7 +317,71 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 			}
 		}
 		
+		// Remove any late-added items (loadout/identity/etc.) that were not part of the saved inventory.
+		GetGame().GetCallqueue().CallLater(ReconcileInventoryAfterLoad, POST_LOAD_RECONCILE_DELAY_MS, false, invManager, items);
+		
 		return true;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	protected static void ReconcileInventoryAfterLoad(SCR_InventoryStorageManagerComponent invManager, array<ref ARGH_SerializedInventoryItem> desiredItems)
+	{
+		if (!invManager || !desiredItems)
+			return;
+		
+		map<string, int> desiredCounts = new map<string, int>();
+		foreach (ARGH_SerializedInventoryItem desired : desiredItems)
+		{
+			if (!desired || desired.m_sPrefabPath.IsEmpty())
+				continue;
+			
+			int desiredCount = desired.m_iQuantity;
+			if (desiredCount <= 0)
+				desiredCount = 1;
+			
+			int existingCount = 0;
+			if (desiredCounts.Find(desired.m_sPrefabPath, existingCount))
+				desiredCounts.Set(desired.m_sPrefabPath, existingCount + desiredCount);
+			else
+				desiredCounts.Set(desired.m_sPrefabPath, desiredCount);
+		}
+		
+		map<string, int> seenCounts = new map<string, int>();
+		array<IEntity> currentItems();
+		invManager.GetItems(currentItems, EStoragePurpose.PURPOSE_ANY);
+		
+		foreach (IEntity item : currentItems)
+		{
+			if (!item)
+				continue;
+			
+			EntityPrefabData prefabData = item.GetPrefabData();
+			if (!prefabData)
+				continue;
+			
+			string prefabPath = prefabData.GetPrefabName();
+			if (prefabPath.IsEmpty())
+				continue;
+			
+			int desiredCount = 0;
+			bool hasDesired = desiredCounts.Find(prefabPath, desiredCount);
+			if (!hasDesired)
+			{
+				SCR_EntityHelper.DeleteEntityAndChildren(item);
+				continue;
+			}
+			
+			int seenCount = 0;
+			seenCounts.Find(prefabPath, seenCount);
+			
+			if (seenCount >= desiredCount)
+			{
+				SCR_EntityHelper.DeleteEntityAndChildren(item);
+				continue;
+			}
+			
+			seenCounts.Set(prefabPath, seenCount + 1);
+		}
 	}
 }
 

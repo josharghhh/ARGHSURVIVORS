@@ -1,6 +1,9 @@
 GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
  ID "508AB2013EEE1E00"
  components {
+  Persistence "{64CAA9135F15F7D0}" {
+   Enabled 1
+  }
   DE_CashComponent "{670418B090C46931}" {
    value 50
   }
