@@ -1,0 +1,106 @@
+ARGH MODS – END USER LICENSE AGREEMENT (EULA)
+
+Last Updated: January 30th 2026
+
+This End User License Agreement (“Agreement”) governs the use of all ARGH Mods (“Mod” or “Mods”) created and published by joshargh (“Author”, “Creator”).
+
+By downloading, installing, accessing, or using this Mod, you agree to be bound by the terms of this Agreement.
+
+
+
+1. Ownership
+
+All Mods are the intellectual property of joshargh.
+This Agreement grants a limited license and does not transfer ownership.
+
+
+
+2. License Grant
+
+This Mod is licensed under Bohemia Interactive’s Arma Public License (APL), subject to the additional restrictions in this Agreement.
+
+You are permitted to:
+
+Use the Mod for personal and non-commercial gameplay
+
+Run the Mod on private or public servers in compliance with this Agreement
+
+Create derivative works, subject to Section 5
+
+
+
+3. ABSOLUTE PROHIBITION ON MONETIZATION
+
+ Under no circumstances may this Mod, or any portion of it, be used for monetization.
+
+This includes, but is not limited to:
+
+Paid access to servers
+
+Priority queues, reserved slots, or VIP features
+
+Donations, subscriptions, or financial benefits tied to gameplay access or advantages
+
+Indirect monetization, paywalls, or bundled commercial services
+
+This restriction applies regardless of modification status.
+
+Any violation immediately terminates this license.
+
+
+
+4. Redistribution
+
+You may not reupload or redistribute this Mod in original or modified form, including as part of mod packs or collections, without prior written permission from joshargh.
+
+Linking to the original Workshop page is permitted.
+
+
+
+5. Derivative Works
+
+Derivative works are permitted, provided that all of the following conditions are met:
+
+Derivative works must remain non-commercial
+
+They may not be monetized in any form
+
+They may not be reuploaded or publicly distributed without written permission from the Author
+
+All derivative works must provide clear credit to joshargh / ARGH Mods
+
+No attempt may be made to claim original authorship over any portion of the Mod
+
+Private server use and personal projects are allowed under these conditions.
+
+
+
+6. No Support Obligation
+
+This Mod is provided “AS IS”, without warranty or guarantee of support or future updates.
+
+
+
+7. Termination
+
+Any breach of this Agreement results in immediate and automatic termination of this license.
+
+Upon termination, all copies must be removed and use must cease immediately.
+
+
+
+8. Reservation of Rights
+
+All rights not expressly granted are reserved by joshargh.
+
+
+
+9. Acceptance
+
+By using this Mod, you confirm that you have read, understood, and agreed to this Agreement.
+
+
+
+© ARGH Mods – Created by joshargh
+
+All Rights Reserved

@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{9AEE90193DC1A534}Configs/EntityCatalog/ARGH_AmbientVehicles.conf"
+ Name "{3591F7AE19AE467A96E2ECD5B1836CF1}Configs/Systems/Persistence/Configuration/Storage/ARGH_StorageBox.conf"
  Configurations {
   CONFResourceClass PC {
   }

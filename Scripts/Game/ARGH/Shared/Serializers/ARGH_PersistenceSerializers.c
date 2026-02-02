@@ -169,6 +169,27 @@ class ARGH_SerializedInventoryItem
 	}
 }
 
+// -----------------------------------------------------------------------------
+// Helper: detect DE wallet item without hard dependency on LDL classes.
+// -----------------------------------------------------------------------------
+static const string ARGH_WALLET_PREFAB = "{8B27F7F5C3B8D0E1}Prefabs/Items/Core/LDL_Item_Wallet.et";
+
+static bool ARGH_IsWalletItem(IEntity item)
+{
+	if (!item)
+		return false;
+
+	EntityPrefabData prefabData = item.GetPrefabData();
+	if (!prefabData)
+		return false;
+
+	string prefabPath = prefabData.GetPrefabName();
+	if (prefabPath.IsEmpty())
+		return false;
+
+	return prefabPath == ARGH_WALLET_PREFAB;
+}
+
 class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 {
 	// Serializer version for forward compatibility
@@ -200,6 +221,9 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 		foreach (IEntity item : allItems)
 		{
 			if (!item)
+				continue;
+
+			if (ARGH_IsWalletItem(item))
 				continue;
 			
 			EntityPrefabData prefabData = item.GetPrefabData();
@@ -269,6 +293,9 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 		foreach (IEntity existingItem : existingItems)
 		{
 			if (!existingItem)
+				continue;
+
+			if (ARGH_IsWalletItem(existingItem))
 				continue;
 			
 			SCR_EntityHelper.DeleteEntityAndChildren(existingItem);
@@ -354,6 +381,9 @@ class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
 		{
 			if (!item)
 				continue;
+
+			if (ARGH_IsWalletItem(item))
+				continue;
 			
 			EntityPrefabData prefabData = item.GetPrefabData();
 			if (!prefabData)
@@ -414,10 +444,6 @@ class SCR_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		float healthScaled = dmgManager.GetHealthScaled();
 		float maxHealth = dmgManager.GetMaxHealth();
 		
-		// Only save if not at full health (optimization)
-		if (healthScaled >= 0.999)
-			return ESerializeResult.DEFAULT;
-		
 		// Write health data
 		context.WriteValue("dmg_version", SERIALIZER_VERSION);
 		context.WriteValue("dmg_health_scaled", healthScaled);
@@ -446,10 +472,220 @@ class SCR_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		// Clamp health to valid range
 		healthScaled = Math.Clamp(healthScaled, 0.0, 1.0);
 		
-		// Restore health state
-		if (healthScaled < 1.0)
+		// Restore health state (always set to avoid default reset)
+		dmgManager.SetHealthScaled(healthScaled);
+		
+		return true;
+	}
+}
+
+// ----------------------------------------------------------------------------- 
+// REAL SERIALIZER: BLD_DamageManagerComponentSerializer
+// 
+// Persists entity health state for basebuilding entities using BLD_DamageManagerComponent.
+// ----------------------------------------------------------------------------- 
+
+class BLD_DamageManagerComponentSerializer : ScriptedComponentSerializer
+{
+	// Serializer version for forward compatibility
+	protected static const int SERIALIZER_VERSION = 1;
+	
+	//------------------------------------------------------------------------------------------------
+	override static typename GetTargetType() 
+	{ 
+		return BLD_DamageManagerComponent; 
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
+	{
+		BLD_DamageManagerComponent dmgManager = BLD_DamageManagerComponent.Cast(component);
+		if (!dmgManager)
+			return ESerializeResult.DEFAULT;
+		
+		float healthScaled = dmgManager.GetHealthScaled();
+		float maxHealth = dmgManager.GetMaxHealth();
+		
+		context.WriteValue("dmg_version", SERIALIZER_VERSION);
+		context.WriteValue("dmg_health_scaled", healthScaled);
+		context.WriteValue("dmg_max_health", maxHealth);
+		
+		return ESerializeResult.OK;
+	}
+	
+	//------------------------------------------------------------------------------------------------
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
+	{
+		BLD_DamageManagerComponent dmgManager = BLD_DamageManagerComponent.Cast(component);
+		if (!dmgManager)
+			return true;
+		
+		int version = 0;
+		if (!context.ReadValue("dmg_version", version))
+			return true;
+		
+		float healthScaled = 1.0;
+		float maxHealth = 100.0;
+		
+		context.ReadValue("dmg_health_scaled", healthScaled);
+		context.ReadValue("dmg_max_health", maxHealth);
+		
+		healthScaled = Math.Clamp(healthScaled, 0.0, 1.0);
+		
+		dmgManager.SetHealthScaled(healthScaled);
+		
+		return true;
+	}
+}
+
+// -----------------------------------------------------------------------------
+// REAL SERIALIZER: ARGH_UniversalInventoryStorageSerializer
+//
+// Persists inventory contents for SCR_UniversalInventoryStorageComponent.
+// -----------------------------------------------------------------------------
+
+class ARGH_UniversalInventoryStorageSerializer : ScriptedComponentSerializer
+{
+	protected static const int SERIALIZER_VERSION = 1;
+	
+	override static typename GetTargetType() 
+	{ 
+		return SCR_UniversalInventoryStorageComponent; 
+	}
+	
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
+	{
+		SCR_UniversalInventoryStorageComponent storage = SCR_UniversalInventoryStorageComponent.Cast(component);
+		if (!storage)
+			return ESerializeResult.DEFAULT;
+		
+		array<IEntity> allItems();
+		storage.GetAll(allItems);
+		
+		if (allItems.IsEmpty())
+			return ESerializeResult.DEFAULT;
+		
+		array<ref ARGH_SerializedInventoryItem> items();
+		foreach (IEntity item : allItems)
 		{
-			dmgManager.SetHealthScaled(healthScaled);
+			if (!item)
+				continue;
+
+			if (ARGH_IsWalletItem(item))
+				continue;
+			
+			EntityPrefabData prefabData = item.GetPrefabData();
+			if (!prefabData)
+				continue;
+			
+			string prefabPath = prefabData.GetPrefabName();
+			if (prefabPath.IsEmpty())
+				continue;
+			
+			ARGH_SerializedInventoryItem entry();
+			entry.m_sPrefabPath = prefabPath;
+			entry.m_iQuantity = 1;
+			
+			SCR_DamageManagerComponent dmgManager = SCR_DamageManagerComponent.Cast(item.FindComponent(SCR_DamageManagerComponent));
+			if (dmgManager)
+			{
+				entry.m_bHasHealth = true;
+				entry.m_fHealthScaled = dmgManager.GetHealthScaled();
+			}
+			
+			items.Insert(entry);
+		}
+		
+		if (items.IsEmpty())
+			return ESerializeResult.DEFAULT;
+		
+		context.WriteValue("uinv_version", SERIALIZER_VERSION);
+		context.WriteValue("uinv_count", items.Count());
+		
+		bool prevTypeDiscrim = context.EnableTypeDiscriminator(false);
+		context.WriteValue("uinv_items", items);
+		context.EnableTypeDiscriminator(prevTypeDiscrim);
+		
+		return ESerializeResult.OK;
+	}
+	
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
+	{
+		SCR_UniversalInventoryStorageComponent storage = SCR_UniversalInventoryStorageComponent.Cast(component);
+		if (!storage)
+			return true;
+		
+		int version = 0;
+		if (!context.ReadValue("uinv_version", version))
+			return true;
+		
+		int itemCount = 0;
+		context.ReadValue("uinv_count", itemCount);
+		if (itemCount <= 0)
+			return true;
+		
+		array<ref ARGH_SerializedInventoryItem> items();
+		bool prevTypeDiscrim = context.EnableTypeDiscriminator(false);
+		context.ReadValue("uinv_items", items);
+		context.EnableTypeDiscriminator(prevTypeDiscrim);
+		
+		if (!items || items.IsEmpty())
+			return true;
+		
+		array<IEntity> existingItems();
+		storage.GetAll(existingItems);
+		foreach (IEntity existingItem : existingItems)
+		{
+			if (!existingItem)
+				continue;
+			SCR_EntityHelper.DeleteEntityAndChildren(existingItem);
+		}
+		
+		EntitySpawnParams params();
+		params.TransformMode = ETransformMode.WORLD;
+		params.Transform[3] = owner.GetOrigin();
+		
+		// SCR_UniversalInventoryStorageComponent supports direct slot insertion
+		
+		foreach (ARGH_SerializedInventoryItem entry : items)
+		{
+			if (!entry || entry.m_sPrefabPath.IsEmpty())
+				continue;
+			
+			Resource resource = Resource.Load(entry.m_sPrefabPath);
+			if (!resource || !resource.IsValid())
+			{
+				Print(string.Format("[ARGH] UniversalStorageSerializer: Failed to load prefab: %1", entry.m_sPrefabPath), LogLevel.WARNING);
+				continue;
+			}
+			
+			for (int i = 0; i < entry.m_iQuantity; i++)
+			{
+				IEntity spawnedItem = GetGame().SpawnEntityPrefab(resource, GetGame().GetWorld(), params);
+				if (!spawnedItem)
+					continue;
+				
+				if (entry.m_bHasHealth)
+				{
+					SCR_DamageManagerComponent dmgManager = SCR_DamageManagerComponent.Cast(spawnedItem.FindComponent(SCR_DamageManagerComponent));
+					if (dmgManager)
+					{
+						float clampedHealth = Math.Clamp(entry.m_fHealthScaled, 0.0, 1.0);
+						dmgManager.SetHealthScaled(clampedHealth);
+					}
+				}
+				
+				InventoryStorageSlot slot = storage.FindSuitableSlotForItem(spawnedItem);
+				if (slot)
+				{
+					slot.AttachEntity(spawnedItem);
+				}
+				else
+				{
+					SCR_EntityHelper.DeleteEntityAndChildren(spawnedItem);
+					Print(string.Format("[ARGH] UniversalStorageSerializer: Failed to insert item: %1", entry.m_sPrefabPath), LogLevel.WARNING);
+				}
+			}
 		}
 		
 		return true;

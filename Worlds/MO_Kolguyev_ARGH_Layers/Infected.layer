@@ -75,9 +75,6 @@ $grp GenericEntity : "{79FE7119DD4DEB12}622120A5448725E3/Prefabs/Systems/Ambient
   coords 5200 403.469 5200
  }
  {
-  coords 4190.473 402.244 5981.261
- }
- {
   coords 2456.487 19.965 5591.164
   angles -3.555 0.278 -4.476
   scale 4.066

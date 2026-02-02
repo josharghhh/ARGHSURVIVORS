@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{09DEECBA06A41850}Configs/EntityCatalog/INGAMEUSE_ARGH_AmbientVehicles.conf"
+ Name "{62C80F86AD0146CD8574BB72459059E0}Configs/Systems/Persistence/Configuration/Item/ARGH_BuildingItems.conf"
  Configurations {
   CONFResourceClass PC {
   }
