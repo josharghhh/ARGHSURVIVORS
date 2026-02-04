@@ -2425,27 +2425,6 @@ SCR_DestructibleBuildingEntity : "{AAB6D9EA8C84ED64}Prefabs/Structures/Infrastru
 }
 $grp GenericEntity : "{AC98FF880BD0F2C2}Prefabs/Props/Furniture/Chair_01/Chair_01_base.et" {
  {
-  coords 492.554 7.081 12302.674
-  angles 0 150 0
- }
- {
-  coords 491.811 7.081 12301.629
- }
- {
-  coords 491.374 7.081 12303.2
- }
- {
-  coords 492.643 7.068 12305.055
-  angles 0 -93.758 0
- }
- {
-  coords 492 7.068 12304.223
- }
- {
-  coords 491.564 7.068 12305.794
-  angles 0 178.294 0
- }
- {
   coords 495.845 7.049 12306.436
   angles 0 96.592 0
  }
@@ -2969,12 +2948,6 @@ GenericEntity : "{DAE1CE87112A53CA}Prefabs/Props/Industrial/CraneShovel_01/Crane
  scale 0.73
 }
 $grp GenericEntity : "{DB56577F30DE9129}Prefabs/Props/Furniture/Table_02.et" {
- {
-  coords 491.728 7.081 12302.422
- }
- {
-  coords 491.917 7.068 12305.016
- }
  {
   coords 494.896 7.049 12306.431
   angles 0 96.592 0

@@ -1,11 +1,8 @@
 GenericEntity {
  ID "6714ACAEFA483226"
  components {
-  SignalsManagerComponent "{6714ACAEFA48321E}" {
-  }
   SoundComponent "{6714ACAEFA483215}" {
-   Filenames {
-    "{F5150056033CF272}Sounds/Props/Fabric/Flag/Props_Flag.acp"
+   Filenames +{
    }
   }
   MeshObject "{6714ACAEFA48320B}" {
@@ -23,8 +20,6 @@ GenericEntity {
    StartNode "State Machine 1"
    AlwaysActive 1
    SimulateOnHeadless 0
-  }
-  Hierarchy "{6714ACAEFA483203}" {
   }
  }
  Flags 0x80003 0

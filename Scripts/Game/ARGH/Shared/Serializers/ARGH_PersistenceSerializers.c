@@ -146,6 +146,349 @@ class SCR_TriggerEntitySerializer : ScriptedComponentSerializer
 }
 
 // -----------------------------------------------------------------------------
+// REAL SERIALIZER: ARGH_BLD_OwnershipComponentSerializer
+//
+// Persists base-building ownership state (HP, code, door link, etc.).
+// -----------------------------------------------------------------------------
+class ARGH_BLD_OwnershipComponentSerializer : ScriptedComponentSerializer
+{
+	protected static const int SERIALIZER_VERSION = 2;
+	static ref array<ref EntityID> s_ARGH_QueryIds;
+
+	override static typename GetTargetType()
+	{
+		return BLD_OwnershipComponent;
+	}
+
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
+	{
+		BLD_OwnershipComponent own = BLD_OwnershipComponent.Cast(component);
+		if (!own)
+			return ESerializeResult.DEFAULT;
+
+		context.WriteValue("own_version", SERIALIZER_VERSION);
+		string ownerID = own.ownerID;
+		string myCode = own.myCode;
+		float partHP = own.partHP;
+		string myDoor = own.myDoor;
+		bool lockPicked = own.lockPicked;
+
+		// If a door entity exists, prefer its code/lock state (often set on the door itself).
+		PersistenceSystem persistence = PersistenceSystem.GetInstance();
+		if (persistence && !myDoor.IsEmpty())
+		{
+			IEntity doorEnt = IEntity.Cast(persistence.FindById(myDoor));
+			if (doorEnt)
+			{
+				BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
+				if (doorOwn)
+				{
+					if (!doorOwn.myCode.IsEmpty())
+						myCode = doorOwn.myCode;
+					lockPicked = doorOwn.lockPicked;
+				}
+			}
+		}
+
+		// If door link is missing, try to locate a nearby door entity and pull its state.
+		string doorPrefab = "";
+		vector doorPos = vector.Zero;
+		vector doorAng = vector.Zero;
+		if (persistence)
+		{
+			IEntity doorEnt;
+			if (!myDoor.IsEmpty())
+			{
+				doorEnt = IEntity.Cast(persistence.FindById(myDoor));
+			}
+			else
+			{
+				s_ARGH_QueryIds = new array<ref EntityID>();
+				GetGame().GetWorld().QueryEntitiesBySphere(owner.GetOrigin(), 1.0, ARGH_AddEntityToArray, null, EQueryEntitiesFlags.ALL);
+				foreach (EntityID entId : s_ARGH_QueryIds)
+				{
+					IEntity ent = GetGame().GetWorld().FindEntityByID(entId);
+					if (!ent || ent == owner)
+						continue;
+					if (!ent.FindComponent(DoorComponent))
+						continue;
+
+					doorEnt = ent;
+					break;
+				}
+			}
+
+			if (doorEnt)
+			{
+				BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
+				if (doorOwn)
+				{
+					if (!doorOwn.myCode.IsEmpty())
+						myCode = doorOwn.myCode;
+					lockPicked = doorOwn.lockPicked;
+				}
+
+				EntityPrefabData prefabData = doorEnt.GetPrefabData();
+				if (prefabData)
+					doorPrefab = prefabData.GetPrefabName();
+				doorPos = doorEnt.GetOrigin();
+				doorAng = doorEnt.GetAngles();
+
+				if (myDoor.IsEmpty())
+					myDoor = persistence.GetId(doorEnt);
+			}
+		}
+
+		context.WriteValue("ownerID", ownerID);
+		context.WriteValue("myCode", myCode);
+		context.WriteValue("partHP", partHP);
+		context.WriteValue("myDoor", myDoor);
+		context.WriteValue("lockPicked", lockPicked);
+
+		context.WriteValue("door_prefab", doorPrefab);
+		context.WriteValue("door_pos", doorPos);
+		context.WriteValue("door_ang", doorAng);
+
+		return ESerializeResult.OK;
+	}
+
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
+	{
+		BLD_OwnershipComponent own = BLD_OwnershipComponent.Cast(component);
+		if (!own)
+			return true;
+
+		int version = 0;
+		if (!context.ReadValue("own_version", version))
+			return true;
+
+		string ownerID = own.ownerID;
+		string myCode = own.myCode;
+		float partHP = own.partHP;
+		string myDoor = own.myDoor;
+		bool lockPicked = own.lockPicked;
+		string doorPrefab = "";
+		vector doorPos = vector.Zero;
+		vector doorAng = vector.Zero;
+
+		context.ReadValue("ownerID", ownerID);
+		context.ReadValue("myCode", myCode);
+		context.ReadValue("partHP", partHP);
+		context.ReadValue("myDoor", myDoor);
+		context.ReadValue("lockPicked", lockPicked);
+		context.ReadValue("door_prefab", doorPrefab);
+		context.ReadValue("door_pos", doorPos);
+		context.ReadValue("door_ang", doorAng);
+
+		own.SetOwnerID(ownerID);
+		own.SetCode(myCode);
+		own.SetPartHP(partHP);
+		own.SetDoor(myDoor);
+		own.SetPicked(lockPicked);
+
+		// Some door link/HP data gets reset during post-load init; re-apply shortly after.
+		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, myDoor, lockPicked, 8);
+		// If door entity wasn't persisted, respawn it from the doorway owner.
+		GetGame().GetCallqueue().CallLater(ARGH_EnsureDoorEntity, 350, false, own, ownerID, myCode, partHP, myDoor, lockPicked, doorPrefab, doorPos, doorAng);
+
+		return true;
+	}
+}
+
+static bool ARGH_AddEntityToArray(IEntity entity)
+{
+	if (!entity)
+		return true;
+	if (!ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
+		return true;
+	ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds.Insert(entity.GetID());
+	return true;
+}
+
+static IEntity ARGH_FindNearbyDoorEntity(IEntity owner, float radius = 2.0)
+{
+	if (!owner)
+		return null;
+
+	if (!ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
+		ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds = new array<ref EntityID>();
+	else
+		ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds.Clear();
+
+	GetGame().GetWorld().QueryEntitiesBySphere(owner.GetOrigin(), radius, ARGH_AddEntityToArray, null, EQueryEntitiesFlags.ALL);
+	foreach (EntityID entId : ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
+	{
+		IEntity ent = GetGame().GetWorld().FindEntityByID(entId);
+		if (!ent || ent == owner)
+			continue;
+		if (!ent.FindComponent(DoorComponent))
+			continue;
+
+		return ent;
+	}
+
+	return null;
+}
+
+static void ARGH_ReapplyOwnershipState(BLD_OwnershipComponent own, string ownerID, string myCode, float partHP, string myDoor, bool lockPicked, int attemptsLeft)
+{
+	if (!own)
+		return;
+
+	// Re-apply only if state doesn't match yet.
+	if (own.ownerID != ownerID)
+		own.SetOwnerID(ownerID);
+	if (own.myCode != myCode)
+		own.SetCode(myCode);
+	if (own.partHP != partHP)
+		own.SetPartHP(partHP);
+	if (own.myDoor != myDoor)
+		own.SetDoor(myDoor);
+	if (own.lockPicked != lockPicked)
+		own.SetPicked(lockPicked);
+
+	if (attemptsLeft > 0 && (own.partHP != partHP || own.myDoor != myDoor || own.myCode != myCode || own.lockPicked != lockPicked))
+	{
+		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, myDoor, lockPicked, attemptsLeft - 1);
+	}
+	else
+	{
+		// Keep door entity code/lock state in sync if it already exists.
+		if (!myDoor.IsEmpty())
+		{
+			PersistenceSystem persistence = PersistenceSystem.GetInstance();
+			if (persistence)
+			{
+				IEntity doorEnt = IEntity.Cast(persistence.FindById(myDoor));
+				if (doorEnt)
+				{
+					BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
+					if (doorOwn)
+					{
+						doorOwn.SetOwnerID(ownerID);
+						doorOwn.SetCode(myCode);
+						doorOwn.SetPartHP(partHP);
+						doorOwn.SetDoor(myDoor);
+						doorOwn.SetPicked(lockPicked);
+					}
+				}
+			}
+		}
+		else
+		{
+			// If no door link, try to locate a nearby door and apply state.
+			IEntity ownerEnt = own.GetOwner();
+			if (ownerEnt)
+			{
+				IEntity doorEnt = ARGH_FindNearbyDoorEntity(ownerEnt, 2.0);
+				if (doorEnt)
+				{
+					BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
+					if (doorOwn)
+					{
+						doorOwn.SetOwnerID(ownerID);
+						doorOwn.SetCode(myCode);
+						doorOwn.SetPartHP(partHP);
+						doorOwn.SetPicked(lockPicked);
+					}
+
+					PersistenceSystem persistence = PersistenceSystem.GetInstance();
+					if (persistence)
+					{
+						string doorId = persistence.GetId(doorEnt);
+						if (!doorId.IsEmpty())
+						{
+							own.SetDoor(doorId);
+							if (doorOwn)
+								doorOwn.SetDoor(doorId);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+static void ARGH_EnsureDoorEntity(BLD_OwnershipComponent own, string ownerID, string myCode, float partHP, string myDoor, bool lockPicked, string doorPrefab, vector doorPos, vector doorAng)
+{
+	if (!own)
+		return;
+
+	if (myDoor.IsEmpty())
+		return;
+
+	PersistenceSystem persistence = PersistenceSystem.GetInstance();
+	if (!persistence)
+		return;
+
+	IEntity existingDoor = IEntity.Cast(persistence.FindById(myDoor));
+	if (existingDoor)
+		return;
+
+	IEntity ownerEnt = own.GetOwner();
+	if (!ownerEnt)
+		return;
+
+	// Only spawn for doorway-type owners to avoid unintended spawns.
+	EntityPrefabData ownerPrefab = ownerEnt.GetPrefabData();
+	if (!ownerPrefab)
+		return;
+
+	string ownerPrefabPath = ownerPrefab.GetPrefabName();
+	if (ownerPrefabPath.IsEmpty() || !ownerPrefabPath.Contains("Doorway"))
+		return;
+
+	string doorPrefabPath = doorPrefab;
+	if (doorPrefabPath.IsEmpty())
+		doorPrefabPath = "{334DDCDFBE1A0C7A}Prefabs/Empty.et";
+
+	Resource doorRes = Resource.Load(doorPrefabPath);
+	if (!doorRes || !doorRes.IsValid())
+		return;
+
+	EntitySpawnParams params();
+	vector transform[4];
+	ownerEnt.GetTransform(transform);
+	if (doorPos != vector.Zero)
+	{
+		transform[3] = doorPos;
+		Math3D.AnglesToMatrix(doorAng, transform);
+	}
+	else
+	{
+		// Match doorway spawn offset used by BLD_PlacerComponent.
+		vector localOffset = {0.515, 0, 0};
+		vector worldOffset = ownerEnt.GetWorldTransformAxis(0) * localOffset[0]
+			+ ownerEnt.GetWorldTransformAxis(1) * localOffset[1]
+			+ ownerEnt.GetWorldTransformAxis(2) * localOffset[2];
+		transform[3] = ownerEnt.GetOrigin() + worldOffset;
+		// Keep doorway rotation as-is (avoid re-deriving from angles).
+	}
+	params.TransformMode = ETransformMode.WORLD;
+	params.Transform = transform;
+
+	IEntity newDoor = GetGame().SpawnEntityPrefab(doorRes, GetGame().GetWorld(), params);
+	if (!newDoor)
+		return;
+
+	// Copy ownership state to the new door entity.
+	BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(newDoor.FindComponent(BLD_OwnershipComponent));
+	if (doorOwn)
+	{
+		doorOwn.SetOwnerID(ownerID);
+		doorOwn.SetCode(myCode);
+		doorOwn.SetPartHP(partHP);
+		doorOwn.SetDoor(myDoor);
+		doorOwn.SetPicked(lockPicked);
+	}
+
+	// Update owner with the new door persistence ID if available.
+	string newDoorId = persistence.GetId(newDoor);
+	if (!newDoorId.IsEmpty())
+		own.SetDoor(newDoorId);
+}
+
+// -----------------------------------------------------------------------------
 // REAL SERIALIZER: InventoryStorageManagerComponentSerializer
 // 
 // Persists inventory contents by saving prefab paths and recreating items.
@@ -173,6 +516,7 @@ class ARGH_SerializedInventoryItem
 // Helper: detect DE wallet item without hard dependency on LDL classes.
 // -----------------------------------------------------------------------------
 static const string ARGH_WALLET_PREFAB = "{8B27F7F5C3B8D0E1}Prefabs/Items/Core/LDL_Item_Wallet.et";
+static const string ARGH_STORAGE_BOX_PREFAB = "{B1429602172906BC}Prefabs/Props/Civilian/StorageBox.et";
 
 static bool ARGH_IsWalletItem(IEntity item)
 {
@@ -188,6 +532,148 @@ static bool ARGH_IsWalletItem(IEntity item)
 		return false;
 
 	return prefabPath == ARGH_WALLET_PREFAB;
+}
+
+static bool ARGH_IsStorageBoxPrefab(IEntity owner)
+{
+	if (!owner)
+		return false;
+
+	EntityPrefabData prefabData = owner.GetPrefabData();
+	if (!prefabData)
+		return false;
+
+	string prefabPath = prefabData.GetPrefabName();
+	if (prefabPath.IsEmpty())
+		return false;
+
+	return prefabPath == ARGH_STORAGE_BOX_PREFAB;
+}
+
+// -------------------------------------------------------------------------
+// Helper: re-apply health after other components finish initializing.
+// -------------------------------------------------------------------------
+static void ARGH_TryApplySCRHealth(IEntity owner, float healthScaled, int attemptsLeft)
+{
+	if (!owner)
+		return;
+
+	SCR_DamageManagerComponent dmgManager = SCR_DamageManagerComponent.Cast(owner.FindComponent(SCR_DamageManagerComponent));
+	if (!dmgManager)
+		return;
+
+	float maxHealth = dmgManager.GetMaxHealth();
+	if (maxHealth <= 0.0 && attemptsLeft > 0)
+	{
+		GetGame().GetCallqueue().CallLater(ARGH_TryApplySCRHealth, 200, false, owner, healthScaled, attemptsLeft - 1);
+		return;
+	}
+
+	dmgManager.SetHealthScaled(Math.Clamp(healthScaled, 0.0, 1.0));
+}
+
+static void ARGH_ApplySCRHealthLater(IEntity owner, float healthScaled, int delayMs = 200, int attempts = 8)
+{
+	if (!owner)
+		return;
+
+	GetGame().GetCallqueue().CallLater(ARGH_TryApplySCRHealth, delayMs, false, owner, healthScaled, attempts);
+}
+
+static void ARGH_TryApplyBLDHealth(IEntity owner, float healthScaled, int attemptsLeft)
+{
+	if (!owner)
+		return;
+
+	BLD_DamageManagerComponent dmgManager = BLD_DamageManagerComponent.Cast(owner.FindComponent(BLD_DamageManagerComponent));
+	if (!dmgManager)
+		return;
+
+	float maxHealth = dmgManager.GetMaxHealth();
+	if (maxHealth <= 0.0 && attemptsLeft > 0)
+	{
+		GetGame().GetCallqueue().CallLater(ARGH_TryApplyBLDHealth, 200, false, owner, healthScaled, attemptsLeft - 1);
+		return;
+	}
+
+	dmgManager.SetHealthScaled(Math.Clamp(healthScaled, 0.0, 1.0));
+}
+
+static void ARGH_ApplyBLDHealthLater(IEntity owner, float healthScaled, int delayMs = 200, int attempts = 8)
+{
+	if (!owner)
+		return;
+
+	GetGame().GetCallqueue().CallLater(ARGH_TryApplyBLDHealth, delayMs, false, owner, healthScaled, attempts);
+}
+
+// -------------------------------------------------------------------------
+// Helpers: find damage components on entity or its prefab children.
+// -------------------------------------------------------------------------
+static SCR_DamageManagerComponent ARGH_FindSCRDamage(IEntity root, out IEntity compOwner)
+{
+	compOwner = null;
+	if (!root)
+		return null;
+
+	array<IEntity> stack = {};
+	stack.Insert(root);
+
+	for (int i = 0; i < stack.Count(); i++)
+	{
+		IEntity ent = stack[i];
+		if (!ent)
+			continue;
+
+		SCR_DamageManagerComponent scr = SCR_DamageManagerComponent.Cast(ent.FindComponent(SCR_DamageManagerComponent));
+		if (scr)
+		{
+			compOwner = ent;
+			return scr;
+		}
+
+		IEntity child = ent.GetChildren();
+		while (child)
+		{
+			stack.Insert(child);
+			child = child.GetSibling();
+		}
+	}
+
+	return null;
+}
+
+static BLD_DamageManagerComponent ARGH_FindBLDDamage(IEntity root, out IEntity compOwner)
+{
+	compOwner = null;
+	if (!root)
+		return null;
+
+	array<IEntity> stack = {};
+	stack.Insert(root);
+
+	for (int i = 0; i < stack.Count(); i++)
+	{
+		IEntity ent = stack[i];
+		if (!ent)
+			continue;
+
+		BLD_DamageManagerComponent bld = BLD_DamageManagerComponent.Cast(ent.FindComponent(BLD_DamageManagerComponent));
+		if (bld)
+		{
+			compOwner = ent;
+			return bld;
+		}
+
+		IEntity child = ent.GetChildren();
+		while (child)
+		{
+			stack.Insert(child);
+			child = child.GetSibling();
+		}
+	}
+
+	return null;
 }
 
 class InventoryStorageManagerComponentSerializer : ScriptedComponentSerializer
@@ -461,7 +947,12 @@ class SCR_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		
 		int version = 0;
 		if (!context.ReadValue("dmg_version", version))
+		{
+			// Storage box: ensure valid HP even if no save data exists yet.
+			if (ARGH_IsStorageBoxPrefab(owner))
+				dmgManager.SetHealthScaled(1.0);
 			return true; // No saved data
+		}
 		
 		float healthScaled = 1.0;
 		float maxHealth = 100.0;
@@ -471,9 +962,21 @@ class SCR_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		
 		// Clamp health to valid range
 		healthScaled = Math.Clamp(healthScaled, 0.0, 1.0);
+
+		// Storage box: only fix invalid data (e.g., missing max health), don't heal real damage
+		if (ARGH_IsStorageBoxPrefab(owner) && maxHealth <= 0.0)
+		{
+			maxHealth = 100.0;
+			if (healthScaled <= 0.0)
+				healthScaled = 1.0;
+		}
 		
 		// Restore health state (always set to avoid default reset)
 		dmgManager.SetHealthScaled(healthScaled);
+		
+		// Some base-building entities reinitialize health after load. Re-apply for storage box.
+		if (ARGH_IsStorageBoxPrefab(owner))
+			ARGH_ApplySCRHealthLater(owner, healthScaled, 200, 10);
 		
 		return true;
 	}
@@ -522,7 +1025,12 @@ class BLD_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		
 		int version = 0;
 		if (!context.ReadValue("dmg_version", version))
+		{
+			// Storage box: ensure valid HP even if no save data exists yet.
+			if (ARGH_IsStorageBoxPrefab(owner))
+				dmgManager.SetHealthScaled(1.0);
 			return true;
+		}
 		
 		float healthScaled = 1.0;
 		float maxHealth = 100.0;
@@ -531,9 +1039,108 @@ class BLD_DamageManagerComponentSerializer : ScriptedComponentSerializer
 		context.ReadValue("dmg_max_health", maxHealth);
 		
 		healthScaled = Math.Clamp(healthScaled, 0.0, 1.0);
+
+		// Storage box: only fix invalid data (e.g., missing max health), don't heal real damage
+		if (ARGH_IsStorageBoxPrefab(owner) && maxHealth <= 0.0)
+		{
+			maxHealth = 100.0;
+			if (healthScaled <= 0.0)
+				healthScaled = 1.0;
+		}
 		
 		dmgManager.SetHealthScaled(healthScaled);
 		
+		// Base-building entities may reset health after load. Re-apply shortly after.
+		ARGH_ApplyBLDHealthLater(owner, healthScaled, 200, 10);
+		
+		return true;
+	}
+}
+
+// ----------------------------------------------------------------------------- 
+// REAL SERIALIZER: ARGH_EditableEntityDamageSerializer
+// 
+// Persists health for editable entities (base building, storage) even when
+// damage components live on prefab children.
+// ----------------------------------------------------------------------------- 
+
+class ARGH_EditableEntityDamageSerializer : ScriptedComponentSerializer
+{
+	protected static const int SERIALIZER_VERSION = 1;
+	protected static const int TYPE_BLD = 1;
+	protected static const int TYPE_SCR = 2;
+
+	override static typename GetTargetType() 
+	{ 
+		return SCR_EditableEntityComponent; 
+	}
+
+	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
+	{
+		if (!owner)
+			return ESerializeResult.DEFAULT;
+
+		IEntity dmgOwner;
+		BLD_DamageManagerComponent bld = ARGH_FindBLDDamage(owner, dmgOwner);
+		if (bld)
+		{
+			context.WriteValue("edmg_version", SERIALIZER_VERSION);
+			context.WriteValue("edmg_type", TYPE_BLD);
+			context.WriteValue("edmg_health_scaled", bld.GetHealthScaled());
+			return ESerializeResult.OK;
+		}
+
+		SCR_DamageManagerComponent scr = ARGH_FindSCRDamage(owner, dmgOwner);
+		if (scr)
+		{
+			context.WriteValue("edmg_version", SERIALIZER_VERSION);
+			context.WriteValue("edmg_type", TYPE_SCR);
+			context.WriteValue("edmg_health_scaled", scr.GetHealthScaled());
+			return ESerializeResult.OK;
+		}
+
+		return ESerializeResult.DEFAULT;
+	}
+
+	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
+	{
+		if (!owner)
+			return true;
+
+		int version = 0;
+		if (!context.ReadValue("edmg_version", version))
+			return true;
+
+		int dmgType = 0;
+		float healthScaled = 1.0;
+
+		context.ReadValue("edmg_type", dmgType);
+		context.ReadValue("edmg_health_scaled", healthScaled);
+		healthScaled = Math.Clamp(healthScaled, 0.0, 1.0);
+
+		IEntity dmgOwner;
+		if (dmgType == TYPE_BLD)
+		{
+			BLD_DamageManagerComponent bld = ARGH_FindBLDDamage(owner, dmgOwner);
+			if (bld)
+			{
+				bld.SetHealthScaled(healthScaled);
+				ARGH_ApplyBLDHealthLater(dmgOwner, healthScaled, 200, 10);
+			}
+			return true;
+		}
+
+		if (dmgType == TYPE_SCR)
+		{
+			SCR_DamageManagerComponent scr = ARGH_FindSCRDamage(owner, dmgOwner);
+			if (scr)
+			{
+				scr.SetHealthScaled(healthScaled);
+				ARGH_ApplySCRHealthLater(dmgOwner, healthScaled, 200, 10);
+			}
+			return true;
+		}
+
 		return true;
 	}
 }

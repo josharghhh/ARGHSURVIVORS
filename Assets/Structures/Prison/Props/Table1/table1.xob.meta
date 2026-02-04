@@ -1,0 +1,70 @@
+MetaFileClass {
+ Name "{4C7A3158F1B92B74}Assets/Structures/Prison/Props/Table1/table1.xob"
+ Configurations {
+  FBXResourceClass PC {
+   ExportSkinning 1
+   MaterialAssigns {
+    MaterialAssignClass "{688494A11AEAB1DE}" {
+     SourceMaterial "Physically_Based"
+     AssignedMaterial "{F32A88F45D949266}Assets/Structures/Prison/Props/Table1/Data/Physically_Based.emat"
+    }
+    MaterialAssignClass "{688494A11AEAB1C8}" {
+     SourceMaterial "Physically_Based_(1)"
+     AssignedMaterial "{06C7A731F1A479B0}Assets/Structures/Prison/Props/Table1/Data/Physically_Based_(1).emat"
+    }
+    MaterialAssignClass "{688494A11AEAB1C1}" {
+     SourceMaterial "Material_9"
+     AssignedMaterial "{5492DEC2318CBEEE}Assets/Structures/Prison/Props/Table1/Data/Material_9.emat"
+    }
+    MaterialAssignClass "{688494A11AEAB1C3}" {
+     SourceMaterial "Physically_Based_(2)"
+     AssignedMaterial "{0C62F77C47B48A37}Assets/Structures/Prison/Props/Table1/Data/Physically_Based_(2).emat"
+    }
+   }
+   MeshParams {
+    MeshParam Object_1 {
+    }
+    MeshParam Object_10 {
+    }
+    MeshParam Object_11 {
+    }
+    MeshParam Object_2 {
+    }
+    MeshParam Object_3 {
+    }
+    MeshParam Object_4 {
+    }
+    MeshParam Object_5 {
+    }
+    MeshParam Object_6 {
+    }
+    MeshParam Object_7 {
+    }
+    MeshParam Object_8 {
+    }
+   }
+   Common TXOCommonClass "{688494A11BBC2732}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_ONE : PC {
+   Common TXOCommonClass "{688494A11BBC4C45}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+   Common TXOCommonClass "{688494A11BBFAB6F}" : "{DD9F02115C764647}Configs/System/ResourceTypes/XBOX_SERIES/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS4 : PC {
+   Common TXOCommonClass "{688494A11BBF9DFE}" : "{53EC476BC921D99A}Configs/System/ResourceTypes/PS4/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass PS5 : PC {
+   Common TXOCommonClass "{688494A11BBF9D4C}" : "{F62AA8E7B8EA9D26}Configs/System/ResourceTypes/PS5/MeshObjectCommon.conf" {
+   }
+  }
+  FBXResourceClass HEADLESS : PC {
+   Common TXOCommonClass "{688494A11BBF9C12}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
+   }
+  }
+ }
+}

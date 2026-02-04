@@ -1,3 +1,16 @@
+GenericEntity {
+ components {
+  MeshObject "{688494A1859D77AC}" {
+   Object "{4C7A3158F1B92B74}Assets/Structures/Prison/Props/Table1/table1.xob"
+  }
+  RigidBody "{688494AC78B11163}" {
+   Active Active
+  }
+ }
+ coords 491.707 7.073 12305.014
+ angles 0 90 0
+ scale 0.537
+}
 SCR_DestructibleBuildingEntity : "{574F2B4AD0C9ECFA}Prefabs/MP/Modes/Plain/VehicleDealer_Full.et" {
  coords 4277.308 0 5805.717
  angles 0 61.175 0

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{5492DEC2318CBEEE}Assets/Structures/Prison/Props/Table1/Data/Material_9.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

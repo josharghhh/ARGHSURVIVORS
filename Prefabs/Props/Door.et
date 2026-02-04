@@ -1,0 +1,17 @@
+GenericEntity {
+ ID "64503459465294BF"
+ components {
+  MeshObject "{645034592AF7E414}" {
+   Materials {
+    MaterialAssignClass "{68880A6446FABD7F}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{9DACC935EBCA91FF}Props/Door.emat"
+    }
+    MaterialAssignClass "{68880A6446FABD6A}" {
+     SourceMaterial "door"
+     AssignedMaterial "{9DACC935EBCA91FF}Props/Door.emat"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{C18C3A3C7D4248D3}Assets/Structures/Prison/Props/Table1/top_BCR.edds"
+ NMOMap "{F95481AEA4351A4D}Assets/Structures/Prison/Props/Table1/top_NMO.edds"
+}

@@ -1,0 +1,449 @@
+FrameWidgetClass {
+ {
+  ImageWidgetClass "{68884E080326A9AC}" {
+   Name "Image0"
+   Slot FrameWidgetSlot "{68884E080326A9DA}" {
+    PositionX 889.775
+    OffsetLeft 889.775
+    PositionY 99.319
+    OffsetTop 99.319
+    SizeX 549.885
+    OffsetRight -1439.66
+    SizeY 927.481
+    OffsetBottom -1026.8
+   }
+   Texture "{8B1E5CC26EA55970}Assets/Images/UI/UIFINAL.edds"
+   Size 1024 1536
+  }
+  PanelWidgetClass "{645979A60EC86D20}" {
+   Prefab "{645979A60EC86D20}"
+   Slot FrameWidgetSlot "{645979A60EC86D05}" {
+    PositionX 915.951
+    OffsetLeft 915.951
+    PositionY 183.043
+    OffsetTop 183.043
+    SizeX 488.599
+    OffsetRight -1404.55
+    SizeY 558.4
+    OffsetBottom -741.443
+   }
+   Color 1 1 1 0
+   "Inherit Color" 1
+   {
+    PanelWidgetClass "{645979A6CEA58E0B}" {
+     Prefab "{645979A6CEA58E0B}"
+     Slot FrameWidgetSlot "{645979A6CEA58E16}" {
+      PositionX 84.353
+      OffsetLeft 84.353
+      PositionY 76.847
+      OffsetTop 76.847
+      SizeX 325.332
+      OffsetRight -409.685
+      SizeY 77.374
+      OffsetBottom -154.221
+     }
+    }
+    TextWidgetClass "{645979A68CE0DC2C}" {
+     Prefab "{645979A68CE0DC2C}"
+     Slot FrameWidgetSlot "{645979A68CE0DC3F}" {
+      PositionX 84.784
+      OffsetLeft 84.784
+      PositionY 77.384
+      OffsetTop 77.384
+      SizeX 325.107
+      OffsetRight -409.891
+      SizeY 77.203
+      OffsetBottom -154.587
+     }
+    }
+    ButtonWidgetClass "{645979A637F3B093}" {
+     Prefab "{645979A637F3B093}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 337.43
+      OffsetLeft 337.43
+      PositionY 481.117
+      OffsetTop 481.117
+      SizeX 80.95
+      OffsetRight -418.38
+      SizeY 77.264
+      OffsetBottom -558.381
+     }
+     Color 1 1 1 0
+     {
+      RichTextWidgetClass "{645979A63BF14A0F}" {
+       Prefab "{645979A63BF14A0F}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5B4D95D41}" {
+     Prefab "{645979A5B4D95D41}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 160.456
+      OffsetLeft 160.456
+      PositionY 420.609
+      OffsetTop 420.609
+      SizeX 174.811
+      OffsetRight -335.267
+      SizeY 67.361
+      OffsetBottom -487.97
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     components {
+      SCR_ButtonTextComponent "{645A46E74755B4F4}" {
+       Enabled 0
+       m_bMouseOverToFocus 1
+       m_BackgroundDefault 1 1 1 0
+       m_BackgroundHovered 0 0.729 0.596 0.3
+       m_BackgroundSelected 0 0.702 0.421 0.3
+      }
+      SCR_ModularButtonComponent "{68884E0E79F934A5}" {
+       m_aEffects {
+        SCR_ButtonEffectColor "{5DB885898296DF89}" {
+         m_eEvents 6144
+         m_sWidgetName "LineHighlight"
+         m_fAnimationTime 0.1
+         m_cFocusGained 0 1 0.735 0.831
+        }
+        SCR_ButtonEffectOpacity "{5D9EECF12B3D016D}" {
+        }
+        SCR_ButtonEffectColor "{5D9EFC157A1E1706}" {
+         m_eEvents 6144
+         m_sWidgetName "Text"
+         m_cFocusGained 1 1 1 1
+         m_cFocusLost 0.92 0.465 0 1
+        }
+        SCR_ButtonEffectColor "{5DF4771438691E29}" {
+         m_eEvents 6144
+         m_sWidgetName "Image0"
+         m_cFocusGained 1 1 1 1
+         m_cFocusLost 0.784 0.353 0 1
+        }
+       }
+       m_bCanBeToggled 1
+       m_bToggledOnlyThroughApi 1
+       m_eEventReturnValue 2147483644
+       m_bFocusOnMouseEnter 1
+      }
+     }
+     {
+      RichTextWidgetClass "{645979A5B4D95D42}" {
+       Prefab "{645979A5B4D95D42}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A56D915020}" {
+     Prefab "{645979A56D915020}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 87.063
+      OffsetLeft 87.063
+      PositionY 187.941
+      OffsetTop 187.941
+      SizeX 96.919
+      OffsetRight -183.982
+      SizeY 64.371
+      OffsetBottom -252.312
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A56D915021}" {
+       Prefab "{645979A56D915021}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5B616F166}" {
+     Prefab "{645979A5B616F166}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 198.679
+      OffsetLeft 198.679
+      PositionY 189.158
+      OffsetTop 189.158
+      SizeX 99.121
+      OffsetRight -297.801
+      SizeY 62.493
+      OffsetBottom -251.651
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5B616F161}" {
+       Prefab "{645979A5B616F161}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5C54E2255}" {
+     Prefab "{645979A5C54E2255}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 312.723
+      OffsetLeft 312.723
+      PositionY 188.43
+      OffsetTop 188.43
+      SizeX 98.831
+      OffsetRight -411.554
+      SizeY 64.483
+      OffsetBottom -252.913
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5C54E2257}" {
+       Prefab "{645979A5C54E2257}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5CA8AEA44}" {
+     Prefab "{645979A5CA8AEA44}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 87.251
+      OffsetLeft 87.251
+      PositionY 266.777
+      OffsetTop 266.777
+      SizeX 96.804
+      OffsetRight -184.055
+      SizeY 62.058
+      OffsetBottom -328.835
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5CA8AEA46}" {
+       Prefab "{645979A5CA8AEA46}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5CA8B8228}" {
+     Prefab "{645979A5CA8B8228}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 196.675
+      OffsetLeft 196.675
+      PositionY 266.048
+      OffsetTop 266.048
+      SizeX 101.339
+      OffsetRight -298.014
+      SizeY 63.668
+      OffsetBottom -329.716
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5CA8B8229}" {
+       Prefab "{645979A5CA8B8229}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5CA8C0D09}" {
+     Prefab "{645979A5CA8C0D09}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 312.368
+      OffsetLeft 312.368
+      PositionY 266.415
+      OffsetTop 266.415
+      SizeX 98.406
+      OffsetRight -410.774
+      SizeY 63.631
+      OffsetBottom -330.046
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5CA8C0D0A}" {
+       Prefab "{645979A5CA8C0D0A}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5EF8D453F}" {
+     Prefab "{645979A5EF8D453F}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 84.13
+      OffsetLeft 84.13
+      PositionY 343.003
+      OffsetTop 343.003
+      SizeX 101.728
+      OffsetRight -185.858
+      SizeY 64.999
+      OffsetBottom -408.002
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5EF8D4539}" {
+       Prefab "{645979A5EF8D4539}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5EF8E5FB0}" {
+     Prefab "{645979A5EF8E5FB0}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 195.696
+      OffsetLeft 195.696
+      PositionY 342.714
+      OffsetTop 342.714
+      SizeX 105.548
+      OffsetRight -301.244
+      SizeY 65.613
+      OffsetBottom -408.327
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5EF8E7535}" {
+       Prefab "{645979A5EF8E7535}"
+       Text ""
+      }
+     }
+    }
+    ButtonWidgetClass "{645979A5EF8E04EF}" {
+     Prefab "{645979A5EF8E04EF}"
+     Slot FrameWidgetSlot "{645979A637F3B078}" {
+      PositionX 312.101
+      OffsetLeft 312.101
+      PositionY 343.723
+      OffsetTop 343.723
+      SizeX 100.218
+      OffsetRight -412.319
+      SizeY 65.721
+      OffsetBottom -409.444
+     }
+     Color 0.0119 0.6079 0.7569 0.2463
+     {
+      RichTextWidgetClass "{645979A5EF8E04EE}" {
+       Prefab "{645979A5EF8E04EE}"
+       Text ""
+      }
+     }
+    }
+    PanelWidgetClass "{646639D7E79F4707}" {
+     Prefab "{646639D7E79F4707}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 159.32
+      OffsetLeft 159.32
+      PositionY 418.016
+      OffsetTop 418.016
+      SizeX 176.318
+      OffsetRight -335.638
+      SizeY 75.167
+      OffsetBottom -493.183
+     }
+    }
+    PanelWidgetClass "{64662C337F9E2E97}" {
+     Prefab "{64662C337F9E2E97}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 89.002
+      OffsetLeft 89.002
+      PositionY 187.349
+      OffsetTop 187.349
+      SizeX 92.477
+      OffsetRight -181.479
+      SizeY 62.765
+      OffsetBottom -250.114
+     }
+    }
+    PanelWidgetClass "{646639D4476EA4D7}" {
+     Prefab "{646639D4476EA4D7}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 197.505
+      OffsetLeft 197.505
+      PositionY 188.106
+      OffsetTop 188.106
+      SizeX 99.705
+      OffsetRight -297.21
+      SizeY 63.757
+      OffsetBottom -251.863
+     }
+    }
+    PanelWidgetClass "{646639D47C2803E6}" {
+     Prefab "{646639D47C2803E6}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 309.904
+      OffsetLeft 309.904
+      PositionY 188.131
+      OffsetTop 188.131
+      SizeX 101.474
+      OffsetRight -411.378
+      SizeY 67.169
+      OffsetBottom -255.3
+     }
+    }
+    PanelWidgetClass "{646639D4651B4541}" {
+     Prefab "{646639D4651B4541}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 87.231
+      OffsetLeft 87.231
+      PositionY 266.761
+      OffsetTop 266.761
+      SizeX 96.476
+      OffsetRight -183.707
+      SizeY 61.837
+      OffsetBottom -328.598
+     }
+    }
+    PanelWidgetClass "{646639D46DC2C6E2}" {
+     Prefab "{646639D46DC2C6E2}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 195.282
+      OffsetLeft 195.282
+      PositionY 265.726
+      OffsetTop 265.726
+      SizeX 105.407
+      OffsetRight -300.689
+      SizeY 66.515
+      OffsetBottom -332.241
+     }
+    }
+    PanelWidgetClass "{646639D494928EB8}" {
+     Prefab "{646639D494928EB8}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 310.86
+      OffsetLeft 310.86
+      PositionY 265.098
+      OffsetTop 265.098
+      SizeX 100.048
+      OffsetRight -410.908
+      SizeY 65.462
+      OffsetBottom -330.56
+     }
+    }
+    PanelWidgetClass "{646639D493FFA09E}" {
+     Prefab "{646639D493FFA09E}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 84.274
+      OffsetLeft 84.274
+      PositionY 342.948
+      OffsetTop 342.948
+      SizeX 100.839
+      OffsetRight -185.113
+      SizeY 65.22
+      OffsetBottom -408.168
+     }
+    }
+    PanelWidgetClass "{646639D49A293465}" {
+     Prefab "{646639D49A293465}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 195.846
+      OffsetLeft 195.846
+      PositionY 342.964
+      OffsetTop 342.964
+      SizeX 105.519
+      OffsetRight -301.365
+      SizeY 64.77
+      OffsetBottom -407.734
+     }
+    }
+    PanelWidgetClass "{646639D480D246CA}" {
+     Prefab "{646639D480D246CA}"
+     Slot FrameWidgetSlot "{64662C337F9E2E71}" {
+      PositionX 309.372
+      OffsetLeft 309.372
+      PositionY 340.582
+      OffsetTop 340.582
+      SizeX 104.378
+      OffsetRight -413.75
+      SizeY 70.049
+      OffsetBottom -410.631
+     }
+    }
+   }
+  }
+ }
+}

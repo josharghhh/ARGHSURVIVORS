@@ -13980,7 +13980,7 @@ $grp GenericEntity : "{D4A604DD154470CD}Prefabs/Systems/AmbientVehicles/AmbientV
      TRAIT_PASSENGERS_SMALL
      VEHICLE_CAR
     }
-    m_aExcludedEditableEntityLabels +{
+    m_aExcludedEditableEntityLabels {
     }
     m_bRequireAllIncludedLabels 1
    }
@@ -13995,7 +13995,7 @@ $grp GenericEntity : "{D4A604DD154470CD}Prefabs/Systems/AmbientVehicles/AmbientV
      TRAIT_PASSENGERS_SMALL
      VEHICLE_CAR
     }
-    m_aExcludedEditableEntityLabels +{
+    m_aExcludedEditableEntityLabels {
     }
     m_bRequireAllIncludedLabels 1
    }
