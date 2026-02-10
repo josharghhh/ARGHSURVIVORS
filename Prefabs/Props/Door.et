@@ -1,17 +1,59 @@
 GenericEntity {
  ID "64503459465294BF"
  components {
-  MeshObject "{645034592AF7E414}" {
-   Materials {
-    MaterialAssignClass "{68880A6446FABD7F}" {
-     SourceMaterial "Material"
-     AssignedMaterial "{9DACC935EBCA91FF}Props/Door.emat"
-    }
-    MaterialAssignClass "{68880A6446FABD6A}" {
-     SourceMaterial "door"
-     AssignedMaterial "{9DACC935EBCA91FF}Props/Door.emat"
+  BLD_OwnershipComponent "{6455578CF400CA26}" {
+  }
+  BLD_RaidingManagerComponent "{645805A6C6C85F2E}" {
+   "Additional hit zones" {
+    SCR_HitZone asd {
+     ColliderNames {
+      "UTM_door"
+     }
+     HZDefault 1
+     DamageReduction 0
+     DamageThreshold 0
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0
+     "Fragmentation multiplier" 0
     }
    }
   }
+  DoorComponent "{64503459C7AC3979}" {
+   DoorAction SCR_DoorUserAction "{6450345AAB44D16A}" {
+    ParentContextList {
+     "SCR_DoorUserAction"
+    }
+   }
+   AngleRange -90
+   TestCollider "UTM_door"
+  }  
+  MeshObject "{645034592AF7E414}" {
+   Object "{7AE42054C5B1AA72}Props/Doorway/Door/door.xob"
+   PixelSizeScale 3
+   BoundingBox AABBBoundingVolume "{6455578BD552FC67}" {
+    Mins -1.034 0.086 -0.028
+    Maxs 0 2.011 0.099
+   }
+  }
+  RigidBody "{64503459535D3FB1}" {
+   Layers 131073
+   ModelGeometry 1
+  }
+  ActionsManagerComponent "{6450345A1612EA23}" {
+   ActionContexts {
+    UserActionContext "{6450345A69D68AFE}" {
+     ContextName "SCR_DoorUserAction"
+     Position PointInfo "{6450345A98F75847}" {
+      Offset -1 1 0
+     }
+     Radius 0.4
+    }
+   }
+  }
+  RplComponent "{64503459E67F3A2E}" {
+  }
+  Hierarchy "{64503459EE7F8813}" {
+  }
  }
+ coords 0.682 0 0
 }

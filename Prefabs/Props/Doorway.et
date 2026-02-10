@@ -1,3 +1,177 @@
 GenericEntity {
  ID "6450141C5F5201F1"
+ components {
+  Persistence "{66D359C456436B63}" {
+  }
+  BLD_OwnershipComponent "{64535D2E33029800}" {
+   MaxHealth 3000
+  }
+  BLD_RaidingManagerComponent "{645805A6F0A535E4}" {
+   "Additional hit zones" {
+    SCR_HitZone asd {
+     HZDefault 1
+     "Collision multiplier" 0
+     "Melee multiplier" 0
+     "Kinetic multiplier" 0
+     "Fragmentation multiplier" 0
+     "Incendiary multiplier" 0
+     "Fire multiplier" 0
+     m_fFireMultiplier 0
+    }
+   }
+  }
+  MeshObject "{6450141C561E41E6}" {
+   Object "{65D98E79D8801372}Props/Doorway/doorwayh.xob"
+   Materials {
+    MaterialAssignClass "{6468E9D57BBEC6A4}" {
+     SourceMaterial "frames"
+     AssignedMaterial "{641FEFEC429FC1A2}Props/Wood.emat"
+    }
+    MaterialAssignClass "{6468E9D57BBEC6B2}" {
+     SourceMaterial "logs"
+     AssignedMaterial "{641FEFEC429FC1A2}Props/Wood.emat"
+    }
+   }
+   PixelSizeScale 3
+   BoundingBox AABBBoundingVolume "{6455578BAF1416E8}" {
+    Mins -1.508 -0.003 -0.106
+    Maxs 1.508 3.003 0.082
+   }
+  }
+  RigidBody "{6450141C5243CC88}" {
+   Layers 0x20003 0
+   ResponseIndex "Normal"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_EditableEntityComponent "{65312B242152C3E2}" {
+   Enabled 0
+   m_UIInfo SCR_EditableEntityUIInfo "{65312B2423BBF8D4}" {
+    Name "Building Part"
+    m_aAutoLabels {
+     CONTENT_MODDED
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_bStatic 1
+   m_fMaxDrawDistance 20
+  }
+  ActionsManagerComponent "{64563565379BB82E}" {
+   ActionContexts {
+    UserActionContext "{64563565309BE7B9}" {
+     ContextName "Top"
+     Position PointInfo "{645635653E3F304F}" {
+      Offset 0 2.8 0
+     }
+     Radius 0.6
+    }
+   }
+   additionalActions {
+    BLD_PartUniversalUserAction "{65DD5587F70618F5}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Ceiling"
+     Duration 2
+     Part "{B70CAD8D53F7267C}Prefabs/Props/Ceiling.et"
+     BuildPricePartName "Ceiling"
+     localOffset 0 3 1.5
+    }
+    BLD_PartUniversalUserAction "{65DD5587F3375E61}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Wall"
+     Duration 2
+     Part "{134F263C895CE56B}Prefabs/Props/Wall.et"
+     BuildPricePartName "Wall"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587FE289A12}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Door"
+     Duration 2
+     Part "{417ADB670039E3D8}Prefabs/Props/Doorway.et"
+     BuildPricePartName "Doorway"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587F963FED6}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "Window"
+     Duration 2
+     Part "{BFEBBF26A643FBA6}Prefabs/Props/Window.et"
+     BuildPricePartName "Window"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_PartUniversalUserAction "{65DD5587FBE69017}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{65DD5587ED17CA0D}" {
+     }
+     ActionTitle "SmallWall"
+     Duration 2
+     Part "{F2CAA88E556DF686}Prefabs/Props/WallSmall.et"
+     BuildPricePartName "SmallWall"
+     localOffset 0 3 0
+     rotOffset 0 0 0
+    }
+    BLD_DeleteUserAction "{645704F47D26D293}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{645704F456DEBA86}" {
+      Name "Delete"
+     }
+     Duration 5
+     "Sort Priority" 12
+    }
+    BLD_WallFlipUserAction "{646170EB38FAF3D4}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{646170EB22C1B0BB}" {
+      Name "Rotate"
+     }
+     Duration 3
+     "Sort Priority" 20
+    }
+    BLD_RepairUserAction "{657D637DAC2DEFEA}" {
+     ParentContextList {
+      "Top"
+     }
+     UIInfo UIInfo "{657D637D55BDB69A}" {
+     }
+     Duration 30
+     "Sort Priority" 88
+    }
+   }
+  }
+  RplComponent "{645104E5C9483CE8}" {
+  }
+  Hierarchy "{6450345B665791B8}" {
+  }
+ }
+ coords 2.889 -1.941 0.012
+ {
+  GenericEntity {
+   ID "64503456FBE80166"
+   coords 0.515 0.002 -0.069
+  }
+ }
 }

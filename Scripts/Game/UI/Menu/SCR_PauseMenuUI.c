@@ -30,6 +30,7 @@ class PauseMenuUI : ChimeraMenuBase
 	protected int m_iLogoutRemaining;
 	protected vector m_vLogoutStartPos;
 	protected bool m_bLogoutSaveRequested;
+	protected bool m_bExitSaveInFlight;
 
 	const string EXIT_SAVE = "Run Away";
 	const string EXIT_NO_SAVE = "Run Away";
@@ -543,8 +544,13 @@ class PauseMenuUI : ChimeraMenuBase
 		if (playerId >= 0)
 			saveName = string.Format("Logout_%1", playerId);
 
-		m_bLogoutSaveRequested = true;
-		saveManager.RequestSavePoint(ESaveGameType.MANUAL, saveName);
+		// Keep logout behavior overwrite-first to avoid creating extra savepoints.
+		bool requested = DZ_SaveGameUtil.OverwriteLatestSave(saveManager);
+		if (!requested)
+			requested = saveManager.RequestSavePoint(ESaveGameType.MANUAL, saveName);
+
+		if (requested)
+			m_bLogoutSaveRequested = true;
 	}
 
 	//------------------------------------------------------------------------------------------------
@@ -649,8 +655,16 @@ class PauseMenuUI : ChimeraMenuBase
 
 		if (IsSavingOnExit())
 		{
-			//--- Close only after the save file was created
-			GetGame().GetSaveGameManager().RequestSavePoint(ESaveGameType.SHUTDOWN, flags: ESaveGameRequestFlags.BLOCKING, callback: new SaveGameOperationCb(OnExitSaveResult))
+			// Fire-and-forget save on exit to avoid UI deadlock during save callbacks.
+			SaveGameManager saveManager = GetGame().GetSaveGameManager();
+			if (saveManager && saveManager.IsSavingAllowed() && saveManager.IsSavingPossible() && !saveManager.IsBusy())
+			{
+				bool requested = DZ_SaveGameUtil.OverwriteLatestSave(saveManager);
+				if (!requested)
+					saveManager.RequestSavePoint(ESaveGameType.MANUAL, "ExitInitial");
+			}
+
+			CloseToMainMenu();
 		}
 		else
 		{
@@ -662,6 +676,9 @@ class PauseMenuUI : ChimeraMenuBase
 	//------------------------------------------------------------------------------------------------
 	protected void OnExitSaveResult(bool success)
 	{
+		m_bExitSaveInFlight = false;
+		GetGame().GetCallqueue().Remove(OnExitSaveTimeout);
+
 		if (success)
 		{
 			CloseToMainMenu();
@@ -675,6 +692,16 @@ class PauseMenuUI : ChimeraMenuBase
 			return;
 
 		dialog.m_OnConfirm.Insert(CloseToMainMenu);
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void OnExitSaveTimeout()
+	{
+		if (!m_bExitSaveInFlight)
+			return;
+
+		m_bExitSaveInFlight = false;
+		CloseToMainMenu();
 	}
 
 	//------------------------------------------------------------------------------------------------

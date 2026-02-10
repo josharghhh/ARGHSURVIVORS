@@ -323,15 +323,8 @@ class SCR_PlayerSpawnPointManagerComponent : SCR_BaseGameModeComponent
 	override void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)
 	{
 		RemoveSpawnPoint(playerId);
-
-		SaveGameManager saveManager = GetGame().GetSaveGameManager();
-		if (!saveManager)
-			return;
-
-		if (!saveManager.IsSavingAllowed() || !saveManager.IsSavingPossible() || saveManager.IsBusy())
-			return;
-
-		saveManager.RequestSavePoint(ESaveGameType.MANUAL, string.Format("Disconnect_%1", playerId));
+		// Avoid creating per-disconnect manual savepoints.
+		// They can produce fragmented savepoint chains under load.
 	}
 	
 	//------------------------------------------------------------------------------------------------

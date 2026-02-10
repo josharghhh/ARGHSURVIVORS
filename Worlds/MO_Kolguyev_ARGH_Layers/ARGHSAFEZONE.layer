@@ -3503,7 +3503,7 @@ $grp SCR_DestructibleBuildingEntity : "{F6AA92F7B23D8A71}Prefabs/Structures/Infr
   scale 0.997
  }
  {
-  coords 484.586 -1.624 12364.766
+  coords 484.586 -1.629 12364.766
   angles 0 -3.113 0
   scale 0.997
  }

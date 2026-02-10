@@ -1,6 +1,11 @@
 GenericEntity {
  ID "64563564FD1AFDCD"
  components {
+  BLD_OwnershipComponent "{6891631156BD3B62}" {
+  }
+  BLD_SyncSignalsManagerComponent "{6891631150CEB08C}" {
+   SignalName "Door"
+  }
   MeshObject "{64563564FD1AFDA4}" {
    Materials {
     MaterialAssignClass "{68880A64A2CDAD39}" {

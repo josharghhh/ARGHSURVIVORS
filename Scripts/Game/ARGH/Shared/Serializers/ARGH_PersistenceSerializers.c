@@ -12,132 +12,111 @@
 // STUB SERIALIZERS: (No state to persist, just satisfy config references)
 //   - Player/AI components, editor components, etc.
 // -----------------------------------------------------------------------------
-
 class StubPersistenceRuleBase {}
-
 class CharacterPersistenceConfigRule : StubPersistenceRuleBase {}
 class VehiclePersistenceConfigRule : StubPersistenceRuleBase {}
 class EntityPrefabPersistenceConfigRule : StubPersistenceRuleBase {}
-
 class SCR_CharacterSerializer : GenericEntitySerializer {}
 class SCR_VehicleSerializer : GenericEntitySerializer {}
-
 // -----------------------------------------------------------------------------
 // STUB SERIALIZERS
 // -----------------------------------------------------------------------------
-
 class ControlledByComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PlayerControllerComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PlayerStateComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PlayerExperienceComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_AIInformationComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_AudioBlacklistComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class FuelManagerComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PrefabResourceLoadComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_ArmorManagerComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_AuthoritySwitcherComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_GameModePointComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_LightEditorManagerComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_MannedEditorComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_MarketVillageComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PowerConsumerEditorComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_PowerSourceEditorComponentSerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context) { return ESerializeResult.DEFAULT; }
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context) { return true; }
 }
-
 class SCR_TriggerEntitySerializer : ScriptedComponentSerializer
 {
 	override static typename GetTargetType() { return GenericComponent; }
@@ -148,186 +127,67 @@ class SCR_TriggerEntitySerializer : ScriptedComponentSerializer
 // -----------------------------------------------------------------------------
 // REAL SERIALIZER: ARGH_BLD_OwnershipComponentSerializer
 //
-// Persists base-building ownership state (HP, code, door link, etc.).
+// Generic ownership serializer used by buildables/storages.
+// Also restores doorway door entities when they are missing after restart.
 // -----------------------------------------------------------------------------
 class ARGH_BLD_OwnershipComponentSerializer : ScriptedComponentSerializer
 {
-	protected static const int SERIALIZER_VERSION = 2;
-	static ref array<ref EntityID> s_ARGH_QueryIds;
-
+	protected static const int SERIALIZER_VERSION = 3;
+	protected static const int REAPPLY_ATTEMPTS = 20;
+	protected static const int DOOR_ENSURE_ATTEMPTS = 10;
 	override static typename GetTargetType()
 	{
 		return BLD_OwnershipComponent;
 	}
-
 	override protected ESerializeResult Serialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationSaveContext context)
 	{
 		BLD_OwnershipComponent own = BLD_OwnershipComponent.Cast(component);
 		if (!own)
 			return ESerializeResult.DEFAULT;
-
 		context.WriteValue("own_version", SERIALIZER_VERSION);
-		string ownerID = own.ownerID;
-		string myCode = own.myCode;
-		float partHP = own.partHP;
-		string myDoor = own.myDoor;
-		bool lockPicked = own.lockPicked;
-
-		// If a door entity exists, prefer its code/lock state (often set on the door itself).
-		PersistenceSystem persistence = PersistenceSystem.GetInstance();
-		if (persistence && !myDoor.IsEmpty())
-		{
-			IEntity doorEnt = IEntity.Cast(persistence.FindById(myDoor));
-			if (doorEnt)
-			{
-				BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
-				if (doorOwn)
-				{
-					if (!doorOwn.myCode.IsEmpty())
-						myCode = doorOwn.myCode;
-					lockPicked = doorOwn.lockPicked;
-				}
-			}
-		}
-
-		// If door link is missing, try to locate a nearby door entity and pull its state.
-		string doorPrefab = "";
-		vector doorPos = vector.Zero;
-		vector doorAng = vector.Zero;
-		if (persistence)
-		{
-			IEntity doorEnt;
-			if (!myDoor.IsEmpty())
-			{
-				doorEnt = IEntity.Cast(persistence.FindById(myDoor));
-			}
-			else
-			{
-				s_ARGH_QueryIds = new array<ref EntityID>();
-				GetGame().GetWorld().QueryEntitiesBySphere(owner.GetOrigin(), 1.0, ARGH_AddEntityToArray, null, EQueryEntitiesFlags.ALL);
-				foreach (EntityID entId : s_ARGH_QueryIds)
-				{
-					IEntity ent = GetGame().GetWorld().FindEntityByID(entId);
-					if (!ent || ent == owner)
-						continue;
-					if (!ent.FindComponent(DoorComponent))
-						continue;
-
-					doorEnt = ent;
-					break;
-				}
-			}
-
-			if (doorEnt)
-			{
-				BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
-				if (doorOwn)
-				{
-					if (!doorOwn.myCode.IsEmpty())
-						myCode = doorOwn.myCode;
-					lockPicked = doorOwn.lockPicked;
-				}
-
-				EntityPrefabData prefabData = doorEnt.GetPrefabData();
-				if (prefabData)
-					doorPrefab = prefabData.GetPrefabName();
-				doorPos = doorEnt.GetOrigin();
-				doorAng = doorEnt.GetAngles();
-
-				if (myDoor.IsEmpty())
-					myDoor = persistence.GetId(doorEnt);
-			}
-		}
-
-		context.WriteValue("ownerID", ownerID);
-		context.WriteValue("myCode", myCode);
-		context.WriteValue("partHP", partHP);
-		context.WriteValue("myDoor", myDoor);
-		context.WriteValue("lockPicked", lockPicked);
-
-		context.WriteValue("door_prefab", doorPrefab);
-		context.WriteValue("door_pos", doorPos);
-		context.WriteValue("door_ang", doorAng);
-
+		context.WriteValue("ownerID", own.ownerID);
+		context.WriteValue("myCode", own.myCode);
+		context.WriteValue("partHP", own.partHP);
+		context.WriteValue("myDoor", ARGH_NormalizeDoorId(own.myDoor));
+		context.WriteValue("lockPicked", own.lockPicked);
 		return ESerializeResult.OK;
 	}
-
 	override protected bool Deserialize(notnull IEntity owner, notnull GenericComponent component, notnull BaseSerializationLoadContext context)
 	{
 		BLD_OwnershipComponent own = BLD_OwnershipComponent.Cast(component);
 		if (!own)
 			return true;
-
 		int version = 0;
 		if (!context.ReadValue("own_version", version))
 			return true;
-
 		string ownerID = own.ownerID;
 		string myCode = own.myCode;
 		float partHP = own.partHP;
 		string myDoor = own.myDoor;
 		bool lockPicked = own.lockPicked;
-		string doorPrefab = "";
-		vector doorPos = vector.Zero;
-		vector doorAng = vector.Zero;
-
 		context.ReadValue("ownerID", ownerID);
 		context.ReadValue("myCode", myCode);
 		context.ReadValue("partHP", partHP);
 		context.ReadValue("myDoor", myDoor);
 		context.ReadValue("lockPicked", lockPicked);
-		context.ReadValue("door_prefab", doorPrefab);
-		context.ReadValue("door_pos", doorPos);
-		context.ReadValue("door_ang", doorAng);
+		myDoor = ARGH_NormalizeDoorId(myDoor);
+
+		// Doorways should come back locked after restart (same expectation as safes/storage).
+		if (ARGH_IsDoorwayEntity(owner) && !myCode.IsEmpty())
+			lockPicked = false;
 
 		own.SetOwnerID(ownerID);
 		own.SetCode(myCode);
 		own.SetPartHP(partHP);
 		own.SetDoor(myDoor);
 		own.SetPicked(lockPicked);
-
-		// Some door link/HP data gets reset during post-load init; re-apply shortly after.
-		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, myDoor, lockPicked, 8);
-		// If door entity wasn't persisted, respawn it from the doorway owner.
-		GetGame().GetCallqueue().CallLater(ARGH_EnsureDoorEntity, 350, false, own, ownerID, myCode, partHP, myDoor, lockPicked, doorPrefab, doorPos, doorAng);
-
+		// Ownership state can be reset by post-load init on some buildables/storages.
+		// Re-apply shortly after load to keep code/lock state stable across restarts.
+		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, myDoor, lockPicked, REAPPLY_ATTEMPTS);
+		if (ARGH_IsDoorwayEntity(owner))
+			GetGame().GetCallqueue().CallLater(ARGH_EnsureDoorwayDoorState, 450, false, own, ownerID, myCode, lockPicked, DOOR_ENSURE_ATTEMPTS);
 		return true;
 	}
-}
-
-static bool ARGH_AddEntityToArray(IEntity entity)
-{
-	if (!entity)
-		return true;
-	if (!ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
-		return true;
-	ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds.Insert(entity.GetID());
-	return true;
-}
-
-static IEntity ARGH_FindNearbyDoorEntity(IEntity owner, float radius = 2.0)
-{
-	if (!owner)
-		return null;
-
-	if (!ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
-		ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds = new array<ref EntityID>();
-	else
-		ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds.Clear();
-
-	GetGame().GetWorld().QueryEntitiesBySphere(owner.GetOrigin(), radius, ARGH_AddEntityToArray, null, EQueryEntitiesFlags.ALL);
-	foreach (EntityID entId : ARGH_BLD_OwnershipComponentSerializer.s_ARGH_QueryIds)
-	{
-		IEntity ent = GetGame().GetWorld().FindEntityByID(entId);
-		if (!ent || ent == owner)
-			continue;
-		if (!ent.FindComponent(DoorComponent))
-			continue;
-
-		return ent;
-	}
-
-	return null;
 }
 
 static void ARGH_ReapplyOwnershipState(BLD_OwnershipComponent own, string ownerID, string myCode, float partHP, string myDoor, bool lockPicked, int attemptsLeft)
@@ -335,157 +195,302 @@ static void ARGH_ReapplyOwnershipState(BLD_OwnershipComponent own, string ownerI
 	if (!own)
 		return;
 
-	// Re-apply only if state doesn't match yet.
 	if (own.ownerID != ownerID)
 		own.SetOwnerID(ownerID);
 	if (own.myCode != myCode)
 		own.SetCode(myCode);
 	if (own.partHP != partHP)
 		own.SetPartHP(partHP);
-	if (own.myDoor != myDoor)
-		own.SetDoor(myDoor);
+
+	string expectedDoor = ARGH_NormalizeDoorId(myDoor);
+	if (!expectedDoor.IsEmpty() && own.myDoor != expectedDoor)
+		own.SetDoor(expectedDoor);
 	if (own.lockPicked != lockPicked)
 		own.SetPicked(lockPicked);
 
-	if (attemptsLeft > 0 && (own.partHP != partHP || own.myDoor != myDoor || own.myCode != myCode || own.lockPicked != lockPicked))
-	{
-		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, myDoor, lockPicked, attemptsLeft - 1);
-	}
-	else
-	{
-		// Keep door entity code/lock state in sync if it already exists.
-		if (!myDoor.IsEmpty())
-		{
-			PersistenceSystem persistence = PersistenceSystem.GetInstance();
-			if (persistence)
-			{
-				IEntity doorEnt = IEntity.Cast(persistence.FindById(myDoor));
-				if (doorEnt)
-				{
-					BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
-					if (doorOwn)
-					{
-						doorOwn.SetOwnerID(ownerID);
-						doorOwn.SetCode(myCode);
-						doorOwn.SetPartHP(partHP);
-						doorOwn.SetDoor(myDoor);
-						doorOwn.SetPicked(lockPicked);
-					}
-				}
-			}
-		}
-		else
-		{
-			// If no door link, try to locate a nearby door and apply state.
-			IEntity ownerEnt = own.GetOwner();
-			if (ownerEnt)
-			{
-				IEntity doorEnt = ARGH_FindNearbyDoorEntity(ownerEnt, 2.0);
-				if (doorEnt)
-				{
-					BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
-					if (doorOwn)
-					{
-						doorOwn.SetOwnerID(ownerID);
-						doorOwn.SetCode(myCode);
-						doorOwn.SetPartHP(partHP);
-						doorOwn.SetPicked(lockPicked);
-					}
+	if (attemptsLeft <= 0)
+		return;
 
-					PersistenceSystem persistence = PersistenceSystem.GetInstance();
-					if (persistence)
-					{
-						string doorId = persistence.GetId(doorEnt);
-						if (!doorId.IsEmpty())
-						{
-							own.SetDoor(doorId);
-							if (doorOwn)
-								doorOwn.SetDoor(doorId);
-						}
-					}
-				}
-			}
-		}
+	bool needsRetry = false;
+	if (own.ownerID != ownerID || own.myCode != myCode || own.partHP != partHP || own.lockPicked != lockPicked)
+		needsRetry = true;
+	if (!expectedDoor.IsEmpty() && own.myDoor != expectedDoor)
+		needsRetry = true;
+
+	if (needsRetry)
+	{
+		GetGame().GetCallqueue().CallLater(ARGH_ReapplyOwnershipState, 300, false, own, ownerID, myCode, partHP, expectedDoor, lockPicked, attemptsLeft - 1);
 	}
 }
 
-static void ARGH_EnsureDoorEntity(BLD_OwnershipComponent own, string ownerID, string myCode, float partHP, string myDoor, bool lockPicked, string doorPrefab, vector doorPos, vector doorAng)
+static bool ARGH_IsInvalidDoorId(string doorId)
 {
-	if (!own)
-		return;
+	if (doorId.IsEmpty())
+		return true;
+	if (doorId == "00000000-0000-0000-0000-000000000000")
+		return true;
+	return false;
+}
+static string ARGH_NormalizeDoorId(string doorId)
+{
+	if (ARGH_IsInvalidDoorId(doorId))
+		return string.Empty;
+	return doorId;
+}
 
-	if (myDoor.IsEmpty())
-		return;
+static const string ARGH_DOORWAY_PREFAB = "{417ADB670039E3D8}Prefabs/Props/Doorway.et";
+static const string ARGH_DOOR_PROXY_PREFAB = "{334DDCDFBE1A0C7A}Prefabs/Empty.et";
+static const string ARGH_DOOR_FALLBACK_PREFAB = "{C9C0AA3EE517F690}Prefabs/Props/Door.et";
+static IEntity s_ARGH_NearbyDoorCandidate;
+static IEntity s_ARGH_NearbyDoorOwner;
+static float s_ARGH_NearbyDoorBestDistSq;
+static vector s_ARGH_NearbyDoorCenter;
+
+static bool ARGH_IsDoorwayEntity(IEntity owner)
+{
+	if (!owner)
+		return false;
+
+	EntityPrefabData prefabData = owner.GetPrefabData();
+	if (!prefabData)
+		return false;
+
+	string prefabPath = prefabData.GetPrefabName();
+	if (prefabPath.IsEmpty())
+		return false;
+
+	return prefabPath.Contains("Prefabs/Props/Doorway.et");
+}
+
+static string ARGH_GetOwnerPrefabPath(IEntity owner)
+{
+	if (!owner)
+		return string.Empty;
+
+	EntityPrefabData prefabData = owner.GetPrefabData();
+	if (!prefabData)
+		return string.Empty;
+
+	return prefabData.GetPrefabName();
+}
+
+static DoorComponent ARGH_FindDoorComponentInHierarchy(IEntity ent)
+{
+	if (!ent)
+		return null;
+
+	DoorComponent door = DoorComponent.Cast(ent.FindComponent(DoorComponent));
+	if (door)
+		return door;
+
+	IEntity child = ent.GetChildren();
+	while (child)
+	{
+		door = DoorComponent.Cast(child.FindComponent(DoorComponent));
+		if (door)
+			return door;
+		child = child.GetSibling();
+	}
+
+	return null;
+}
+
+static IEntity ARGH_FindDoorByPersistenceId(string doorId)
+{
+	if (ARGH_IsInvalidDoorId(doorId))
+		return null;
 
 	PersistenceSystem persistence = PersistenceSystem.GetInstance();
 	if (!persistence)
-		return;
+		return null;
 
-	IEntity existingDoor = IEntity.Cast(persistence.FindById(myDoor));
-	if (existingDoor)
-		return;
+	IEntity doorEnt = IEntity.Cast(persistence.FindById(doorId));
+	if (!doorEnt)
+		return null;
+	if (!ARGH_FindDoorComponentInHierarchy(doorEnt))
+		return null;
 
-	IEntity ownerEnt = own.GetOwner();
-	if (!ownerEnt)
-		return;
+	return doorEnt;
+}
 
-	// Only spawn for doorway-type owners to avoid unintended spawns.
-	EntityPrefabData ownerPrefab = ownerEnt.GetPrefabData();
-	if (!ownerPrefab)
-		return;
+static bool ARGH_QueryNearbyDoorEntity(IEntity ent)
+{
+	if (!ent || ent == s_ARGH_NearbyDoorOwner)
+		return true;
 
-	string ownerPrefabPath = ownerPrefab.GetPrefabName();
-	if (ownerPrefabPath.IsEmpty() || !ownerPrefabPath.Contains("Doorway"))
-		return;
+	if (!ARGH_FindDoorComponentInHierarchy(ent))
+		return true;
 
-	string doorPrefabPath = doorPrefab;
-	if (doorPrefabPath.IsEmpty())
-		doorPrefabPath = "{334DDCDFBE1A0C7A}Prefabs/Empty.et";
-
-	Resource doorRes = Resource.Load(doorPrefabPath);
-	if (!doorRes || !doorRes.IsValid())
-		return;
-
-	EntitySpawnParams params();
-	vector transform[4];
-	ownerEnt.GetTransform(transform);
-	if (doorPos != vector.Zero)
+	float distSq = vector.DistanceSq(ent.GetOrigin(), s_ARGH_NearbyDoorCenter);
+	if (!s_ARGH_NearbyDoorCandidate || distSq < s_ARGH_NearbyDoorBestDistSq)
 	{
-		transform[3] = doorPos;
-		Math3D.AnglesToMatrix(doorAng, transform);
-	}
-	else
-	{
-		// Match doorway spawn offset used by BLD_PlacerComponent.
-		vector localOffset = {0.515, 0, 0};
-		vector worldOffset = ownerEnt.GetWorldTransformAxis(0) * localOffset[0]
-			+ ownerEnt.GetWorldTransformAxis(1) * localOffset[1]
-			+ ownerEnt.GetWorldTransformAxis(2) * localOffset[2];
-		transform[3] = ownerEnt.GetOrigin() + worldOffset;
-		// Keep doorway rotation as-is (avoid re-deriving from angles).
-	}
-	params.TransformMode = ETransformMode.WORLD;
-	params.Transform = transform;
-
-	IEntity newDoor = GetGame().SpawnEntityPrefab(doorRes, GetGame().GetWorld(), params);
-	if (!newDoor)
-		return;
-
-	// Copy ownership state to the new door entity.
-	BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(newDoor.FindComponent(BLD_OwnershipComponent));
-	if (doorOwn)
-	{
-		doorOwn.SetOwnerID(ownerID);
-		doorOwn.SetCode(myCode);
-		doorOwn.SetPartHP(partHP);
-		doorOwn.SetDoor(myDoor);
-		doorOwn.SetPicked(lockPicked);
+		s_ARGH_NearbyDoorCandidate = ent;
+		s_ARGH_NearbyDoorBestDistSq = distSq;
 	}
 
-	// Update owner with the new door persistence ID if available.
-	string newDoorId = persistence.GetId(newDoor);
-	if (!newDoorId.IsEmpty())
-		own.SetDoor(newDoorId);
+	return true;
+}
+
+static IEntity ARGH_FindNearbyDoorEntity(IEntity doorwayOwner, float radius = 2.0)
+{
+	if (!doorwayOwner || !GetGame())
+		return null;
+
+	ChimeraWorld world = GetGame().GetWorld();
+	if (!world)
+		return null;
+
+	s_ARGH_NearbyDoorCandidate = null;
+	s_ARGH_NearbyDoorOwner = doorwayOwner;
+	s_ARGH_NearbyDoorCenter = doorwayOwner.GetOrigin();
+	s_ARGH_NearbyDoorBestDistSq = radius * radius;
+
+	world.QueryEntitiesBySphere(doorwayOwner.GetOrigin(), radius, ARGH_QueryNearbyDoorEntity, null, EQueryEntitiesFlags.DYNAMIC);
+
+	IEntity resolved = s_ARGH_NearbyDoorCandidate;
+	s_ARGH_NearbyDoorCandidate = null;
+	s_ARGH_NearbyDoorOwner = null;
+	s_ARGH_NearbyDoorBestDistSq = 0.0;
+	return resolved;
+}
+
+static string ARGH_GetPersistenceId(IEntity ent)
+{
+	if (!ent)
+		return string.Empty;
+
+	PersistenceSystem persistence = PersistenceSystem.GetInstance();
+	if (!persistence)
+		return string.Empty;
+
+	return persistence.GetId(ent);
+}
+
+static vector ARGH_GetDoorSpawnPosition(IEntity doorwayOwner)
+{
+	IEntity child = doorwayOwner.GetChildren();
+	if (child)
+		return child.GetOrigin();
+
+	vector localOffset = "0.515 0 0";
+	vector worldOffset = doorwayOwner.GetWorldTransformAxis(0) * localOffset[0]
+		+ doorwayOwner.GetWorldTransformAxis(1) * localOffset[1]
+		+ doorwayOwner.GetWorldTransformAxis(2) * localOffset[2];
+
+	return doorwayOwner.GetOrigin() + worldOffset;
+}
+
+static IEntity ARGH_SpawnDoorProxy(IEntity doorwayOwner)
+{
+	if (!doorwayOwner || !GetGame())
+		return null;
+
+	Resource doorResource = Resource.Load(ARGH_DOOR_PROXY_PREFAB);
+	string selectedPrefab = ARGH_DOOR_PROXY_PREFAB;
+	if (!doorResource)
+	{
+		doorResource = Resource.Load(ARGH_DOOR_FALLBACK_PREFAB);
+		selectedPrefab = ARGH_DOOR_FALLBACK_PREFAB;
+	}
+	if (!doorResource)
+		return null;
+
+	EntitySpawnParams spawnParams = new EntitySpawnParams();
+	spawnParams.Transform[3] = ARGH_GetDoorSpawnPosition(doorwayOwner);
+
+	IEntity spawned = GetGame().SpawnEntityPrefab(doorResource, doorwayOwner.GetWorld(), spawnParams);
+	if (spawned)
+		spawned.SetAngles(doorwayOwner.GetAngles());
+
+	string spawnedId = ARGH_GetPersistenceId(spawned);
+	bool hasDoorComp = ARGH_FindDoorComponentInHierarchy(spawned) != null;
+	bool hasOwnership = false;
+	if (spawned)
+		hasOwnership = BLD_OwnershipComponent.Cast(spawned.FindComponent(BLD_OwnershipComponent)) != null;
+	ARGH_DoorPersistenceDebug.TraceSpawnResult(spawned != null, selectedPrefab, spawnedId, hasDoorComp, hasOwnership);
+
+	return spawned;
+}
+
+static void ARGH_SyncDoorOwnershipFromDoorway(BLD_OwnershipComponent doorwayOwn, IEntity doorEnt)
+{
+	if (!doorwayOwn || !doorEnt)
+		return;
+
+	BLD_OwnershipComponent doorOwn = BLD_OwnershipComponent.Cast(doorEnt.FindComponent(BLD_OwnershipComponent));
+	if (!doorOwn)
+		return;
+
+	if (doorOwn.ownerID != doorwayOwn.ownerID)
+		doorOwn.SetOwnerID(doorwayOwn.ownerID);
+	if (doorOwn.myCode != doorwayOwn.myCode)
+		doorOwn.SetCode(doorwayOwn.myCode);
+	if (doorOwn.lockPicked != doorwayOwn.lockPicked)
+		doorOwn.SetPicked(doorwayOwn.lockPicked);
+}
+
+static void ARGH_RequestDoorRelinkCommit_S(string reason)
+{
+	if (!Replication.IsServer())
+		return;
+
+	DZ_PersistenceCommit.RequestGlobalFlush_S(reason, 3000, 500, ESaveGameType.MANUAL);
+}
+
+static void ARGH_EnsureDoorwayDoorState(BLD_OwnershipComponent own, string ownerID, string myCode, bool lockPicked, int attemptsLeft)
+{
+	if (!Replication.IsServer())
+		return;
+	if (!own || attemptsLeft <= 0)
+		return;
+
+	IEntity doorwayOwner = own.GetOwner();
+	if (!ARGH_IsDoorwayEntity(doorwayOwner))
+		return;
+
+	ARGH_DoorPersistenceDebug.TraceEnsureStart(
+		doorwayOwner,
+		ARGH_GetOwnerPrefabPath(doorwayOwner),
+		own.myDoor,
+		myCode,
+		ARGH_DOOR_PROXY_PREFAB,
+		attemptsLeft
+	);
+
+	if (own.ownerID != ownerID)
+		own.SetOwnerID(ownerID);
+	if (own.myCode != myCode)
+		own.SetCode(myCode);
+	if (own.lockPicked != lockPicked)
+		own.SetPicked(lockPicked);
+
+	string doorId = ARGH_NormalizeDoorId(own.myDoor);
+	IEntity doorEnt = ARGH_FindDoorByPersistenceId(doorId);
+	if (!doorEnt)
+		doorEnt = ARGH_FindNearbyDoorEntity(doorwayOwner);
+	if (!doorEnt)
+		doorEnt = ARGH_SpawnDoorProxy(doorwayOwner);
+	if (!doorEnt)
+	{
+		GetGame().GetCallqueue().CallLater(ARGH_EnsureDoorwayDoorState, 900, false, own, ownerID, myCode, lockPicked, attemptsLeft - 1);
+		return;
+	}
+
+	ARGH_SyncDoorOwnershipFromDoorway(own, doorEnt);
+
+	string linkedDoorId = ARGH_GetPersistenceId(doorEnt);
+	linkedDoorId = ARGH_NormalizeDoorId(linkedDoorId);
+	if (!linkedDoorId.IsEmpty())
+	{
+		if (own.myDoor != linkedDoorId)
+		{
+			own.SetDoor(linkedDoorId);
+			ARGH_RequestDoorRelinkCommit_S("door_respawn_relink");
+		}
+		return;
+	}
+
+	GetGame().GetCallqueue().CallLater(ARGH_EnsureDoorwayDoorState, 900, false, own, ownerID, myCode, lockPicked, attemptsLeft - 1);
 }
 
 // -----------------------------------------------------------------------------
