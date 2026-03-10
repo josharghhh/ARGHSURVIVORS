@@ -1,0 +1,105 @@
+FrameWidgetClass {
+ "Left rule" Wrap
+ "Right rule" Wrap
+ "Up rule" Wrap
+ "Down rule" Wrap
+ {
+  FrameWidgetClass "{68CEB952BEE5C614}" {
+   Name "Frame0"
+   Slot FrameWidgetSlot "{68CEB952BEE5C1FE}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY -1
+    OffsetTop -1
+    SizeX 572.9
+    OffsetRight -572.9
+    SizeY 178.8
+    OffsetBottom -177.8
+    Alignment 0.5 0.5
+   }
+   Color 1 1 1 0
+   "Inherit Color" 0
+   {
+    TextWidgetClass "{68CEB9536968E1F4}" {
+     Name "SpawnTitle"
+     Slot FrameWidgetSlot "{68CEB9536968E1D2}" {
+      Anchor 0 0 1 0
+      PositionX 285.043
+      OffsetLeft 285.043
+      PositionY 3.222
+      OffsetTop 3.222
+      SizeX 1.379
+      OffsetRight -286.422
+      SizeY 50.964
+      OffsetBottom -54.186
+      Alignment 0.5 0
+      SizeToContent 0
+     }
+     Color 1 1 1 1
+     "Inherit Color" 0
+     Text "ARGH SURVIVORS"
+     "Font Size" 100
+     "Min Font Size" 100
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{68CF5BEA608AB353}" {
+      Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+     }
+    }
+    TextWidgetClass "{68CEB9536968E179}" {
+     Name "SpawnStatus"
+     Slot FrameWidgetSlot "{68CEB9536968E171}" {
+      Anchor 0 0 1 0
+      PositionX 286.637
+      OffsetLeft 286.637
+      PositionY 69.762
+      OffsetTop 69.762
+      SizeX 0
+      OffsetRight -286.637
+      SizeY 34.69
+      OffsetBottom -104.452
+      Alignment 0.5 0
+      SizeToContent 0
+     }
+     Color 0.75 0.05 0.05 1
+     "Inherit Color" 0
+     Text "RESPAWNING IN 20"
+     "Font Size" 50
+     "Min Font Size" 50
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{68CF5BEBD1740D1B}" {
+      Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+     }
+    }
+    TextWidgetClass "{68CEB9536968E12F}" {
+     Name "SpawnHint"
+     Slot FrameWidgetSlot "{68CEB9536968E12B}" {
+      Anchor 0 0 1 0
+      PositionX 285.601
+      OffsetLeft 285.601
+      PositionY 113.123
+      OffsetTop 113.123
+      SizeX 0
+      OffsetRight -285.601
+      SizeY 44
+      OffsetBottom -157.123
+      Alignment 0.5 0
+      SizeToContent 0
+     }
+     Color 0.88 0.88 0.88 1
+     "Inherit Color" 0
+     Text "PREPARING YOUR COASTAL REDEPLOY."
+     "Font Size" 24
+     "Min Font Size" 24
+     "Horizontal Alignment" Center
+     "Vertical Alignment" Center
+     FontProperties FontProperties "{68CF5BEBC9433E40}" {
+      Font "{74C96B093E4BCF2F}UI/FONTS/BAD GRUNGE.fnt"
+     }
+    }
+   }
+  }
+ }
+}

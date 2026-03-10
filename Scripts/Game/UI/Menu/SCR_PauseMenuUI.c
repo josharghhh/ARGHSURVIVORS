@@ -51,6 +51,7 @@ class PauseMenuUI : ChimeraMenuBase
 	const string DIALOG_SAVE_FAILED = "pause_menu_save_failed";
 	
 	protected const int LOGOUT_COUNTDOWN_SECONDS = 10;
+	protected const int LOGOUT_PRESAVE_SECONDS = 5;
 	protected const float LOGOUT_MOVE_THRESHOLD_SQR = 0.04;
 
 	static ref ScriptInvoker m_OnPauseMenuOpened = new ScriptInvoker();
@@ -512,7 +513,6 @@ class PauseMenuUI : ChimeraMenuBase
 		m_vLogoutStartPos = controlled.GetOrigin();
 		m_iLogoutRemaining = LOGOUT_COUNTDOWN_SECONDS;
 		m_bLogoutPending = true;
-		RequestLogoutSave();
 
 		GetGame().GetCallqueue().Remove(UpdateLogoutCountdown);
 		GetGame().GetCallqueue().CallLater(UpdateLogoutCountdown, 1000, true);
@@ -525,32 +525,15 @@ class PauseMenuUI : ChimeraMenuBase
 		if (m_bLogoutSaveRequested)
 			return;
 
-		if (IsSavingOnExit())
+		if (!IsSavingOnExit())
 			return;
 
-		SaveGameManager saveManager = GetGame().GetSaveGameManager();
-		if (!saveManager)
+		SCR_PlayerController playerController = SCR_PlayerController.Cast(GetGame().GetPlayerController());
+		if (!playerController)
 			return;
 
-		if (!saveManager.IsSavingAllowed() || !saveManager.IsSavingPossible() || saveManager.IsBusy())
-			return;
-
-		int playerId = -1;
-		PlayerController pc = GetGame().GetPlayerController();
-		if (pc)
-			playerId = pc.GetPlayerId();
-
-		string saveName = "Logout";
-		if (playerId >= 0)
-			saveName = string.Format("Logout_%1", playerId);
-
-		// Keep logout behavior overwrite-first to avoid creating extra savepoints.
-		bool requested = DZ_SaveGameUtil.OverwriteLatestSave(saveManager);
-		if (!requested)
-			requested = saveManager.RequestSavePoint(ESaveGameType.MANUAL, saveName);
-
-		if (requested)
-			m_bLogoutSaveRequested = true;
+		playerController.ARGH_RequestPauseExitSave();
+		m_bLogoutSaveRequested = true;
 	}
 
 	//------------------------------------------------------------------------------------------------
@@ -566,6 +549,11 @@ class PauseMenuUI : ChimeraMenuBase
 		}
 
 		m_iLogoutRemaining = Math.Max(m_iLogoutRemaining - 1, 0);
+
+		// Front-load the expensive persistence work before the exit confirm click.
+		if (m_iLogoutRemaining <= LOGOUT_PRESAVE_SECONDS)
+			RequestLogoutSave();
+
 		UpdateExitButtonLabel();
 
 		if (m_iLogoutRemaining <= 0)
@@ -655,13 +643,11 @@ class PauseMenuUI : ChimeraMenuBase
 
 		if (IsSavingOnExit())
 		{
-			// Fire-and-forget save on exit to avoid UI deadlock during save callbacks.
-			SaveGameManager saveManager = GetGame().GetSaveGameManager();
-			if (saveManager && saveManager.IsSavingAllowed() && saveManager.IsSavingPossible() && !saveManager.IsBusy())
+			SCR_PlayerController playerController = SCR_PlayerController.Cast(GetGame().GetPlayerController());
+			if (playerController && !m_bLogoutSaveRequested)
 			{
-				bool requested = DZ_SaveGameUtil.OverwriteLatestSave(saveManager);
-				if (!requested)
-					saveManager.RequestSavePoint(ESaveGameType.MANUAL, "ExitInitial");
+				playerController.ARGH_RequestPauseExitSave();
+				m_bLogoutSaveRequested = true;
 			}
 
 			CloseToMainMenu();
@@ -941,10 +927,15 @@ class PauseMenuUI : ChimeraMenuBase
 		if (!playerController)
 			return;
 
+		SCR_PlayerController arghPlayerController = SCR_PlayerController.Cast(playerController);
+		if (arghPlayerController)
+			arghPlayerController.ARGH_RequestManualSuicideRespawn();
+
 		SCR_RespawnComponent respawn = SCR_RespawnComponent.Cast(playerController.FindComponent(SCR_RespawnComponent));
 		if (!respawn)
 			return;
 
+		// Keep the stock death request so the restored ARGH deploy handler drives the respawn flow.
 		respawn.RequestPlayerSuicide();
 		Close();
 	}
@@ -997,6 +988,10 @@ class PauseMenuUI : ChimeraMenuBase
 	//------------------------------------------------------------------------------------------------
 	protected bool IsSavingOnExit()
 	{
-		return !Replication.IsRunning() && GetGame().GetSaveGameManager().IsSavingAllowed();
+		SCR_PlayerController playerController = SCR_PlayerController.Cast(GetGame().GetPlayerController());
+		if (!playerController)
+			return false;
+
+		return playerController.ARGH_CanRequestPauseExitSave_O();
 	}
 }

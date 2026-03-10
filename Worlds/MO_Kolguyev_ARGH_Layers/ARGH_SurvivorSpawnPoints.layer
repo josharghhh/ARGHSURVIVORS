@@ -1,0 +1,236 @@
+$grp SCR_SpawnPoint : "{5A2220DD0C16958C}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124001}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 11229.961 2.207 10817.93
+  angles -2.775 -166.081 21.305
+  m_fRandomSpawnRadius 45
+  m_Info SCR_UIInfo "{C5B50B9C8E124003}" {
+   Name "Kamensk Coast"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124011}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 6479.526 4.789 3158.544
+  angles 0 -61 0
+  m_fRandomSpawnRadius 55
+  m_Info SCR_UIInfo "{C5B50B9C8E124013}" {
+   Name "Ugoldar Coast"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124021}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 6266.831 2.399 8458.205
+  angles 0 123 0
+  m_fRandomSpawnRadius 55
+  m_Info SCR_UIInfo "{C5B50B9C8E124023}" {
+   Name "Mineraly Coast"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124031}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 5698.784 6.839 3082.823
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124033}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124041}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 10236.96 9.956 10676.229
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124043}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124051}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 9622.645 18.114 10669.593
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124053}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124061}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 9231.616 73.727 9995.455
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124063}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124071}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 8551.352 95.28 9694.01
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124073}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124081}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 8067.198 173.19 9007.662
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124083}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124091}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 7146.568 0.789 8895.488
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124093}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124101}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 4224.455 186.734 7415.221
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124103}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124111}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 1443.457 3.017 7653.355
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124113}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124121}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 2257.282 40.658 6233.891
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124123}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124131}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 5507.229 47.809 3276.019
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124133}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124141}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 6375.546 30.994 2505.75
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124143}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124151}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 3977.77 19.58 7992.879
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124153}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124161}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 2515.316 36.675 7833.763
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124163}" {
+   Name "Random Coastal"
+  }
+ }
+ {
+  components {
+   FactionAffiliationComponent "{C5B50B9C8E124171}" {
+    "faction affiliation" "US"
+   }
+  }
+  coords 2171.612 57.894 7660.502
+  angles 0 36 0
+  m_fRandomSpawnRadius 70
+  m_Info SCR_UIInfo "{C5B50B9C8E124173}" {
+   Name "Random Coastal"
+  }
+ }
+}

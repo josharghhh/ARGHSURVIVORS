@@ -1,0 +1,10 @@
+TimeAndWeatherManagerEntity {
+ ID "5244F08C9618CADD"
+ coords 11789.166 4.588 10201.604
+ Enabled 1
+ WeatherStateMachine "{A3BAF78F6F0331A2}Terrains/ARGHSURV/WeatherPresets/StateMachine/ARGH_WeatherStates_Locked.conf"
+ "Initial Day Time" 7.4
+ "Internal variant transition" 0
+ "Internal subvariant 0" 0
+ "Internal subvariant 1" 0
+}

@@ -45,7 +45,7 @@ class ARGH_MetabolismConfig : Managed
 modded class SCR_CharacterControllerComponent
 {
     // Config resource path (Workbench-editable .conf)
-    static const string ARGH_METABOLISM_CONFIG_PATH = "Configs/Systems/ARGH_Metabolism.conf";
+    static const ResourceName ARGH_METABOLISM_CONFIG_PATH = "{7BF7753E0F359039}Configs/Systems/ARGH_Metabolism.conf";
 
     // ==============================
     // Config (loaded once)
@@ -521,7 +521,7 @@ modded class SCR_CharacterControllerComponent
             return;
 
         // Load dedicated layout (kept lightweight) as a root widget.
-        m_wStatusRoot = workspace.CreateWidgets("UI/layouts/HUD/Metabolism/MetabolismHUD.layout");
+        m_wStatusRoot = workspace.CreateWidgets("{1B16D0ECE2D14271}UI/layouts/HUD/Metabolism/MetabolismHUD.layout");
         if (!m_wStatusRoot)
             return;
 

@@ -1,0 +1,445 @@
+$grp GameEntity : "{097F88BDCA8B3D89}Prefabs/Structures/BuildingParts/Lights/LampIndustrial_01_on_exterior.et" {
+ {
+  coords 6458.12 27.98 3738.719
+  angles 0 54.416 0
+ }
+ {
+  coords 4616.552 42.787 3533.2
+  angles 0 141.525 0
+ }
+ {
+  coords 4619.992 43.32 3528.913
+  angles 0 139.799 0
+ }
+ {
+  coords 5877.022 45.651 8009.359
+  angles 0 97.166 0
+ }
+ {
+  coords 8157.561 287.848 8577.653
+  angles 0 -35.175 0
+ }
+ {
+  coords 2710.178 27.66 5558.287
+  angles 0 -178.529 0
+ }
+ {
+  coords 6126.571 427.779 6254.743
+  angles 0 -79.607 0
+ }
+}
+GenericEntity : "{1A1CE09F7BCA6650}Prefabs/Props/Wrecks/S105_wreck/S105_wreck_static.et" {
+ coords 11767.323 14.654 10586.134
+ angles 0 32.628 0
+}
+$grp GenericEntity : "{2B26287DC5B7F9D0}Prefabs/Props/Industrial/ToolBox_01/ToolBox_01_red.et" {
+ {
+  coords 11775.451 14.656 10588.194
+  angles 0 -64.749 0
+ }
+ {
+  coords 8162.189 284.499 8571.739
+  angles 0 -119.035 0
+ }
+}
+$grp SCR_ChimeraCharacter : "{3B1CB7C77F5CCE6C}Prefabs/Characters/DE_Examples/DE_Trader_Vehicles_CarDealer.et" {
+ {
+  coords 5872.431 42.859 8010.141
+  angles 0 98.286 0
+ }
+ {
+  coords 6456.883 24.342 3736.635
+  angles 0 0 0
+ }
+ {
+  coords 11775.421 14.656 10589.287
+  angles 0 -110.926 0
+ }
+}
+$grp GenericEntity : "{4433A092ECFE98D9}Prefabs/Structures/Military/Bunkers/AircraftShelter_E_01/AircraftShelter_E_01_chimney_green.et" {
+ {
+  coords 11918.235 9.142 10638.009
+ }
+ {
+  coords 6441.894 28.117 3853.696
+ }
+ {
+  coords 6455.336 27.609 3737.874
+ }
+ {
+  coords 4615.213 42.932 3531.769
+ }
+ {
+  coords 5871.433 45.324 8008.415
+ }
+ {
+  coords 9710.164 134.637 10165.651
+ }
+}
+$grp GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
+ {
+  coords 11820.216 12.697 10751.799
+  angles 0 -84.613 0
+ }
+ {
+  coords 6215.375 38.636 7980.008
+  angles 0 143.058 0
+ }
+ {
+  coords 5965.654 2.7 8299.428
+  angles 0 169.739 0
+ }
+ {
+  coords 3555.083 4.208 7901.427
+  angles 0 147.973 0
+ }
+ {
+  coords 4582.843 41.034 3552.823
+  angles 0 -72.817 0
+ }
+ {
+  coords 6076.125 39.7 7981.832
+  angles 0 87.111 0
+ }
+ {
+  coords 6422.068 25.33 3737.243
+  angles 0 136.374 0
+ }
+ {
+  coords 7645.551 24.057 5028.075
+  angles 0 -75.903 0
+ }
+ {
+  coords 2692.578 221.027 6970.937
+  angles 0 -3.887 0
+ }
+ {
+  coords 2720.488 25.986 5688.24
+  angles 0 -1.014 0
+ }
+ {
+  coords 4583.198 40.844 3551.046
+  angles 0 -162.729 0
+ }
+ {
+  coords 6360.779 16.035 3482.192
+  angles 0 33.735 0
+ }
+}
+$grp GenericEntity : "{45D056CC11985141}Prefabs/Props/Wrecks/S1203_wreck/S1203_wreck.et" {
+ {
+  coords 11770.11 14.656 10585.534
+  angles 0 -152.592 0
+ }
+ {
+  coords 8163.656 283.427 8581.358
+  angles 0.613 159.967 1.682
+ }
+}
+DecalEntity : "{46679C8491043813}Prefabs/Decals/Dirt/Decal_Dirt_Patch_04_V2.et" {
+ coords 8160.378 -0.062 8580.505
+ angles -90 0 -27.257
+ scale 6
+ ClutterOccluder 1
+}
+$grp SCR_ChimeraCharacter : "{46FAAA3E4CD10798}Prefabs/MercOut/MO_Trader_SurplusGearDealer.et" {
+ {
+  coords 4429.866 2.308 8207.554
+  angles 0 -79.036 0
+ }
+ {
+  coords 10061.476 6.847 10835.666
+  angles 0 80.134 0
+ }
+ {
+  coords 3713.314 3.477 3773.524
+  angles 0 -131.264 0
+ }
+ {
+  coords 11099.274 100.931 10370.597
+  angles 0 -99.759 0
+ }
+}
+$grp SCR_ChimeraCharacter : "{4D5ACFDF431400A9}Prefabs/Characters/DE_Examples/MO_Trader_Basic.et" {
+ {
+  coords 6440.19 23.914 3844.468
+  angles 0 134.576 0
+ }
+ {
+  coords 11924.536 5.272 10632.146
+  angles 0 76.023 0
+ }
+ {
+  coords 6070.736 39.799 7979.655
+  angles 0 81.554 0
+ }
+ {
+  coords 5957.739 2.7 8302.077
+  angles 0 141.138 0
+ }
+}
+GenericEntity : "{75D125481E2E0663}Prefabs/Compositions/Misc/SubCompositions/Barrel_ToolRack_01.et" {
+ coords 11770.627 14.656 10582.354
+ angles 0 -70.281 0
+}
+$grp SCR_ChimeraCharacter : "{8159CB36730F8FCC}Prefabs/Characters/DE_Examples/DE_Trader_Vehicles_Armed.et" {
+ {
+  coords 8160.02 284.487 8575.274
+  angles 0 -120.118 0
+ }
+ {
+  coords 2703.954 24.873 5559.182
+  angles 0 -14.811 0
+ }
+}
+GenericEntity : "{97BC8B79BFE292BA}Prefabs/Props/Industrial/CompressorTrailerWreck_01/Dst/CompressorTrailerWreck_01_dst_01.et" {
+ coords 11765.266 14.656 10587.863
+ angles 0 -113.072 0
+}
+DecalEntity : "{9EE74738BD9E8CDB}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_02.et" {
+ coords 8155.219 0.171 8580.178
+ angles -90 0 25.992
+ scale 5
+}
+$grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/LightPrefabs/LightIndustrial_01_light_spot_exterior.et" {
+ {
+  coords 8152.531 287.301 8571.777
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 8716.169 13.056 7318.119
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 6072.191 42.955 7980.302
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 11925.375 8.3 10632.866
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.17
+  Dynamic 1
+ }
+ {
+  coords 6441.414 27.01 3844.058
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 5958.25 5.219 8301.99
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 8161.428 287.745 8569.989
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 2703.498 28.014 5563.325
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.66
+  Dynamic 1
+ }
+ {
+  coords 7556.515 24 4772.198
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.24
+  Dynamic 1
+ }
+ {
+  coords 7548.075 24.201 4763.922
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.28
+  Dynamic 1
+ }
+ {
+  coords 9710.735 132.804 10163.887
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.16
+  Dynamic 1
+ }
+ {
+  coords 9711.102 132.074 10166.485
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.16
+  Dynamic 1
+ }
+ {
+  coords 11773.438 19.02 10586.005
+  angles -88.713 -180 -180
+  LV 8.43
+  Type Point
+  Radius 44
+  NearPlane 0.28
+  Dynamic 1
+ }
+}
+GenericEntity : "{C8A9F7FDDF3CE851}Prefabs/Compositions/Misc/SubCompositions/Decorations/Barrel_Radio_01.et" {
+ coords 11771.992 14.656 10582.447
+ angles 0 122.194 0
+}
+GenericEntity : "{CCD0D67036621BE5}Prefabs/Structures/BuildingParts/Industrial/ToolRack_Filled_02.et" {
+ coords 8158.864 286.206 8571.146
+ angles 0 62.912 0
+}
+SCR_DestructibleBuildingEntity : "{D424A3CD07F7A6F0}Prefabs/Structures/Houses/Village/House_Village_E_1I08/House_Village_E_1I08t.et" {
+ coords 8156.261 1.176 8571.703
+ angles 0 -26.907 0
+}
+$grp SCR_ChimeraCharacter : "{D8DA33ED6E86B100}Prefabs/Characters/DE_Examples/DE_Trader_Vehicles_US.et" {
+ {
+  coords 2693.384 221.135 6969.666
+  angles 0 149.098 0
+ }
+ {
+  coords 7555.26 21.322 4765.29
+  angles 0 0 0
+ }
+}
+GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+ components {
+  SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+   m_bGradualLightning 1
+   m_fLV 6
+   m_eInitialLightState LIT
+  }
+ }
+ coords 11774.549 14.656 10587
+}
+$grp SCR_ChimeraCharacter : "{E4715B9064126831}Prefabs/Characters/DE_Examples/DE_Trader_Vehicles_USSR.et" {
+ {
+  coords 4617.651 40.505 3532.023
+  angles 0 138.227 0
+ }
+ {
+  coords 9709.616 129.284 10162.108
+  angles 0 0 0
+ }
+}
+$grp ParticleEffectEntity : "{E931C0A6240D4D27}Prefabs/Particles/Smoke/Smoke_Smokestack_Medium.et" {
+ {
+  coords 3712.293 9.422 3776.639
+ }
+ {
+  coords 4431.494 8.368 8210.351
+ }
+ {
+  coords 10064.539 12.942 10833.929
+ }
+ {
+  coords 6119.257 431.577 6255.014
+ }
+ {
+  coords 8718.034 16.57 7322.155
+ }
+ {
+  coords 6072.075 46.796 7984.599
+ }
+ {
+  coords 11918.221 10.774 10638.021
+ }
+ {
+  coords 11099.218 106.796 10370.605
+ }
+ {
+  coords 6441.887 29.48 3853.752
+ }
+ {
+  coords 2696.044 228.086 6967.146
+ }
+ {
+  coords 3543.514 17.422 7903.936
+ }
+ {
+  coords 8152.692 293.473 8568.34
+ }
+ {
+  coords 6455.328 28.972 3737.77
+ }
+ {
+  coords 4615.205 44.295 3531.664
+ }
+ {
+  coords 5871.425 46.687 8008.311
+ }
+ {
+  coords 5960.843 8.383 8298.58
+ }
+ {
+  coords 2708.377 30.532 5558.883
+ }
+ {
+  coords 7556.492 28.669 4763.972
+ }
+ {
+  coords 9710.14 136 10165.639
+ }
+}
+$grp SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
+ {
+  coords 8714.639 9.485 7319.044
+  angles 0 119.267 0
+ }
+ {
+  coords 6125.351 424.498 6254.544
+  angles 0 -79.523 0
+ }
+ {
+  coords 3544.456 12.088 7904.398
+  angles 0 56.102 0
+ }
+ {
+  coords 8152.885 284.866 8569.862
+  angles 0 0 0
+ }
+ {
+  coords 2700.558 221.142 6965.155
+  angles 0 -11.209 0
+ }
+}

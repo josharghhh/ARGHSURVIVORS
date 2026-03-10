@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2A77B2B7CF6E4FA1}Configs/Systems/Respawn/ARGH_RandomSpawn.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

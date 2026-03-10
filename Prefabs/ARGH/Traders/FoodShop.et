@@ -1,0 +1,370 @@
+GenericEntity {
+ ID "68CF5BF691D0A22B"
+ coords 500.114 8.868 12311.44
+ {
+  $grp GenericEntity {
+   {
+    ID "68CF5BF691D027E3"
+    components {
+     MeshObject "{67340B0ED07E8DA4}" {
+      Object "{137689790DE1CCCD}Assets/Pumpkin/Pumpkin.xob"
+     }
+    }
+    coords 4.887 -1.232 0.334
+   }
+   {
+    ID "68CF5BF691D027EC"
+    components {
+     MeshObject "{67340B0E5EC716DD}" {
+      Object "{C544512DE2B5372C}Assets/Cabbage/repolho.xob"
+     }
+    }
+    coords 4.066 -1.21 0.496
+   }
+   {
+    ID "68CF5BF691D15A7A"
+    components {
+     MeshObject "{673873122A327974}" {
+      Object "{E443663E5241622A}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_folded.xob"
+     }
+    }
+    coords 1.534 -0.452 -5.404
+    angles -0.368 84.645 108
+    scale 1.67
+   }
+   {
+    ID "68CF5BF691D17168"
+    components {
+     MeshObject "{673873122A327974}" {
+      Object "{E443663E5241622A}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_folded.xob"
+     }
+    }
+    coords 1.532 -0.62 -5.431
+    angles -0.368 84.645 108
+    scale 1.67
+   }
+   {
+    ID "68CF5BF691D1E9AA"
+    components {
+     MeshObject "{67340B0ED15A686F}" {
+      Object "{137689790DE1CCCD}Assets/Pumpkin/Pumpkin.xob"
+     }
+    }
+    coords 5.153 -1.232 0.358
+   }
+   {
+    ID "68CF5BF691D1E9AB"
+    components {
+     MeshObject "{673873122A327974}" {
+      Object "{E443663E5241622A}Assets/Items/Equipment/Maps/Map_Paper_01/Map_Paper_01_folded.xob"
+     }
+    }
+    coords 1.521 -0.195 -5.409
+    angles -0.368 84.645 108
+    scale 1.67
+   }
+  }
+  $grp GenericEntity : "{078B9372FC15735D}Prefabs/Props/Commercial/ShoppingBasket_01/ShoppingBasket_01_red.et" {
+   {
+    ID "68CF5BF691D106A1"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.555 -1.683 -5.048
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF691D106A6"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.555 -1.777 -5.048
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF691D1716A"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.555 -1.718 -5.048
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF69E2E4FDA"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 6.09 -1.832 -4.99
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF69E2E882B"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 6.09 -1.787 -4.99
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF69E2EEC4D"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 6.09 -1.728 -4.99
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF69E2EEFD6"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.555 -1.822 -5.048
+    angles 0 82.932 0
+   }
+   {
+    ID "68CF5BF69E2EFA1D"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 6.09 -1.693 -4.99
+    angles 0 82.932 0
+   }
+  }
+  SCR_DestructibleBuildingEntity : "{0C967CB96A602ECD}Prefabs/Structures/Infrastructure/Naval/Sheds/BoatShed_01/BoatShed_01_weatheredDOORLESS.et" {
+   ID "68CF5BF69E2E4FD8"
+   coords 3.138 -2.866 -0.976
+   angles 0 175.631 0
+  }
+  $grp GenericEntity : "{47F8D83F71EB2B74}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_02/LampStreet_E_02_addon.et" {
+   {
+    ID "68CF5BF69E2E4FE4"
+    coords -0.283 0.682 -0.016
+    angles 0 -93.435 0
+    scale 0.9
+   }
+   {
+    ID "68CF5BF69E2E4FE7"
+    coords 6.378 0.687 -0.602
+    angles 0 80.053 0
+    scale 0.9
+   }
+  }
+  $grp SCR_DestructibleEntity : "{510AAC7765BE2F0B}Prefabs/Structures/Walls/Wooden/WoodenFence_04/WoodenFence_04_4m_Pole.et" {
+   {
+    ID "68CF5BF69E2E4FE0"
+    coords 4.046 -6.95 2.549
+    angles 0 -16.718 0
+    scale 3.092
+   }
+   {
+    ID "68CF5BF69E2E4FE3"
+    coords 1.811 -6.95 2.549
+    angles 0 -16.718 0
+    scale 3.092
+   }
+  }
+  $grp GenericEntity : "{613F68B39D0A4A64}Prefabs/Props/Commercial/CoolingBoxShop_01.et" {
+   {
+    ID "68CF5BF69E2E4FE1"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 1.794 -1.795 0.021
+    angles 0 175.573 0
+   }
+   {
+    ID "68CF5BF69E2E591D"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 4.796 -1.851 0.338
+    angles 0 175.573 0
+   }
+  }
+  ParticleEffectEntity : "{815D11CFF3A86DE2}Prefabs/Particles/Water/BUBBLEARGH.et" {
+   ID "68CF5BF69E2CCC34"
+   coords 4.298 -7.936 6.397
+   scale 2.99
+  }
+  $grp GenericEntity : "{9DD2152A4D1F1F69}Prefabs/ARGH/Signs/Grocery.et" {
+   {
+    ID "68CF5BF69E2E5912"
+    coords -0.068 -3.703 -2.248
+    angles 0 -91.368 0
+    scale 1.45
+   }
+   {
+    ID "68CF5BF69E2E66B7"
+    coords 2.965 -2.762 2.684
+    angles 0 176.195 0
+    scale 1.26
+   }
+  }
+  $grp LightEntity : "{A45B8995A66B9146}Prefabs/Structures/BuildingParts/Lights/LightPrefabs/LightIndustrial_01_light_spot_exterior.et" {
+   {
+    ID "68CF5BF69E2CCC36"
+    coords 3.308 2.403 -3.019
+    angles -88.713 180 180
+    Color 0.6529 0.2747 0.076 1
+    LV 8.43
+    Type Point
+    Radius 44
+    NearPlane 0.9
+    Dynamic 1
+   }
+   {
+    ID "68CF5BF69E2CCC37"
+    coords 6.632 -1.968 -4.212
+    angles -88.713 180 180
+    Color 0.6529 0.2747 0.076 1
+    LV 8.43
+    Type Point
+    Radius 44
+    NearPlane 0.9
+    Dynamic 1
+   }
+  }
+  SCR_DestructibleEntity : "{AAA1E8B3722E8BE3}Prefabs/Structures/Infrastructure/Naval/Piers/PierRail_01_V4.et" {
+   ID "68CF5BF69E2E66B6"
+   coords 5.338 -1.826 -1.718
+   angles 0 87.408 0
+   scale 0.51
+  }
+  GenericEntity : "{B6C340C78D5D5338}Prefabs/Structures/BuildingParts/Doors/Door_PierShed_01_A_RIGHT_EXT_COV_B.et" {
+   ID "68CF5BF69E2E66B4"
+   components {
+    ActionsManagerComponent "{F32B667C3C823800}" {
+     Enabled 0
+    }
+    Hierarchy "{7642683606C70747}" {
+     Enabled 1
+     PivotID "Socket_door_right_02"
+     AutoTransform 1
+    }
+   }
+   coords 0.303 -1.897 -1.08
+   angles 89.909 -93.132 0.621
+   scale 2.169
+  }
+  GenericEntity : "{EA34FD3A068E550A}Prefabs/Props/Commercial/NewspaperStand_01.et" {
+   ID "68CF5BF69E2E66B3"
+   components {
+    DL_LootSpawnComponent "{66B442257E6A201D}" {
+     Enabled 0
+    }
+   }
+   coords 1.531 -1.793 -5.36
+   angles 0 176.596 0
+  }
+  $grp GenericEntity : "{EC9EC10F9D401E7A}Prefabs/Structures/BuildingParts/Lights/LampIndustrial_05/LampIndustrial_05.et" {
+   {
+    ID "68CF5BF69E2E66AF"
+    coords 2.941 -1.088 2.779
+    angles -0.277 -177.841 0.264
+    scale 0.353
+   }
+   {
+    ID "68CF5BF69E2E66B0"
+    coords 5.096 -1.105 2.901
+    angles -0.381 -139.571 0.036
+    scale 0.353
+   }
+   {
+    ID "68CF5BF69E2E66B1"
+    coords 0.778 -1.133 2.629
+    angles 0.046 128.899 0.38
+    scale 0.353
+   }
+   {
+    ID "68CF5BF69E2FDB4E"
+    coords 0.171 -1.805 -3.415
+    angles 0.288 87.017 0.252
+    scale 0.353
+   }
+  }
+  $grp GenericEntity : "{EEC781AC391B7400}Prefabs/Props/Commercial/ShoppingCart_01.et" {
+   {
+    ID "68CF5BF69E2CCC33"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.769 -1.822 -2.4
+    angles 0 -0.373 0
+   }
+   {
+    ID "68CF5BF69E2F649F"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.77 -1.838 -2.741
+    angles 0 -0.373 0
+   }
+   {
+    ID "68CF5BF69E2F87C9"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.762 -1.817 -3.176
+    angles 0 -0.373 0
+   }
+   {
+    ID "68CF5BF69E2F87CA"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.76 -1.814 -3.604
+    angles 0 -0.373 0
+   }
+   {
+    ID "68CF5BF69E2FDB4F"
+    components {
+     DL_LootSpawnComponent "{66B442257E6A201D}" {
+      Enabled 0
+     }
+    }
+    coords 5.754 -1.813 -4.049
+    angles 0 -0.373 0
+   }
+  }
+  GenericEntity : "{F56333F87A4FB433}Prefabs/Props/Commercial/ScaleShop_01/ScaleShop_01_yellow.et" {
+   ID "68CF5BF69E2CCC32"
+   coords 4.051 -0.977 0.79
+   angles 0 85.909 0
+   scale 0.95
+  }
+  SCR_DestructibleBuildingEntity : "{F6AA92F7B23D8A71}Prefabs/Structures/Infrastructure/Naval/Piers/Pier_01.et" {
+   ID "68CF5BF69E2CCC35"
+   coords 3.613 -8.349 -6.683
+   angles 0 -93.113 0
+   scale 1.087
+  }
+ }
+}

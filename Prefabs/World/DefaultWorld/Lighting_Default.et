@@ -1,0 +1,7 @@
+GenericWorldLightEntity {
+ ID "52D6BA0EA66D4DC6"
+ DirectLightColor 1 0.348 0.0902 0.0513
+ IndirectLightColor 1 0.0799 0.0417 0.0862
+ ProbeReflectionColor 1 0.348 0.0902 0.0513
+ ProbeDiffuseColor 1 0.0799 0.0417 0.0862
+}

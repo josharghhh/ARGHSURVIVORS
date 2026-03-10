@@ -1,0 +1,10 @@
+StaticModelEntity : "{DD49716491710760}Prefabs/Props/Military/Compositions/FIA/Antenna_01_FIA.et" {
+ ID "F0DBA538AC2A0552"
+ {
+  SCR_RadioVehicleSpawnPoint {
+   ID "64A486DC6079F48B"
+   m_Info SCR_UIInfo "{5E3EA4953A7E903F}" {
+   }
+  }
+ }
+}

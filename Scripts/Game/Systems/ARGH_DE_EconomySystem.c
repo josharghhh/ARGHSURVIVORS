@@ -97,7 +97,8 @@ modded class DE_EconomySystem : WorldSystem
 			return;
 		lastTickTime = 0;
 		
-		if (!DL_LootSystem.GetInstance().lootDataReady)
+		DL_LootSystem lootSystem = DL_LootSystem.GetInstance();
+		if (!lootSystem || !lootSystem.lootDataReady)
 			return;
 		
 		for (int i = 0; i < Math.Min(100, bankComponents.Count()); i++)
@@ -210,4 +211,3 @@ modded class DE_EconomySystem : WorldSystem
 		inventoryUI.RefreshLootUIListener();
 	}
 }
-

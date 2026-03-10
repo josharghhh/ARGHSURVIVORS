@@ -11,9 +11,6 @@ GenericEntity {
  angles 0 90 0
  scale 0.537
 }
-GenericEntity : "{173AB5EB5EF99F21}Prefabs/Props/Civilian/StorageBoxPlans.et" {
- coords 484.372 4.377 12363.432
-}
 SCR_DestructibleBuildingEntity : "{574F2B4AD0C9ECFA}Prefabs/MP/Modes/Plain/VehicleDealer_Full.et" {
  coords 4277.308 0 5805.717
  angles 0 61.175 0
@@ -64,35 +61,6 @@ SCR_DestructibleBuildingEntity : "{574F2B4AD0C9ECFA}Prefabs/MP/Modes/Plain/Vehic
    }
   }
  }
-}
-$grp GenericEntity : "{614D8A633504DAD2}Prefabs/Props/Civilian/ARGHSUITCASE.et" {
- {
-  coords 486.518 4.364 12362.747
- }
- {
-  coords 485.454 4.364 12362.747
- }
- {
-  coords 484.537 4.364 12362.747
- }
- {
-  coords 483.746 4.364 12362.747
- }
- {
-  coords 482.99 4.364 12362.747
- }
- {
-  coords 486.477 4.363 12363.535
- }
- {
-  coords 482.992 4.367 12363.974
- }
- {
-  coords 485.475 4.369 12363.686
- }
-}
-GenericEntity : "{703F2DB693C60ABF}Prefabs/Props/Civilian/NewBasePlans.et" {
- coords 486.08 4.367 12364.135
 }
 $grp SCR_ChimeraCharacter : "{79E55BE2B5EE102C}Prefabs/Characters/DE_Examples/DE_Trader_General.et" {
  VehicleTrader {

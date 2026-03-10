@@ -1,0 +1,835 @@
+$grp GenericEntity : "{0DDAFCA92FF4451C}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_CIV.et" {
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6677.455 27.625 3982.418
+  angles 0 50.584 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6777.99 25.996 3939.865
+  angles 0 84.014 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6482.472 23.041 3679.572
+  angles 0 110.117 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 5906.748 14.232 3152.812
+  angles 0 173.482 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6309.572 3.618 3166.117
+  angles 0 -91.296 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 8449.728 21.59 6451.82
+  angles 0 173.482 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 9208.777 3.688 8233.157
+  angles 0 31.633 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 12008.512 6.623 10461.377
+  angles 0 173.482 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 12005.972 6.534 10440.081
+  angles 0 82.995 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11948.741 7.406 10460.89
+  angles 0 160.023 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11955.28 7.406 10465.274
+  angles 0 160.023 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11982.652 7.501 10526.404
+  angles 0 26.616 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11983.916 7.499 10548.788
+  angles 0 0.345 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11907.559 7.607 10586.956
+  angles 0 73.821 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11868.571 8.5 10556.122
+  angles 0 76.027 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11854.917 9.268 10581.321
+  angles 0 76.752 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11850.067 8.593 10644.334
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11858.76 8.574 10615.774
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11815.461 12.597 10625.581
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11808.074 12.597 10648.206
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11791.786 12.437 10745.767
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11897.157 3.294 11088.787
+  angles 0 90.954 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 11521.435 106.116 10728.642
+  angles 0 79.565 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 9752.725 129.687 10190.41
+  angles 0 -148.497 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 9245.08 94.174 9465.217
+  angles 0 133.906 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6090.776 3.948 8231.288
+  angles 0 72.438 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 5982.688 2.437 8288.094
+  angles 0 166.012 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 5710.82 2.188 8269.169
+  angles 0 -120.49 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 5590.556 2.128 8226.232
+  angles 0 70.128 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6031.524 40.064 7952.947
+  angles 0 108.626 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6259.009 2.125 8536.104
+  angles 0 -75.939 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 4412.332 2.287 8154.024
+  angles 0 -34.434 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3627.024 1.625 7930.961
+  angles 0 -96.319 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3627.551 1.6 7914.398
+  angles 0 -99.542 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3571.323 2.582 7890.393
+  angles 0 -159.966 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 2722.776 110.874 7463.177
+  angles 0 -117.304 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 1863.884 127.969 7517.712
+  angles 0 149.394 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 1652.205 110.707 7378.902
+  angles 0 -6.261 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 2780.86 24.218 5389.684
+  angles 0 82.565 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3208.729 49.226 4981.748
+  angles 0 -31.388 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3281.48 26.852 4548.94
+  angles 0 17.678 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 3803.2 4.833 3732.45
+  angles 0 -130.936 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 4485.175 40.5 3461.245
+  angles 0 10.678 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 4330.604 52.479 3202.528
+  angles 0 51.323 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6359.542 11.625 3383.658
+  angles 0 57.896 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6750.764 6.844 3641.347
+  angles 0 -119.855 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 7004.727 4.594 3876.18
+  angles 0 -152.03 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aExcludedEditableEntityLabels +{
+     VEHICLE_HELICOPTER
+     VEHICLE_AIRPLANE
+     VEHICLE_APC
+    }
+   }
+  }
+  coords 6862.545 30.344 4140.441
+  angles 0 77.673 0
+ }
+}
+$grp GenericEntity : "{644AEC5C537E03F0}Prefabs/Systems/AmbientVehicles/AmbientVehicleSpawnpoint_USSR.et" {
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 2636.179 24.219 5517.683
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 2683.247 24.218 5479.958
+  angles 0 -89.961 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 2928.214 24.22 5164.694
+  angles 0 -129.521 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 4365.52 55.188 3217.504
+  angles 0 98.74 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 5304.251 65.188 3404.144
+  angles 0 66.342 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 5976 9.312 3116.211
+  angles 0 -107.945 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 2078.727 119.25 7387.24
+  angles 0 136.195 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 2022.378 129.469 7327.841
+  angles 0 133.523 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 6927.074 435.864 6829.04
+  angles 0 15.716 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 6747.522 441.812 6806.141
+  angles 0 -132.05 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 7020.415 427.436 6933.01
+  angles 0 -87.324 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 6952.007 418 7007.129
+  angles 0 -171.985 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 6898.694 426.031 6928.407
+  angles 0 62.226 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 8506.451 95.925 9330.957
+  angles 0 113.325 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 6371.431 40.028 8030.918
+  angles 0 -84.83 0
+ }
+ {
+  components {
+   SCR_AmbientVehicleSpawnPointComponent "{5D5E85F932F777FA}" {
+    m_aIncludedEditableEntityLabels {
+     VEHICLE_HELICOPTER
+     TRAIT_ARMED
+    }
+    m_bRequireAllIncludedLabels 1
+   }
+  }
+  coords 5974.372 9.306 3115.012
+  angles 0 -106.564 0
+ }
+}

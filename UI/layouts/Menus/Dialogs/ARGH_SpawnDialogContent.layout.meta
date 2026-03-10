@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A9DB0F9A8D814C21}UI/layouts/Menus/Dialogs/ARGH_SpawnDialogContent.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass PS5 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

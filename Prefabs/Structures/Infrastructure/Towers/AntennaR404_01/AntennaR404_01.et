@@ -1,0 +1,9 @@
+StaticModelEntity : "{BCF54BF42D61C77E}Prefabs/Structures/Core/Tower_Base.et" {
+ ID "50D67C36F43527FE"
+ components {
+  SCR_MapDescriptorComponent "{56F2C33183C309B2}" {
+   Enabled 0
+   VisibleOnMap 0
+  }
+ }
+}

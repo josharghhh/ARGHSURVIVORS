@@ -270,7 +270,7 @@ SCR_DestructibleBuildingEntity : "{7B5991365F117397}MINES/ShaftStraight.et" {
       scale 1.094
      }
     }
-    $grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+    $grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
      {
       coords -6.004 -6.859 0.572
       angles -3.513 74.213 9.247
@@ -2500,7 +2500,7 @@ SCR_DestructibleBuildingEntity : "{7B5991365F117397}MINES/ShaftStraight.et" {
     }
    }
   }
-  SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+  SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
    coords -0.364 1.068 -1.019
    angles -9.852 -167.976 -103.775
    scale 0.012

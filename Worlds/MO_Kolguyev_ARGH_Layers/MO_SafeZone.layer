@@ -1,4 +1,16 @@
-$grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+$grp SCR_IndestructibleEnvironmentalEntity : "{1200EAC7C79003AF}Prefabs/Rocks/Granite/GraniteRock_03_V2.et" {
+ {
+  coords 43.696 678.57 12754.413
+  angles 0 65.188 0
+  scale 0.146
+ }
+ {
+  coords 39.708 678.833 12754.6
+  angles 0.985 71.448 9.279
+  scale 0.146
+ }
+}
+$grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
  {
   components {
    SCR_EditableEntityComponent "{58910CB42762D472}" {
@@ -20,9 +32,25 @@ $grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/
   scale 0.698
  }
 }
+SCR_ChimeraCharacter : "{5C6F313FE2C931B5}Prefabs/Characters/DE_Examples/DE_Admin_Trader.et" {
+ components {
+  DE_TraderComponent "{66F68382BBCE97CA}" {
+   traderName "Admin Trader"
+   traderMargin -100
+   fallbackSupplyCost 0
+   modes 510
+  }
+ }
+ coords 41.392 679.429 12761.813
+ angles 0 162.161 0
+}
 GenericEntity : "{614D8A633504DAD2}Prefabs/Props/Civilian/ARGHSUITCASE.et" {
  coords 477.483 2.423 12298.604
  angles 0 -130.862 0
+}
+GenericEntity AdminTPVault : "{6673E4E9181F1470}Prefabs/Systems/ARGH_VAULT.et" {
+ coords 37.742 679.438 12756.578
+ scale 0.07
 }
 $grp GenericEntity : "{74ECB0169F30948C}Prefabs/World/Locations/Common/LocationBase.et" {
  {

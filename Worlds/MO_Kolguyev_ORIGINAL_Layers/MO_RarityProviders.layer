@@ -1,0 +1,17 @@
+$grp GenericEntity : "{3B697FB474EF996E}Prefabs/World/DL_LootSpawnRarityProvider.et" {
+ {
+  coords 5076.121 691.017 6347.403
+ }
+ {
+  coords 2217.577 126.125 7355.781
+ }
+ {
+  coords 2724.851 24.657 5597.08
+ }
+ {
+  coords 6800.649 360.515 6142.635
+ }
+ {
+  coords 8608.697 95.588 9306.081
+ }
+}

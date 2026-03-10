@@ -1178,7 +1178,7 @@ GenericEntity : "{013DD5713343455C}Prefabs/Particles/explosion_debris_Rock/dst_r
   }
  }
  coords 524.503 -6.559 12413.706
- angles 1.943 89.311 69.677
+ angles 1.943 89.311 88.06
  scale 100
 }
 $grp SCR_IndestructibleEnvironmentalEntity : "{01ACC51FDECAD098}Prefabs/ARGH/Caves/ARGHCave_CORNER1.et" {
@@ -1561,7 +1561,7 @@ $grp GenericEntity : "{47F8D83F71EB2B74}Prefabs/Structures/Infrastructure/Lamps/
   scale 0.9
  }
 }
-$grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
+$grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
  {
   coords 523.627 -5.51 12415.904
   angles -17.703 17.564 -6.507
@@ -2786,11 +2786,6 @@ $grp GenericEntity : "{C82B2FB7BF77F924}Prefabs/Props/Industrial/Mine/MiningPick
   angles 0 0 -24.793
  }
 }
-GenericEntity : "{C886ED0052FC8070}PrefabsEditable/Auto/Compositions/Slotted/SlotFlatSmall/E_SafeZone_SpawnAntenna.et" {
- coords 479.6 2.317 12377.627
- angles -2.395 35.469 -6.061
- scale 0.997
-}
 GenericEntity : "{C9FD2230AF5AC2D8}Prefabs/Structures/Infrastructure/Waterworks/WellPump_01/WellPump_01_base.et" {
  coords 487.766 2.378 12309.122
 }
@@ -3234,176 +3229,7 @@ $grp GenericEntity : "{EEC781AC391B7400}Prefabs/Props/Commercial/ShoppingCart_01
   angles 0 -0.373 0
  }
 }
-$grp GenericEntity : "{EFA7233213E77C2E}Prefabs/Systems/SpawnPoints/SpawnPosition.et" {
- {
-  coords 486.078 2.381 12387.863
-  angles 0 -165.02 0
-  scale 0.997
- }
- {
-  coords 481.881 2.548 12373.374
-  angles 0 -146.673 0
-  scale 0.997
- }
- {
-  coords 476.408 2.285 12373.854
-  angles 0 -175.044 0
-  scale 0.997
- }
- {
-  coords 484.873 2.796 12374.938
-  angles 0 115.602 0
-  scale 0.997
- }
- {
-  coords 475.116 2.429 12369.02
-  angles 0 144.727 0
-  scale 0.997
- }
- {
-  coords 472.812 2.488 12366.135
-  angles 0 144.727 0
-  scale 0.997
- }
- {
-  coords 477.701 3.202 12370.574
-  angles 0 -175.044 0
-  scale 0.997
- }
- {
-  coords 475 3.171 12366.474
-  angles 0 -169.661 0
-  scale 0.997
- }
- {
-  coords 472.794 2.397 12368.564
-  angles 0 144.008 0
-  scale 0.997
- }
- {
-  coords 470.234 2.086 12372.808
-  angles 0 144.008 0
-  scale 0.997
- }
- {
-  coords 474.701 2.189 12374.771
-  angles 0 144.008 0
-  scale 0.997
- }
- {
-  coords 478.818 2.397 12373.422
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 488.192 2.891 12381.839
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 484.45 2.445 12380.626
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 482.695 2.133 12385.523
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 471.279 1.719 12384.641
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 477.741 1.83 12386.545
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 471.574 1.942 12378.646
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 486.98 2.596 12385.077
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 472.443 1.623 12388.318
-  angles 0 160.64 0
-  scale 0.997
- }
- {
-  coords 477.318 1.99 12383.155
-  angles 0 -165.02 0
-  scale 0.997
- }
- {
-  coords 476.281 2.109 12380.148
-  angles 0 -165.02 0
-  scale 0.997
- }
-}
 $grp SCR_ChimeraCharacter : "{F3400FAF5F2CA34C}Prefabs/MercOut/MO_Trader_BlackMarketArmsDealer.et" {
- foodtrader {
-  components {
-   DE_TraderComponent "{66F68382BBCE97CA}" {
-    traderName "food Dealer"
-    cardPayment 1
-    traderMargin 0.5
-    types 0
-    itemWhitelist {
-     "{07DACEB908D3BA94}Prefabs/FoodDrink/Apple.et"
-     "{872ADB5D62B35D43}Prefabs/FoodDrink/ArmyCrackers.et"
-     "{B00F6699B5E40D29}Prefabs/FoodDrink/Cabbage.et"
-     "{9145D72FF5EFC119}Prefabs/FoodDrink/CanteenSoviet.et"
-     "{218E66B4534651E1}Prefabs/FoodDrink/CanteenUS.et"
-     "{33B9574AD526D5AE}Prefabs/FoodDrink/Capsicum.et"
-     "{7247A8706B43BC8C}Prefabs/FoodDrink/Cherry.et"
-     "{2AE74C2A5647003D}Prefabs/FoodDrink/chipsExtraCheese.et"
-     "{8B3A6788BF261FDA}Prefabs/FoodDrink/DryMeat.et"
-     "{356AE47BFE19A47D}Prefabs/FoodDrink/EggMedium.et"
-     "{0021D6AEE15D1D30}Prefabs/FoodDrink/EggSmall.et"
-     "{D4D02A2479893CB7}Prefabs/FoodDrink/HoneyComb.et"
-     "{4D55B4A53AC736A5}Prefabs/FoodDrink/Mango.et"
-     "{0A13D9E72CF41133}Prefabs/FoodDrink/MRE.et"
-     "{439A037A2A45E6CF}Prefabs/FoodDrink/Mushroom.et"
-     "{610CFCE348C1782F}Prefabs/FoodDrink/Pear.et"
-     "{43BDECFD73CE845A}Prefabs/FoodDrink/Plum.et"
-     "{6EB3ACE174E7244B}Prefabs/FoodDrink/Potato.et"
-     "{08291808B6FF2553}Prefabs/FoodDrink/Pumpkin.et"
-     "{EB82B10E9C7D11A7}Prefabs/FoodDrink/Tomato.et"
-    }
-   }
-   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
-    Slots {
-     LoadoutSlotInfo Hat {
-      Prefab ""
-     }
-     LoadoutSlotInfo Jacket {
-      Prefab "{17DBD854BFF6CD8D}Prefabs/Characters/Uniforms/Shirt_Turtleneck_01/Shirt_Turtleneck_01_grey_Dirty.et"
-     }
-     LoadoutSlotInfo Pants {
-      Prefab "{537FD11C135757AC}Prefabs/Characters/Uniforms/Pants_Trousers_01/Pants_Trousers_01_DarkGrey_Dirty.et"
-     }
-     LoadoutSlotInfo Back {
-     }
-     LoadoutSlotInfo Vest {
-     }
-     LoadoutSlotInfo HandWear {
-     }
-     LoadoutSlotInfo NVS_NVGSlot {
-     }
-     LoadoutSlotInfo Head {
-     }
-    }
-   }
-  }
-  coords 503.412 7.013 12311.984
-  angles 0 164.694 0
- }
  WeaponsDealer {
   components {
    DE_TraderComponent "{66F68382BBCE97CA}" {

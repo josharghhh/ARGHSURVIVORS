@@ -101,6 +101,10 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
   SCR_IdentityManagerComponent "{5AEEA80681EA61AF}" {
    m_eIdentityItemGenerationType 6
   }
+  ARGH_PlayerCharLinkComponent "{6A9036A0AC9E11D1}" {
+  }
+  ARGH_MapMarkerFilterComponent "{6B8A3F8A9D4E31C1}" {
+  }
   SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
    m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
   }
@@ -109,25 +113,11 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
    m_iReceiveKillFeedType ALL
   }
   SCR_PlayerSpawnPointManagerComponent "{670413C72FAE3922}" {
-   m_bEnablePlayerSpawnPoints 1
+   m_bEnablePlayerSpawnPoints 0
    m_eDeployableSpawnPointBudgetType NONE
   }
-  SCR_RespawnBriefingComponent "{670413C72FAE3921}" {
-   m_sJournalConfigPath "{E8B9FDA6DF9066DE}Configs/Journal/Journal_CO_Arland.conf"
-   m_Info SCR_UIInfo "{670413C72FAE392A}" {
-    Description "#AR-CombatScenario_Briefing"
-   }
-   m_SimpleBriefingBackground "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
-   m_aGameModeHints {
-    SCR_HintUIInfo "{670413C72FAE3929}" {
-     Name "#AR-Workshop_TabName_Briefing"
-     Description "#AR-CombatScenario_Briefing"
-     Icon "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
-    }
-   }
-  }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_MenuSpawnLogic "{670413C72FAE3937}" {
+   m_SpawnLogic ARGH_RandomSpawnLogic "{670413C72FAE3937}" {
     m_sForcedFaction "SURVIVORS"
    }
   }
@@ -149,35 +139,6 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
      m_fThreshold 1
      m_iMinParticipation 1
      m_iMinVotes 300
-    }
-   }
-  }
-  SCR_WelcomeScreenComponent "{670413C72FAE3930}" {
-   Enabled 0
-   m_sHeaderTitle "Cain Survivors"
-   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{670413C72FAE393F}" {
-    m_LeftColumn SCR_WelcomeScreenFactionContent "{670413C72FAE0257}" {
-     m_sTitleText "#AR-DeployScreen_AvailableFactionsTitle"
-     m_sBottomTitleText "#AR-DeployScreen_MoreFactions"
-    }
-    m_MiddleColumn SCR_WelcomeScreenMissionObjectivesContent "{670413C72FAE0256}" {
-     m_sTitleText "PVE Survival"
-     m_aMissionObjectives {
-      SCR_WelcomeScreenMissionObjectives "{670413C72FAE0255}" {
-       m_sObjectiveQuadName "Explore"
-       m_sDescription "Scavenge, survive, and avoid hostile factions across CAIN."
-      }
-     }
-    }
-    m_RightColumn SCR_WelcomeScreenIntroductionContent "{670413C72FAE0254}" {
-     m_sTitleText "Welcome"
-     m_aIntroduction {
-      SCR_WelcomeScreenIntroduction "{670413C72FAE0252}" {
-       m_sContentImage "{8E135C7AA80F6861}UI/Textures/MissionLoadingScreens/CO_Arland_05.edds"
-       m_sContentTitleText "Overview"
-       m_sContentDescriptionText "Randomized survivor deployments with ARGH, Ballien, and Bacon zombie threats."
-      }
-     }
     }
    }
   }

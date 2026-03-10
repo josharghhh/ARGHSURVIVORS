@@ -137,23 +137,6 @@ $grp GenericEntity : "{A6340D063CD1630A}622120A5448725E3/Prefabs/Systems/Ambient
   coords 10678.843 55.921 10589.377
  }
 }
-SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
- coords 0 0 0
- m_aPlayerLoadouts {
-  SCR_FactionPlayerLoadout "{D731B0F63DCB7103}" {
-   m_sLoadoutName "Survivor Scout"
-   m_sLoadoutResource "{6CB52AE4A03D9637}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Male.et"
-   m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
-   m_sAffiliatedFaction "SURVIVORS"
-  }
-  SCR_FactionPlayerLoadout "{20A4281F95CCB7C5}" {
-   m_sLoadoutName "Survivor Medic"
-   m_sLoadoutResource "{A27AA9F45BE7C25B}Prefabs/Characters/Factions/ARGH_SURVIVORS/ARGH_Character_Survivor_Female.et"
-   m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
-   m_sAffiliatedFaction "SURVIVORS"
-  }
- }
-}
 GenericEntity : "{C22394165A77A77A}622120A5448725E3/Prefabs/Systems/AmbientPatrolSpawnpoint_Tier1_Small.et" {
  coords 2589.871 8.203 4910.7
  angles 13.12 -3.549 -15.284

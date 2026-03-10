@@ -1,17 +1,5 @@
-$grp SCR_IndestructibleEnvironmentalEntity : "{1200EAC7C79003AF}Prefabs/Rocks/Granite/GraniteRock_03_V2.et" {
- {
-  coords 95.21 600.736 12698.236
-  angles 0 65.188 0
-  scale 0.146
- }
- {
-  coords 91.222 600.999 12698.423
-  angles 0.985 71.448 9.279
-  scale 0.146
- }
-}
 SCR_DestructibleBuildingEntity : "{284A7F21D3B7430F}Prefabs/Structures/Commerical/RadioStation.et" {
- coords 93.255 800.732 12705.337
+ coords 41.701 876.287 12761.333
  angles 0 90 0
  {
   Building {
@@ -498,12 +486,30 @@ StaticModelEntity AdminBase_Spawner : "{321EBB0282EB9AD3}Prefabs/Systems/FastTra
    Object ""
   }
  }
- coords 89.673 801.898 12699.901
+ coords 38.119 876.216 12755.897
  angles 0 0.001 0
  scale 0.02
 }
+$grp SCR_IndestructibleEnvironmentalEntity : "{3F68EE5DCB004B10}Prefabs/Rocks/Granite/GraniteCliff_01.et" {
+ {
+  coords 50.856 675.914 12753.935
+  angles -88.08 0 0
+ }
+ {
+  coords 55.901 675.989 12755.377
+  angles -90 -180 -180
+ }
+ {
+  coords 43.862 676.154 12752.07
+  angles -90 -180 -180
+ }
+ {
+  coords 39.012 676.154 12752.07
+  angles -90 -180 -180
+ }
+}
 GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
- coords 96.098 601.595 12702.705
+ coords 44.544 679.437 12758.701
  angles 0 -90.684 0
  {
   DE_BankEntity {
@@ -512,40 +518,6 @@ GenericEntity : "{44B3AC23A45CE5BE}Prefabs/Props/DynamicEconomy/DE_ATM.et" {
    angles -11.287 0.435 14.802
   }
  }
-}
-$grp SCR_IndestructibleEnvironmentalEntity : "{5108922392AE7139}PrefabsEditable/Auto/Rocks/Granite/E_GraniteCliff_01.et" {
- {
-  coords 102.41 598.072 12697.938
-  angles -88.08 0 0
- }
- {
-  coords 107.455 598.147 12699.381
-  angles -90 -180 -180
- }
- {
-  coords 95.416 598.312 12696.075
-  angles -90 -180 -180
- }
- {
-  coords 90.566 598.312 12696.075
-  angles -90 -180 -180
- }
-}
-SCR_ChimeraCharacter : "{5C6F313FE2C931B5}Prefabs/Characters/DE_Examples/DE_Admin_Trader.et" {
- components {
-  DE_TraderComponent "{66F68382BBCE97CA}" {
-   traderName "Admin Trader"
-   traderMargin -100
-   fallbackSupplyCost 0
-   modes 510
-  }
- }
- coords 92.906 601.595 12705.637
- angles 0 162.161 0
-}
-GenericEntity AdminTPVault : "{6673E4E9181F1470}Prefabs/Systems/ARGH_VAULT.et" {
- coords 89.256 601.604 12700.401
- scale 0.07
 }
 StaticModelEntity AdminBaseTeleporter : "{DEFAB7E592F00F0A}Prefabs/Systems/FastTravel/TP_Action.et" {
  components {
@@ -625,7 +597,7 @@ StaticModelEntity AdminBaseTeleporter : "{DEFAB7E592F00F0A}Prefabs/Systems/FastT
    }
   }
  }
- coords 89.691 802.163 12700.816
+ coords 38.137 876.52 12756.813
  angles 0 180 0
  scale 2.142
 }
